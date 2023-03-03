@@ -1,0 +1,33 @@
+{
+  "menuItems": [
+    {
+      "index": "n2",
+      "name": "home",
+      "url": "/",
+      "animateDelay": ".8",
+      "exitDelay": ".7"
+    },
+    {
+      "index": "n1",
+      "name": "about",
+      "url": "about",
+      "animateDelay": ".7",
+      "exitDelay": ".6"
+    },
+
+    {
+      "index": "n3",
+      "name": "projects",
+      "url": "projects",
+      "animateDelay": ".5",
+      "exitDelay": ".4"
+    },
+    {
+      "index": "n4",
+      "name": "contact",
+      "url": "contact",
+      "animateDelay": ".4",
+      "exitDelay": ".2"
+    }
+  ]
+}
