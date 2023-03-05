@@ -17,10 +17,12 @@ const DivAnimations = () => {
           animateDuration,
           exitDelay,
           exitDuration,
+          animationType,
+          index
         }) => {
           return (
             <m.div
-              key={classDiv}
+              key={index}
               className={classDiv}
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
@@ -28,6 +30,8 @@ const DivAnimations = () => {
                 delay: animateDelay,
                 ease: "easeInOut",
                 duration: animateDuration,
+                type: animationType,
+                stiffness: 90,
               }}
               exit={{
                 x: "-100%",
@@ -35,6 +39,8 @@ const DivAnimations = () => {
                   ease: "easeInOut",
                   delay: exitDelay,
                   duration: exitDuration,
+                  type: animationType,
+                  stiffness: 90,
                 },
               }}
             ></m.div>

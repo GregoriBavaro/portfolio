@@ -6,6 +6,7 @@
   justify-content: flex-end;
   background-color: transparent;
   padding: 0 2rem;
+  
 }
 
 .nav {
@@ -13,11 +14,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%;
+  width: 100%;
   max-width: 100rem;
   transform: translate(-50%, -50%);
-  height: 80%;
-  padding: 2rem;
+  height: 100%;
+  z-index: 10;
 }
 
 .header ul {
@@ -26,7 +27,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  width: 100%;
+  width: fit-content;
 }
 
 .header ul li {
@@ -42,3 +43,47 @@
   z-index: 100;
 }
 
+
+.toBeige {
+  color: #ffffff00;
+  background: linear-gradient(90deg, var(--beige) 50%, var(--lightBeige) 0)
+    var(--_p, 100%) / 200% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 1.2s;
+  
+}
+
+.toGreen {
+  color: #ffffff00;
+  background: linear-gradient(90deg, var(--green) 50%, var(--lightBeige) 0)
+    var(--_p, 100%) / 200% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 1.2s;
+}
+
+.toOrange {
+  color: #ffffff00;
+  background: linear-gradient(90deg, var(--orange) 50%, var(--lightBeige) 0)
+    var(--_p, 100%) / 200% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 1.2s;
+}
+
+.toPurple {
+  color: #ffffff00;
+  background: linear-gradient(90deg, var(--purple) 50%, var(--lightBeige) 0)
+    var(--_p, 100%) / 200% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 1.2s;
+}
+
+.toBeige:hover,
+.toOrange:hover,
+.toGreen:hover,
+.toPurple:hover {
+  --_p: 0%;
+}

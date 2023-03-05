@@ -1,5 +1,5 @@
 //Hooks
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 import Link from "next/link";
 import { Spin as Hamburger } from "hamburger-react";
 import { motion as m, AnimatePresence } from "framer-motion";
@@ -16,9 +16,14 @@ import classes from "./Navigation.module.css";
 const Navigation = () => {
   const links = [...menuList.menuItems];
   const [isOpen, setOpen] = useState(false);
-  
 
-  
+  useEffect(() => {
+    if (isOpen) {
+      document.querySelector("html").classList.add("overflow-hidden");
+    } else {
+      document.querySelector("html").classList.remove("overflow-hidden");
+    }
+  }, [isOpen]);
 
   return (
     <Fragment>
@@ -37,7 +42,7 @@ const Navigation = () => {
               <nav className={classes.nav}>
                 <ul>
                   {links.map(
-                    ({ index, name, url, animateDelay, exitDelay }) => {
+                    ({ index, name, url, animateDelay, exitDelay, clr }) => {
                       return (
                         <m.li
                           key={index}
@@ -54,8 +59,8 @@ const Navigation = () => {
                           }}
                         >
                           <Link href={url}>
-                            <div>
-                              <m.h4>{name}</m.h4>
+                            <div className={classes[clr]}>
+                              <h4>{name}</h4>
                             </div>
                           </Link>
                         </m.li>
