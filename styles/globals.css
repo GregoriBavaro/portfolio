@@ -73,6 +73,74 @@
   }
 }
 
+
+/* colors */
+:root {
+  --beige: rgb(172, 136, 97);
+  --lightBeige: rgb(215, 189, 184);
+  --green: rgb(45, 112, 100);
+  --orange: rgb(181, 89, 64);
+  --purple: rgb(144, 100, 220);
+  --black: rgb(0, 0, 0);
+}
+
+
+
+/* flying color nav div's */
+.navBeige {
+  background-color: var(--beige);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navGreen {
+  background-color: var(--green);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navBlack {
+  background-color: var(--black);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navOrange {
+  background-color: var(--orange);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* color */
+.beige-color {
+  color: var(--beige);
+}
+
+.green-color {
+  color: var(--green);
+}
+
+.orange-color {
+  color: var(--orange);
+}
+
+.lightBeige-color {
+  color: var(--purple);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {

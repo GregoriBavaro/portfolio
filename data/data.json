@@ -4,30 +4,64 @@
       "index": "n2",
       "name": "home",
       "url": "/",
-      "animateDelay": ".8",
-      "exitDelay": ".7"
+      "animateDelay": 2,
+      "exitDelay": 0.2
     },
     {
       "index": "n1",
       "name": "about",
       "url": "about",
-      "animateDelay": ".7",
-      "exitDelay": ".6"
+      "animateDelay": 2.1,
+      "exitDelay": 0.4
     },
 
     {
       "index": "n3",
       "name": "projects",
       "url": "projects",
-      "animateDelay": ".5",
-      "exitDelay": ".4"
+      "animateDelay": 2.2,
+      "exitDelay": 0.6
     },
     {
       "index": "n4",
       "name": "contact",
       "url": "contact",
-      "animateDelay": ".4",
-      "exitDelay": ".2"
+      "animateDelay": 2.3,
+      "exitDelay": 0.7
+    }
+  ],
+  "navbarAnimatedElements": [
+    {
+      "classDiv": "navBeige",
+      "animateDelay": 0.3,
+      "animateDuration": 0.5,
+      "exitDelay": 2.2,
+      "exitDuration": 0.5
+      
+    },
+    {
+      "classDiv": "navGreen",
+      "animateDelay": 0.8,
+      "animateDuration": 0.2,
+      "exitDelay": 1.7,
+      "exitDuration": 0.2
+      
+    },
+    {
+      "classDiv": "navOrange",
+      "animateDelay": 1.3,
+      "animateDuration": 0.2,
+      "exitDelay": 1.2,
+      "exitDuration": 0.2
+      
+    },
+    {
+      "classDiv": "navBlack",
+      "animateDelay": 1.8,
+      "animateDuration": 0.5,
+      "exitDelay": 0.8,
+      "exitDuration": 0.5
+      
     }
   ]
 }

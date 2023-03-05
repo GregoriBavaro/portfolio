@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: flex-end;
   background-color: transparent;
-  padding: 0 2%;
+  padding: 0 2rem;
 }
 
 .nav {
@@ -18,7 +18,6 @@
   transform: translate(-50%, -50%);
   height: 80%;
   padding: 2rem;
-  border: 2px solid red;
 }
 
 .header ul {
@@ -27,9 +26,19 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .header ul li {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3rem;
 }
+
+.header ul li h4 {
+  padding: 1rem;
+}
+
+.hamburger {
+  z-index: 100;
+}
+
