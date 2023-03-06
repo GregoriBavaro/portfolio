@@ -1,11 +1,11 @@
 //Hooks
 import { useState, Fragment, useEffect } from "react";
-import Link from "next/link";
 import { Spin as Hamburger } from "hamburger-react";
 import { motion as m, AnimatePresence } from "framer-motion";
 
 //Components
 import DivAnimations from "../ui/DivAnimations";
+import LogoAnimation from "../ui/LogoAnimation";
 
 //Data
 import menuList from "../../data/data.json";
@@ -28,6 +28,7 @@ const Navigation = () => {
   return (
     <Fragment>
       <header className={classes.header}>
+        <LogoAnimation />
         <div className={classes.hamburger}>
           <Hamburger
             color="var(--lightBeige)"
@@ -58,11 +59,9 @@ const Navigation = () => {
                             },
                           }}
                         >
-                          <Link href={url}>
-                            <div className={classes[clr]}>
-                              <h4>{name}</h4>
-                            </div>
-                          </Link>
+                          <div className={classes[clr]}>
+                            <h4>{name}</h4>
+                          </div>
                         </m.li>
                       );
                     }

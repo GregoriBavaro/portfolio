@@ -11,7 +11,6 @@ const HomePage = () => {
   return (
     <Fragment>
       <Navigation />
-      <LogoAnimation />
       <Hero />
     </Fragment>
   );

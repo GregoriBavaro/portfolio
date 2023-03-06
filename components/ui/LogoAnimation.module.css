@@ -1,7 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/duckling");
 
 .logoInitial {
-  z-index: 100;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11,6 +10,7 @@
   animation-delay: 5s;
   text-align: center;
   font-size: 5rem;
+  z-index: 100;
 }
 
 .job {

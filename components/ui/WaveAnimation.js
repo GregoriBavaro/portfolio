@@ -21,7 +21,7 @@ const WaveAnimation = () => {
         <m.svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        xmlnsxlink="http://www.w3.org/1999/xlink"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
         xmlnssvgjs="http://svgjs.dev/svgjs"
         viewBox="0 0 1422 800"
         initial="hidden"
