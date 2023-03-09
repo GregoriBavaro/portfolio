@@ -2,8 +2,12 @@
 import { motion as m } from "framer-motion";
 import { Fragment } from "react";
 
+//Components
+import NameSignSVG from "./NameSignSVG";
+
 //CSS
 import classes from "./LogoAnimation.module.css";
+
 const LogoAnimation = () => {
   return (
     <Fragment>
@@ -13,10 +17,8 @@ const LogoAnimation = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        <h3>Gregori Bavaro</h3>
+        <NameSignSVG />
       </m.div>
-      <m.p className={classes.job}
-        >Front-end Developer & Code Geek</m.p>
     </Fragment>
   );
 };

@@ -29,13 +29,18 @@ const Navigation = () => {
     <Fragment>
       <header className={classes.header}>
         <LogoAnimation />
-        <div className={classes.hamburger}>
+        <m.div
+          className={classes.hamburger}
+          initial={{ x: "300%" }}
+          animate={{ x: 0 }}
+          transition={{ x: { delay: 5.5, duration: 1 } }}
+        >
           <Hamburger
             color="var(--lightBeige)"
             toggled={isOpen}
             toggle={setOpen}
           />
-        </div>
+        </m.div>
         <AnimatePresence>
           {isOpen && (
             <div>

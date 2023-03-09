@@ -5,39 +5,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: animate 2s ease-in-out 3s;
+  animation: animate 1s ease-in 1s;
   animation-fill-mode: forwards;
   animation-delay: 5s;
   text-align: center;
-  font-size: 5rem;
+  scale: 1;
   z-index: 100;
-}
-
-.job {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--lightBeige);
-  font-size: 2rem;
-  animation: animateJob 1s ease-in-out 2s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-  letter-spacing: 0.2rem;
-}
-
-.logoInitial h3 {
-  color: var(--lightBeige);
-  font-family: "Duckling", sans-serif;
-}
-
-@keyframes animateJob {
-  0% {
-    top: 70%;
-  }
-  100% {
-    top: 62%;
-  }
 }
 
 @keyframes animate {
@@ -46,9 +19,9 @@
     left: 50%;
   }
   100% {
-    top: 1.3rem;
-    left: 2rem;
-    transform: translate(-0%, -0%);
-    font-size: 2rem;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -60%);
+    scale: 0.3;
   }
 }
