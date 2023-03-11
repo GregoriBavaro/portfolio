@@ -1,0 +1,10 @@
+.ballStyle {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: -3%;
+  top: -3%;
+}

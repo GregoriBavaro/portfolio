@@ -6,21 +6,24 @@ const NameSignSVG = () => {
     hidden: {
       pathLength: 0,
       opacity: 0,
-      fill: "rgb(0, 0, 0)",
+      fill: "rgb(45, 112, 100)",
       strokeWidth: 3,
+      scale: 1
     },
     visible: (i) => {
       const delay = 1 + i * 0.5;
       return {
         pathLength: 1,
         opacity: 1,
-        fill: "rgb(215, 189, 184)",
+        fill: "rgb(215, 189, 184)", 
+        scale: [null, 0.8, 1],
         strokeWidth: 0,
         transition: {
           pathLength: { delay, type: "spring", duration: 6, bounce: 0 },
           opacity: { delay, duration: 0.01 },
           fill: { delay: 4.5, duration: 3 },
           strokeWidth: { delay: 4.5, duration: 3 },
+          scale: {delay: 6, duration: 1}
         },
       };
     },

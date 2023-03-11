@@ -1,7 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
+.hero {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
 
+.heroJob {
+  position: absolute;
+  top: 62%;
+  font-size: 2.3rem;
+  color: rgb(215, 189, 184);
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
 
-.circle {
-    border : 2px solid red;
-    width: 20rem;
+/*HERO ICONS */
+
+.heroPresentation {
+  position: absolute;
+  top: 30%;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 60px;
+  color: rgb(215, 189, 184);
+}
+
+.heroIconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.heroIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.heroIcons p {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+.heroIconWrapper {
+  width: 10rem;
+}
+
+.heroIconWrapper img {
+  width: 5rem;
+}
+
+.heroIam {
+  grid-area: 2 / 1 / 3 / 2;
+  width: 33rem;
+  text-align: right;
+  font-size: 1.2rem;
+  padding: 0 1rem 0 0;
+}
+
+.heroAboutMe {
+  grid-area: 2 / 2 / 3 / 3;
+  width: 33rem;
+  text-align: left;
+  padding: 0 0 0 1rem;
+  line-height: 1.7rem;
 }
