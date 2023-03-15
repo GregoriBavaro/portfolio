@@ -1,0 +1,39 @@
+.section {
+  border: 2px solid red;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  border: 2px solid red;
+  width: 100%;
+  height: 70vh;
+}
+
+.container__wrapper {
+  display: flex;
+}
+
+.container__images {
+  border: 2px solid green;
+}
+
+.container__text {
+}
+
+.container__images img {
+  max-width: 50%;
+  display: block;
+}
+
+.container__images_one {
+  position: absolute;
+  left: 40%;
+  border: 2px solid green;
+}
+
+.container__images_two {
+  position: absolute;
+  left: 60%;
+  border: 2px solid green;
+}

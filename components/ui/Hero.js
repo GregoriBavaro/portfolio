@@ -3,7 +3,7 @@ import { motion as m } from "framer-motion";
 import { Fragment } from "react";
 
 //Components
-import WaveAnimation from "./WaveAnimation";
+import Canvas from "./Canvas";
 import BouncingBall from "./BouncingBall";
 
 //CSS
@@ -37,7 +37,8 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 7.5 }}
         >
-          <div className={classes.heroIconsContainer}>
+          
+          {/* <div className={classes.heroIconsContainer}>
             {heroIcons.map((item, i) => {
               return (
                 <m.div
@@ -65,9 +66,9 @@ const Hero = () => {
                 </m.div>
               );
             })}
-          </div>
+          </div> */}
 
-          <m.div
+          {/* <m.div
             className={classes.heroIam}
             initial={{ scale: 0 }}
             animate={{ scale: [null, 1.01, 1] }}
@@ -77,8 +78,8 @@ const Hero = () => {
               Hi, I am Gregori, nice to meet you. I build beautiful &
               interactive websites. Please take a look around!
             </h2>
-          </m.div>
-          <m.div
+          </m.div> */}
+          {/* <m.div
             className={classes.heroAboutMe}
             initial={{ scale: 0 }}
             animate={{ scale: [null, 1.1, 1] }}
@@ -91,7 +92,7 @@ const Hero = () => {
               technologies.I love to create beautiful and performant products
               with delightful user experiences.
             </p>
-          </m.div>
+          </m.div> */}
         </m.div>
       </div>
     </Fragment>

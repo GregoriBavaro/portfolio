@@ -105,39 +105,7 @@ const NameSignSVG = () => {
           variants={draw}
         />
       </m.g>
-      <defs>
-        <filter
-          id="filter0_i_3_7"
-          x="0.307495"
-          y="0.895477"
-          width="592.01"
-          height="128.897"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy="4" />
-          <feGaussianBlur stdDeviation="2" />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          />
-          <feBlend mode="normal" in2="shape" result="effect1_innerShadow_3_7" />
-        </filter>
-      </defs>
+      
     </m.svg>
   );
 };

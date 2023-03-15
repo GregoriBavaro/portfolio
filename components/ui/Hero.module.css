@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 85vh;
+  
 }
 
 .heroJob {
@@ -21,13 +22,13 @@
 
 .heroPresentation {
   position: absolute;
-  top: 30%;
+  top: 100%;
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 60px;
-  color: rgb(215, 189, 184);
+  color: var(--lightBeige);
 }
 
 .heroIconsContainer {

@@ -1,0 +1,38 @@
+
+.person__img {
+  max-width: 100%;
+  display: block;
+}
+
+.person__circle {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(45, 112, 100);
+  inset: auto 0 0;
+  margin-left: auto;
+  border-radius: 0 0 100vw 100vw;
+}
+
+.person__img {
+  position: relative;
+  z-index: 2;
+}
+
+.person__container {
+  background-color: rgba(255, 192, 203, 0);
+  aspect-ratio: 1 / 1.9;
+  display: grid;
+  align-items: end;
+  border-radius: 0 0 57rem 100rem;
+  overflow: hidden;
+}
+
+.person {
+  --transform-speed: 250ms;
+  max-width: 30rem;
+  position: absolute;
+  top: -12rem;
+  right: 8rem;
+  margin-inline: auto;
+}

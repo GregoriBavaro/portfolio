@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 10vh;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container__header {
+  position: absolute;
+  font-size: 5rem;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.container__text {
+  margin-top: 6rem;
+  font-size: 1.5rem;
+  color: var(--lightBeige);
+  width: 80%;
+  margin-inline: auto;
+  font-weight: 300;
+}

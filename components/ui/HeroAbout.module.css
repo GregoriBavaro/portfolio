@@ -1,0 +1,26 @@
+.container {
+  position: absolute;
+  top: 30%;
+  left: 20vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 15rem;
+  gap: 2rem;
+  color : var(--lightBeige)
+}
+
+.container h2 {
+  color: var(--green);
+  margin-bottom: -2rem;
+}
+
+.container__header {
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 4.7rem;
+}
+
+.container__header span {
+  font-weight: 400;
+}
+

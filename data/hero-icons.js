@@ -8,25 +8,25 @@ export const heroIcons = [
   {
     icon: responsive,
     text: "Responsive Designs",
-    delay: 8.5,
+    delay: 7.5,
     duration: 1
   },
   {
     icon: pixelPerfect,
     text: "Pixel-Perfect Code",
-    delay: 8.7,
+    delay: 7.7,
     duration: 1
   },
   {
     icon: design,
     text: "Elegant Solutions",
-    delay: 8.9,
+    delay: 7.9,
     duration: 1
   },
   {
     icon: love,
     text: "Build With Love",
-    delay: 9.1,
+    delay: 8.1,
     duration: 1
   },
 ];
