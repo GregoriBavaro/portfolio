@@ -12,23 +12,15 @@ import classes from "../layout/About.module.css";
 
 const About = () => {
   const targetRef = useRef();
-
-  const { scrollY } = useScroll();
-
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["end end", "end start"],
-  });
   const [value, setValue] = useState();
+  const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setValue(latest - 650);
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-
   return (
-    <m.div style={{ opacity }} ref={targetRef} className={classes.container}>
+    <m.div ref={targetRef} className={classes.container}>
       <m.div
         className={classes.container__header}
         initial={{ x: -600 }}

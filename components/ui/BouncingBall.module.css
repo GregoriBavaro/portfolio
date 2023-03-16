@@ -1,7 +1,7 @@
 .ballStyle {
   display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 100%;
+  height: 100%;
   background-color: black;
   border-radius: 50%;
   position: absolute;

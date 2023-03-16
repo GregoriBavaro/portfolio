@@ -19,7 +19,7 @@ const HomePage = () => {
       <Photo />
       <About />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </Fragment>
   );
 };

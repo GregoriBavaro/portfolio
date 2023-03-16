@@ -15,13 +15,13 @@ import { heroIcons } from "../../data/hero-icons";
 const Hero = () => {
   return (
     <Fragment>
-      <BouncingBall />
+      {/* <BouncingBall /> */}
       <div className={classes.hero}>
         <m.div
           className={classes.heroJob}
           initial={{ scale: 1 }}
           animate={{ scale: [null, 1.2, 0] }}
-          transition={{ delay: 6, duration: 1 }}
+          transition={{ delay: 3, duration: 1 }}
         >
           <m.p
             initial={{ y: "100%", opacity: 0 }}

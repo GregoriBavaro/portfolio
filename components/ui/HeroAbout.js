@@ -11,7 +11,7 @@ const HeroAbout = () => {
       initial={{ x: "-300%" }}
       animate={{ x: "0" }}
       transition={{
-        delay: 8,
+        delay: 6,
         ease: "easeInOut",
         duration: 2,
         type: "spring",

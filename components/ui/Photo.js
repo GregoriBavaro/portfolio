@@ -12,7 +12,7 @@ const Photo = () => {
       initial={{ y: "-100%", x: "100%", rotate: "50deg" }}
       animate={{ y: "0", x: "0", rotate: "50deg" }}
       transition={{
-        delay: 7,
+        delay: 5,
         ease: "easeInOut",
         duration: 1,
         type: "spring",
@@ -26,7 +26,7 @@ const Photo = () => {
           initial={{ y: "100%", x: "100%", rotate: "310deg", scale: 1.2 }}
           animate={{ y: "0", x: "0", rotate: "310deg", scale: 1.2 }}
           transition={{
-            delay: 8,
+            delay: 6,
             ease: "easeInOut",
             duration: 2,
             type: "spring",

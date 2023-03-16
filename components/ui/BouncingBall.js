@@ -7,17 +7,17 @@ import classes from "./BouncingBall.module.css";
 const BouncingBall = () => {
   const bounceTransition = {
     scale: {
-      delay: 4.8,
-      duration: 1.7,
+      delay: 3.3,
+      duration: 2,
       ease: "easeInOut",
     },
     backgroundColor: {
-      delay: 5.2,
-      duration: 1.3,
+      delay: 1,
+      duration: 1,
       ease: "easeInOut",
     },
     borderRadius: {
-      delay: 6
+      delay: 5
     }
   };
 
@@ -26,7 +26,7 @@ const BouncingBall = () => {
       className={classes.ballStyle}
       transition={bounceTransition}
       animate={{
-        scale: [null, 0.8, 500],
+        scale: [null, 0.8, 1],
         backgroundColor: "rgb(0, 0, 0)",
         borderRadius: 0
       }}

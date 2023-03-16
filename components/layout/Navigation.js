@@ -33,7 +33,7 @@ const Navigation = () => {
           className={classes.hamburger}
           initial={{ x: "300%" }}
           animate={{ x: 0 }}
-          transition={{ x: { delay: 7, duration: 1 } }}
+          transition={{ x: { delay: 6, duration: 1 } }}
         >
           <Hamburger
             color="var(--lightBeige)"
