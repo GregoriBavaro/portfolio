@@ -14,12 +14,12 @@ import classes from "../layout/Projects.module.css";
 //Data
 import ProjectOne from "../../data/project-one";
 
-const Projects = () => {
+const Projects = (props) => {
   const targetRef = useRef(null);
   const descriptionRef = useRef(false);
   const isInView = useInView(descriptionRef, { once: false, amount: "all" });
 
-  console.log(isInView);
+
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -33,7 +33,7 @@ const Projects = () => {
     return pos > 0 ? "fixed" : "relative";
   });
 
-  const { projectOnePhotos: projectOnePhotos } = ProjectOne();
+  // const { projectOnePhotos: projectOnePhotos } = ProjectOne();
 
   const styleText = {
     background:
@@ -43,6 +43,7 @@ const Projects = () => {
     transitionDelay: "1s",
     transitionProperty: "background",
     transition: "1s ease-out",
+    
   };
 
   return (
@@ -57,22 +58,16 @@ const Projects = () => {
               transition: ".1s ease-in-out",
             }}
           >
-            <m.h1 style={styleText} >01</m.h1>
+            <m.h1 style={styleText} >{props.dataObject.number}</m.h1>
             <div className={classes.container__text__about}>
               <m.h2 ref={descriptionRef} style={styleText}>
-                MM9 Machinery
+                {props.dataObject.name}
               </m.h2>
               <m.h3 ref={descriptionRef} style={styleText}>
-                Front End Developer<span>&#x2022;</span>Designer
+                {props.dataObject.job1}<span>&#x2022;</span>{props.dataObject.job2}
               </m.h3>
               <m.p ref={descriptionRef} style={styleText}>
-                Developed end-to-end solution for a client in the corrugated box
-                manufacturing business. The main focus was to create a product
-                that is user-friendly with amazing UX/UI, optimizing the
-                application for maximum speed and building responsive styled
-                components for a better overall user experience, especially for
-                mobile and tablet users. Developed in React.js & .Net, with
-                build in administrator panel.
+                {props.dataObject.description}
               </m.p>
             </div>
             <m.h4 ref={descriptionRef} style={styleText}>Web App</m.h4>
@@ -80,7 +75,7 @@ const Projects = () => {
         </AnimatePresence>
 
         <div className={classes.container__images}>
-          {projectOnePhotos.map(({ alt, src, y, x, scale }, i) => {
+          {props.photos.map(({ alt, src, y, x, scale }, i) => {
             return (
               <m.div
                 key={i}

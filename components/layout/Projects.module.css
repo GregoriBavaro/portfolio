@@ -2,7 +2,7 @@
   width: 100%;
   top: 0%;
   margin-top: 10vh;
-  min-height: 350vh;
+  min-height: 770vh;
   position: relative;
   /* overflow-x: hidden; */
 }
@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  background-color: rgb(18, 18, 18);
 }
 
 .container__text h4 {
@@ -78,7 +79,7 @@
 .container__images__wrapper {
   display: flex;
   justify-content: center;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
   overflow-x: hidden;
   height: 80vh;
 }
