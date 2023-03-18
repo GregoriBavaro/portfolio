@@ -1,5 +1,5 @@
 //Hooks
-import { Fragment } from "react";
+import { Fragment, useRef } from "react";
 
 //Components
 import Navigation from "../components/layout/Navigation";
@@ -13,6 +13,9 @@ import Projects from "../components/layout/Projects";
 //Data
 import ProjectOne from "../data/project-one";
 import ProjectTwo from "../data/project-two";
+
+//CSS
+import classes from "../components/layout/Projects.module.css";
 
 const projectOneData = {
   number: "1",
@@ -28,23 +31,40 @@ const ProjectTwoData = {
   name: "Productivity App",
   job1: "Front End Developer",
   job2: "Designer",
-  description: "Developed end-to-end solution with a team of 3 developers, Productivity Web Application aimed at task and time management to help people struggling with productivity management, and help them handle their workload better."
-}
+  description:
+    "Developed end-to-end solution with a team of 3 developers, Productivity Web Application aimed at task and time management to help people struggling with productivity management, and help them handle their workload better.",
+};
 
 const HomePage = () => {
   const { projectOnePhotos: projectOnePhotos } = ProjectOne();
   const { projectTwoPhotos: projectTwoPhotos } = ProjectTwo();
 
+  const aboutRef = useRef();
+  const projectsRef = useRef();
 
+  console.log(aboutRef);
   return (
     <Fragment>
-      <Navigation />
+      <Navigation refs={[aboutRef, projectsRef ]} />
       <Hero />
       <AboutHero />
       <Photo />
-      <About />
-      <Projects dataObject={projectOneData} photos={projectOnePhotos}/>
-      <Projects dataObject={ProjectTwoData} photos={projectTwoPhotos}/>
+      <div id="about" ref={aboutRef}>
+        <About />
+      </div>
+      <div id="projects" ref={projectsRef}>
+        <Projects
+          dataObject={projectOneData}
+          photos={projectOnePhotos}
+          class={classes.container__p1}
+        />
+        <Projects
+          dataObject={ProjectTwoData}
+          photos={projectTwoPhotos}
+          class={classes.container__p2}
+        />
+      </div>
+
       {/* <Contact /> */}
     </Fragment>
   );

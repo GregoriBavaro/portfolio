@@ -95,7 +95,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--beige);
+  background-color: rgb(66, 140, 126);
 }
 
 /* colors */

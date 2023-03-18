@@ -3,7 +3,7 @@
     {
       "index": "n2",
       "name": "home",
-      "url": "/",
+      "url": "home",
       "animateDelay": 2,
       "exitDelay": 0.2,
       "clr": "toBeige"
@@ -23,7 +23,7 @@
       "url": "projects",
       "animateDelay": 2.2,
       "exitDelay": 0.6,
-      "clr": "toOrange"
+      "clr": "toBeige"
     },
     {
       "index": "n4",
@@ -31,7 +31,7 @@
       "url": "contact",
       "animateDelay": 2.3,
       "exitDelay": 0.7,
-      "clr": "toPurple"
+      "clr": "toGreen"
     }
   ],
   "navbarAnimatedElements": [

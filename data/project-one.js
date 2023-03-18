@@ -8,14 +8,14 @@ import { useScroll, useTransform } from "framer-motion";
 const ProjectOne = () => {
   const { scrollYProgress } = useScroll();
 
-  const y = useTransform(scrollYProgress, [0.1, 1], ["30%", "-400%"]);
-  const yTwo = useTransform(scrollYProgress, [0.1, 1], ["-50%", "-450%"]);
-  const yThree = useTransform(scrollYProgress, [0.1, 1], ["-50%", "-650%"]);
-  const yFour = useTransform(scrollYProgress, [0.1, 1], ["-50%", "-500%"]);
-  const x = useTransform(scrollYProgress, [1, 1], ["0%", "0%"]);
-  const xTwo = useTransform(scrollYProgress, [1, 1], ["35%", "35%"]);
-  const xThree = useTransform(scrollYProgress, [1, 1], ["24%", "24%"]);
-  const xFour = useTransform(scrollYProgress, [1, 1], ["-20%", "-20%"]);
+  const y = useTransform(scrollYProgress, [0.1, 1], ["10%", "-400%"]);
+  const yTwo = useTransform(scrollYProgress, [0.1, 1], ["50%", "-600%"]);
+  const yThree = useTransform(scrollYProgress, [0.1, 1], ["290%", "-660%"]);
+  const yFour = useTransform(scrollYProgress, [0.1, 1], ["220%", "-600%"]);
+  const x = useTransform(scrollYProgress, [1, 1], ["-5%", "-5%"]);
+  const xTwo = useTransform(scrollYProgress, [1, 1], ["60%", "60%"]);
+  const xThree = useTransform(scrollYProgress, [1, 1], ["50%", "50%"]);
+  const xFour = useTransform(scrollYProgress, [1, 1], ["-25%", "-25%"]);
 
   const projectOnePhotos = [
     {

@@ -47,7 +47,7 @@ const Projects = (props) => {
   };
 
   return (
-    <m.div ref={targetRef} className={classes.container}>
+    <m.div ref={targetRef} className={props.class}>
       <m.div style={{ position }} className={classes.container__wrapper}>
         <AnimatePresence>
           <m.div

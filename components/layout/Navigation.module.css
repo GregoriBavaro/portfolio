@@ -33,6 +33,7 @@
 .header ul li {
   text-transform: uppercase;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .header ul li h4 {

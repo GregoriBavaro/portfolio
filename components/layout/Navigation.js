@@ -13,7 +13,7 @@ import menuList from "../../data/data.json";
 //CSS
 import classes from "./Navigation.module.css";
 
-const Navigation = () => {
+const Navigation = (props) => {
   const links = [...menuList.menuItems];
   const [isOpen, setOpen] = useState(false);
 
@@ -24,6 +24,20 @@ const Navigation = () => {
       document.querySelector("html").classList.remove("overflow-hidden");
     }
   }, [isOpen]);
+
+  const navigationHandler = (e) => {
+    setOpen(false);
+
+    setTimeout(() => {
+      if (e.target.innerText === "about") {
+        console.log("about");
+        props.refs[0].current?.scrollIntoView({ behavior: "smooth" });
+      }
+      if (e.target.innerText === "projects") {
+        props.refs[1].current?.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 2800);
+  };
 
   return (
     <Fragment>
@@ -63,6 +77,7 @@ const Navigation = () => {
                               delay: exitDelay,
                             },
                           }}
+                          onClick={navigationHandler}
                         >
                           <div className={classes[clr]}>
                             <h4>{name}</h4>
