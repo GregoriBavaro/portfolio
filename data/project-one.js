@@ -13,9 +13,9 @@ const ProjectOne = () => {
   const yThree = useTransform(scrollYProgress, [0.1, 1], ["290%", "-660%"]);
   const yFour = useTransform(scrollYProgress, [0.1, 1], ["220%", "-600%"]);
   const x = useTransform(scrollYProgress, [1, 1], ["-5%", "-5%"]);
-  const xTwo = useTransform(scrollYProgress, [1, 1], ["60%", "60%"]);
+  const xTwo = useTransform(scrollYProgress, [1, 1], ["-6%", "-6%"]);
   const xThree = useTransform(scrollYProgress, [1, 1], ["50%", "50%"]);
-  const xFour = useTransform(scrollYProgress, [1, 1], ["-25%", "-25%"]);
+  const xFour = useTransform(scrollYProgress, [1, 1], ["5%", "5%"]);
 
   const projectOnePhotos = [
     {

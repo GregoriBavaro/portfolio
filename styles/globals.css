@@ -180,14 +180,13 @@ body {
   overflow-x: hidden;
   font-family: "Oswald", sans-serif;
   box-sizing: border-box;
-  overflow: overlay; 
+  overflow: overlay;
   overflow-x: hidden;
 }
 
-
-/* body {
-  background-color: rgb(45, 112, 100);
-} */
+body {
+  background-color: rgb(18, 18, 18);
+}
 
 a {
   color: inherit;

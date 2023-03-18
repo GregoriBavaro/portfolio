@@ -16,12 +16,12 @@ const ProjectTwo = () => {
   const yFour = useTransform(scrollYProgress, [0.1, 1], ["500%", "-80%"]);
   const yFive = useTransform(scrollYProgress, [0.1, 1], ["650%", "10%"]);
   const ySix = useTransform(scrollYProgress, [0.1, 1], ["500%", "-250%"]);
-  const x = useTransform(scrollYProgress, [1, 1], ["-10%", "-10%"]);
-  const xTwo = useTransform(scrollYProgress, [1, 1], ["80%", "80%"]);
+  const x = useTransform(scrollYProgress, [1, 1], ["7%", "7%"]);
+  const xTwo = useTransform(scrollYProgress, [1, 1], ["60%", "60%"]);
   const xThree = useTransform(scrollYProgress, [1, 1], ["10%", "10%"]);
   const xFour = useTransform(scrollYProgress, [1, 1], ["0%", "0%"]);
-  const xFive = useTransform(scrollYProgress, [1, 1], ["10%", "10%"]);
-  const xSix = useTransform(scrollYProgress, [1, 1], ["-75%", "-75%"]);
+  const xFive = useTransform(scrollYProgress, [1, 1], ["-10%", "-10%"]);
+  const xSix = useTransform(scrollYProgress, [1, 1], ["-5%", "-5%"]);
  
 
   const projectTwoPhotos = [

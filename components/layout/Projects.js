@@ -11,15 +11,10 @@ import {
 //CSS
 import classes from "../layout/Projects.module.css";
 
-//Data
-import ProjectOne from "../../data/project-one";
-
 const Projects = (props) => {
   const targetRef = useRef(null);
   const descriptionRef = useRef(false);
   const isInView = useInView(descriptionRef, { once: false, amount: "all" });
-
-
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -33,17 +28,13 @@ const Projects = (props) => {
     return pos > 0 ? "fixed" : "relative";
   });
 
-  // const { projectOnePhotos: projectOnePhotos } = ProjectOne();
-
   const styleText = {
     background:
       "linear-gradient(to left, var(--lightBeige) 50%, #121212 50%) right",
     backgroundSize: "200%",
     backgroundPosition: isInView ? "left" : "right",
-    transitionDelay: "1s",
     transitionProperty: "background",
     transition: "1s ease-out",
-    
   };
 
   return (
@@ -79,7 +70,7 @@ const Projects = (props) => {
             return (
               <m.div
                 key={i}
-                style={{ y, x, scale }}
+                style={{ y, right: x, scale }}
                 className={classes.container__images__wrapper}
               >
                 <img src={src.src} alt={alt} />

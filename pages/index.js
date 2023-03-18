@@ -1,5 +1,6 @@
 //Hooks
-import { Fragment, useRef } from "react";
+import { useRef } from "react";
+import { motion as m } from "framer-motion";
 
 //Components
 import Navigation from "../components/layout/Navigation";
@@ -8,7 +9,7 @@ import Photo from "../components/ui/Photo";
 import AboutHero from "../components/ui/HeroAbout";
 import About from "../components/layout/About";
 import Projects from "../components/layout/Projects";
-// import Contact from "../components/layout/Contact";
+import Contact from "../components/layout/Contact";
 
 //Data
 import ProjectOne from "../data/project-one";
@@ -42,10 +43,9 @@ const HomePage = () => {
   const aboutRef = useRef();
   const projectsRef = useRef();
 
-  console.log(aboutRef);
   return (
-    <Fragment>
-      <Navigation refs={[aboutRef, projectsRef ]} />
+    <m.div>
+      <Navigation refs={[aboutRef, projectsRef]} />
       <Hero />
       <AboutHero />
       <Photo />
@@ -64,9 +64,8 @@ const HomePage = () => {
           class={classes.container__p2}
         />
       </div>
-
-      {/* <Contact /> */}
-    </Fragment>
+      <Contact />
+    </m.div>
   );
 };
 

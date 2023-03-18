@@ -23,13 +23,6 @@ const Hero = () => {
           animate={{ scale: [null, 1.2, 0] }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <m.p
-            initial={{ y: "100%", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            Front-end Developer & Code Geek
-          </m.p>
         </m.div>
         <m.div
           className={classes.heroPresentation}

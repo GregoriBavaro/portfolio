@@ -30,7 +30,6 @@ const Navigation = (props) => {
 
     setTimeout(() => {
       if (e.target.innerText === "about") {
-        console.log("about");
         props.refs[0].current?.scrollIntoView({ behavior: "smooth" });
       }
       if (e.target.innerText === "projects") {

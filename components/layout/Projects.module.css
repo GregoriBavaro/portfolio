@@ -21,7 +21,7 @@
 
 .container__images {
   flex: 1 1 0px; 
-  min-width: 40rem ;
+  min-width: 50rem ;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -87,7 +87,7 @@
 .container__images__wrapper {
   display: flex;
   justify-content: center;
-  transition: all 0.2s ease-out;
+  transition: all 0.1s ease-out;
   overflow-x: hidden;
   height: 80vh;
   position: absolute;
