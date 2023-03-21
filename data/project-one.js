@@ -8,10 +8,10 @@ import { useScroll, useTransform } from "framer-motion";
 const ProjectOne = () => {
   const { scrollYProgress } = useScroll();
 
-  const y = useTransform(scrollYProgress, [0.1, 1], ["10%", "-400%"]);
-  const yTwo = useTransform(scrollYProgress, [0.1, 1], ["50%", "-600%"]);
-  const yThree = useTransform(scrollYProgress, [0.1, 1], ["290%", "-660%"]);
-  const yFour = useTransform(scrollYProgress, [0.1, 1], ["220%", "-600%"]);
+  const y = useTransform(scrollYProgress, [0.1, 1], ["60%", "-360%"]);
+  const yTwo = useTransform(scrollYProgress, [0.1, 1], ["80%", "-380%"]);
+  const yThree = useTransform(scrollYProgress, [0.1, 1], ["290%", "-400%"]);
+  const yFour = useTransform(scrollYProgress, [0.1, 1], ["250%", "-370%"]);
   const x = useTransform(scrollYProgress, [1, 1], ["-5%", "-5%"]);
   const xTwo = useTransform(scrollYProgress, [1, 1], ["-6%", "-6%"]);
   const xThree = useTransform(scrollYProgress, [1, 1], ["50%", "50%"]);

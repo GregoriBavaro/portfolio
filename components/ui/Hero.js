@@ -4,7 +4,6 @@ import { Fragment } from "react";
 
 //Components
 import Canvas from "./Canvas";
-import BouncingBall from "./BouncingBall";
 
 //CSS
 import classes from "./Hero.module.css";

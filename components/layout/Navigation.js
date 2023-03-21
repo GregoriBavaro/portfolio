@@ -44,9 +44,9 @@ const Navigation = (props) => {
         <LogoAnimation />
         <m.div
           className={classes.hamburger}
-          initial={{ x: "300%" }}
-          animate={{ x: 0 }}
-          transition={{ x: { delay: 6, duration: 1 } }}
+          initial={{ y: "-300%" }}
+          animate={{ y: 0 }}
+          transition={{ y: { delay: 6, duration: 1 } }}
         >
           <Hamburger
             color="var(--lightBeige)"

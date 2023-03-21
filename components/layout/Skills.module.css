@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 80vh;
+  top: 0%;
+  height: 100vh;
+  background-color: var(--green)
+}
+
+.container__wrapper {
+  display: flex;
+  top: 0%;
+  width: 100%;
+  padding: 2rem;
+  height: 100%;
+}

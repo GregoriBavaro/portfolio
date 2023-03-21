@@ -1,4 +1,5 @@
 //Hooks
+import Store from "../components/hooks/Store"
 import { useRef } from "react";
 import { motion as m } from "framer-motion";
 
@@ -9,7 +10,7 @@ import Photo from "../components/ui/Photo";
 import AboutHero from "../components/ui/HeroAbout";
 import About from "../components/layout/About";
 import Projects from "../components/layout/Projects";
-import Contact from "../components/layout/Contact";
+import Skills from "../components/layout/Skills";
 
 //Data
 import ProjectOne from "../data/project-one";
@@ -44,7 +45,7 @@ const HomePage = () => {
   const projectsRef = useRef();
 
   return (
-    <m.div>
+    <Store>
       <Navigation refs={[aboutRef, projectsRef]} />
       <Hero />
       <AboutHero />
@@ -64,8 +65,8 @@ const HomePage = () => {
           class={classes.container__p2}
         />
       </div>
-      <Contact />
-    </m.div>
+      <Skills />
+    </Store>
   );
 };
 

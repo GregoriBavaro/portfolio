@@ -6,7 +6,7 @@ const NameSignSVG = () => {
     hidden: {
       pathLength: 0,
       opacity: 0,
-      fill: "rgb(45, 112, 100)",
+      fill: "rgb(18, 18, 18)",
       strokeWidth: 3,
       scale: 1
     },

@@ -198,3 +198,8 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.useInView {
+  border: 2px solid red;
+}

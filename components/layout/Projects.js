@@ -1,5 +1,6 @@
 //Hooks
-import { useRef } from "react";
+import { Context } from "../hooks/Store"
+import { useRef, useContext } from "react";
 import {
   motion as m,
   useScroll,
@@ -12,9 +13,12 @@ import {
 import classes from "../layout/Projects.module.css";
 
 const Projects = (props) => {
+  const [state, setState] = useContext(Context)
   const targetRef = useRef(null);
   const descriptionRef = useRef(false);
   const isInView = useInView(descriptionRef, { once: false, amount: "all" });
+
+  console.log(state);
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -25,7 +29,7 @@ const Projects = (props) => {
   // const x = useTransform(scrollYProgress, [0.1, 1], ["20%", "-20%"]);
   // const opacity = useTransform(scrollYProgress, [0.9, 1], [1, 0]);
   const position = useTransform(scrollYProgress, (pos) => {
-    return pos > 0 ? "fixed" : "relative";
+    return pos > 0  ? "fixed" : "relative";
   });
 
   const styleText = {
@@ -36,6 +40,7 @@ const Projects = (props) => {
     transitionProperty: "background",
     transition: "1s ease-out",
   };
+
 
   return (
     <m.div ref={targetRef} className={props.class}>
@@ -73,7 +78,7 @@ const Projects = (props) => {
                 style={{ y, right: x, scale }}
                 className={classes.container__images__wrapper}
               >
-                <img src={src.src} alt={alt} />
+                <img src={src.src} alt={alt}/>
               </m.div>
             );
           })}
