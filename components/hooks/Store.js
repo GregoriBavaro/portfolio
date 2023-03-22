@@ -7,10 +7,10 @@ const initialState = {
 export const Context = createContext();
 
 const Store = ({ children }) => {
-  const [state, setState] = useState(initialState);
+  const [stateSkills, setStateSkills] = useState(initialState);
 
   return (
-    <Context.Provider value={[state, setState]}>{children}</Context.Provider>
+    <Context.Provider value={[stateSkills, setStateSkills]}>{children}</Context.Provider>
   );
 };
 

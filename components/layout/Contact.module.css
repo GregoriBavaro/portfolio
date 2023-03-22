@@ -1,17 +1,21 @@
 .container {
   position: relative;
-  width: 100%;
-  margin-top: 10vh;
-  margin-top: 10svh;
-  height: 70vh;
-  height: 70svh;
+  top: 0%;
+  height: 80vh;
+  height: 80svh;
+}
+
+.container__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  top: 0%;
+  width: 100%;
+  padding: 2rem;
+  height: 100%;
 }
 
 .container__header {
   position: absolute;
+  top: 25%;
   font-size: 5rem;
   text-transform: uppercase;
   opacity: 0.3;

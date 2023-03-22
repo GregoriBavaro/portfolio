@@ -10,8 +10,8 @@ const ProjectTwo = () => {
 
   const y = useTransform(scrollYProgress, [0.1, 1], ["290%", "-200%"]);
   const yTwo = useTransform(scrollYProgress, [0.1, 1], ["400%", "-220%"]);
-  const yThree = useTransform(scrollYProgress, [0.1, 1], ["500%", "-120%"]);
-  const ySix = useTransform(scrollYProgress, [0.1, 1], ["700%", "-120%"]);
+  const yThree = useTransform(scrollYProgress, [0.1, 1], ["780%", "-220%"]);
+  const ySix = useTransform(scrollYProgress, [0.1, 1], ["880%", "-230%"]);
   const x = useTransform(scrollYProgress, [1, 1], ["7%", "7%"]);
   const xTwo = useTransform(scrollYProgress, [1, 1], ["60%", "60%"]);
   const xThree = useTransform(scrollYProgress, [1, 1], ["10%", "10%"]);

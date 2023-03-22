@@ -16,7 +16,7 @@ const About = () => {
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    setValue(latest - 650);
+    setValue(latest - 680);
   });
 
   return (

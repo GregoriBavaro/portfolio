@@ -1,10 +1,8 @@
 .container {
   position: relative;
-  overflow-x: hidden;
-  margin-top: 80vh;
   top: 0%;
   height: 100vh;
-  background-color: var(--green)
+  height: 100svh;
 }
 
 .container__wrapper {
@@ -13,4 +11,40 @@
   width: 100%;
   padding: 2rem;
   height: 100%;
+}
+
+
+.container__header {
+  position: absolute;
+  top: 25%;
+  font-size: 5rem;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.container__text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+  color: var(--lightBeige);
+  width: 80%;
+  font-weight: 300;
+}
+
+.container__text__skills , .container__text__dSkills {
+  flex: 1 1 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.container__text ul {
+  font-size: 2rem;
+  list-style-type: none;
+  font-weight: 300;
 }

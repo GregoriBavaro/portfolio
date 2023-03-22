@@ -1,5 +1,5 @@
 //Hooks
-import { Context } from "../hooks/Store"
+import { Context } from "../hooks/Store";
 import { useRef, useContext } from "react";
 import {
   motion as m,
@@ -13,34 +13,43 @@ import {
 import classes from "../layout/Projects.module.css";
 
 const Projects = (props) => {
-  const [state, setState] = useContext(Context)
+  const [stateSkills, setStateSkills] = useContext(Context);
   const targetRef = useRef(null);
   const descriptionRef = useRef(false);
   const isInView = useInView(descriptionRef, { once: false, amount: "all" });
-
-  console.log(state);
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start start", "end end"],
   });
 
-  // const scale = useTransform(scrollYProgress, [1, 1], [1 , 1]);
-  // const x = useTransform(scrollYProgress, [0.1, 1], ["20%", "-20%"]);
-  // const opacity = useTransform(scrollYProgress, [0.9, 1], [1, 0]);
+ 
   const position = useTransform(scrollYProgress, (pos) => {
-    return pos > 0  ? "fixed" : "relative";
+    return pos > 0 ? "fixed" : "relative";
   });
 
-  const styleText = {
-    background:
-      "linear-gradient(to left, var(--lightBeige) 50%, #121212 50%) right",
-    backgroundSize: "200%",
-    backgroundPosition: isInView ? "left" : "right",
-    transitionProperty: "background",
-    transition: "1s ease-out",
-  };
 
+  let animationText = {};
+  if (!stateSkills) {
+    animationText = {
+      background:
+        "linear-gradient(to left, var(--lightBeige) 50%, #121212 50%) right",
+      backgroundSize: "200%",
+      backgroundPosition: isInView ? "left" : "right",
+      transitionProperty: "background",
+      transition: "1s ease-out",
+    };
+  } else {
+    animationText = {
+      background:
+        "linear-gradient(to left, var(--lightBeige) 50%, #121212 50%) right",
+      backgroundSize: "200%",
+      backgroundPosition: stateSkills ? "right" : "left" ,
+      opacity: stateSkills ? 0 : 1 ,
+      transitionProperty: "background",
+      transition: ".4s ease-out",
+    };
+  }
 
   return (
     <m.div ref={targetRef} className={props.class}>
@@ -49,24 +58,29 @@ const Projects = (props) => {
           <m.div
             ref={descriptionRef}
             className={classes.container__text}
+            // animate={{display: state ? "none" : "flex"}}
             style={{
               opacity: isInView ? 1 : 0,
               transition: ".1s ease-in-out",
             }}
           >
-            <m.h1 style={styleText} >{props.dataObject.number}</m.h1>
+            <m.h1 style={animationText}>{props.dataObject.number}</m.h1>
             <div className={classes.container__text__about}>
-              <m.h2 ref={descriptionRef} style={styleText}>
+              <m.h2 ref={descriptionRef} style={animationText}>
                 {props.dataObject.name}
               </m.h2>
-              <m.h3 ref={descriptionRef} style={styleText}>
-                {props.dataObject.job1}<span>&#x2022;</span>{props.dataObject.job2}
+              <m.h3 ref={descriptionRef} style={animationText}>
+                {props.dataObject.job1}
+                <span>&#x2022;</span>
+                {props.dataObject.job2}
               </m.h3>
-              <m.p ref={descriptionRef} style={styleText}>
+              <m.p ref={descriptionRef} style={animationText}>
                 {props.dataObject.description}
               </m.p>
             </div>
-            <m.h4 ref={descriptionRef} style={styleText}>Web App</m.h4>
+            <m.h4 ref={descriptionRef} style={animationText}>
+              Web App
+            </m.h4>
           </m.div>
         </AnimatePresence>
 
@@ -78,7 +92,7 @@ const Projects = (props) => {
                 style={{ y, right: x, scale }}
                 className={classes.container__images__wrapper}
               >
-                <img src={src.src} alt={alt}/>
+                <img src={src.src} alt={alt} />
               </m.div>
             );
           })}
