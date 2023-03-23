@@ -1,6 +1,6 @@
 //Hooks
 import { Context } from "../hooks/Store";
-import { useRef, useContext } from "react";
+import { useRef, useContext, useEffect } from "react";
 import {
   motion as m,
   useScroll,

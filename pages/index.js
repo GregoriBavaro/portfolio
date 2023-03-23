@@ -1,7 +1,7 @@
 //Hooks
-import Store from "../components/hooks/Store"
+import Store from "../components/hooks/Store";
 import { useRef } from "react";
-
+import { motion as m } from "framer-motion";
 
 //Components
 import Navigation from "../components/layout/Navigation";
@@ -44,30 +44,42 @@ const HomePage = () => {
 
   const aboutRef = useRef();
   const projectsRef = useRef();
+  const skillsRef = useRef();
+  const contactRef = useRef();
 
   return (
     <Store>
-      <Navigation refs={[aboutRef, projectsRef]} />
+      <Navigation refs={[aboutRef, projectsRef, skillsRef, contactRef]} />
       <Hero />
       <AboutHero />
       <Photo />
-      <div id="about" ref={aboutRef}>
-        <About />
-      </div>
-      <div id="projects" ref={projectsRef}>
-        <Projects
-          dataObject={projectOneData}
-          photos={projectOnePhotos}
-          class={classes.container__p1}
-        />
-        <Projects
-          dataObject={ProjectTwoData}
-          photos={projectTwoPhotos}
-          class={classes.container__p2}
-        />
-      </div>
-      <Skills />
-      <Contact />
+      <m.div
+        initial={{ display: "none" }}
+        animate={{ display: "inline-block" }}
+        transition={{ delay: 6.8, duration: "1s ease-out" }}
+      >
+        <div id="about" ref={aboutRef}>
+          <About />
+        </div>
+        <div id="projects" ref={projectsRef}>
+          <Projects
+            dataObject={projectOneData}
+            photos={projectOnePhotos}
+            class={classes.container__p1}
+          />
+          <Projects
+            dataObject={ProjectTwoData}
+            photos={projectTwoPhotos}
+            class={classes.container__p2}
+          />
+        </div>
+        <div ref={skillsRef}>
+          <Skills />
+        </div>
+        <div ref={contactRef}>
+          <Contact />
+        </div>
+      </m.div>
     </Store>
   );
 };

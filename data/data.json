@@ -25,13 +25,22 @@
       "exitDelay": 0.6,
       "clr": "toBeige"
     },
+    
     {
       "index": "n4",
+      "name": "skills",
+      "url": "skills",
+      "animateDelay": 2.3,
+      "exitDelay": 0.8,
+      "clr": "toGreen"
+    },
+    {
+      "index": "n5",
       "name": "contact",
       "url": "contact",
-      "animateDelay": 2.3,
-      "exitDelay": 0.7,
-      "clr": "toGreen"
+      "animateDelay": 2.4,
+      "exitDelay": 1,
+      "clr": "toBeige"
     }
   ],
   "navbarAnimatedElements": [

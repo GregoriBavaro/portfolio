@@ -35,6 +35,12 @@ const Navigation = (props) => {
       if (e.target.innerText === "projects") {
         props.refs[1].current?.scrollIntoView({ behavior: "smooth" });
       }
+      if(e.target.innerText === "skills") {
+        props.refs[2].current?.scrollIntoView({ behavior: "smooth" });
+      }
+      if(e.target.innerText === "contact") {
+        props.refs[3].current?.scrollIntoView({ behavior: "smooth" });
+      }
     }, 2800);
   };
 

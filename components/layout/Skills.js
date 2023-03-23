@@ -4,7 +4,6 @@ import { useRef, useState, useContext, useEffect } from "react";
 import {
   motion as m,
   useScroll,
-  useTransform,
   useInView,
   useMotionValueEvent,
 } from "framer-motion";
@@ -31,14 +30,13 @@ const Skills = () => {
     setValue(latest - 5568);
   });
 
-  
   useEffect(() => {
     setStateSkills(isInView);
   }, [isInView]);
 
   return (
-    <div ref={targetRef}  className={classes.container}>
-      <m.div  className={classes.container__wrapper}>
+    <div ref={targetRef} className={classes.container}>
+      <m.div className={classes.container__wrapper}>
         <m.div
           className={classes.container__header}
           initial={{ right: 0 }}
