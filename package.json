@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.14",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.261",
     "framer-motion": "^10.0.1",

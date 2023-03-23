@@ -1,31 +1,122 @@
 .container {
   position: relative;
   top: 0%;
-  height: 80vh;
-  height: 80svh;
+  height: 70vh;
+  height: 70svh;
+  overflow: hidden;
 }
 
 .container__wrapper {
   display: flex;
   top: 0%;
   width: 100%;
-  padding: 2rem;
   height: 100%;
 }
 
-.container__header {
-  position: absolute;
-  top: 25%;
-  font-size: 5rem;
-  text-transform: uppercase;
-  opacity: 0.3;
+.container__wrapper__icons,
+.container__wrapper__email {
+  flex: 0.2 0.2 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.container__text {
-  margin-top: 6rem;
-  font-size: 1.5rem;
+.wrapper__icons,
+.wrapper__email {
+  position: absolute;
+  bottom: 0%;
+  width: 5rem;
+  height: 25rem;
   color: var(--lightBeige);
-  width: 80%;
-  margin-inline: auto;
-  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container__wrapper__text {
+  flex: 1 1 0px;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 4rem;
+}
+
+.wrapper__text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 50%;
+}
+
+.wrapper__text h1 {
+  color: var(--green);
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.wrapper__text p {
+  color: var(--lightBeige)
+}
+
+.wrapper__text button {
+  width: 10rem;
+  border: 1px solid var(--green);
+  background-color: transparent;
+  padding: 1rem 0;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: var(--green)
+}
+
+.wrapper__text button:hover {
+  
+  background-color:rgba(45, 112, 100, 0.186) ;
+  
+}
+
+.inside__email {
+  flex: 1 1 0px;
+  margin-left: 0.3rem;
+}
+
+.inside__icons {
+  flex: 1 1 0px;
+}
+
+.inside__icons section {
+  transform: rotate(90deg) translateX(100%);
+  width: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inside__email h4 {
+  transform: rotate(90deg) translateX(100%);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.inside__email h4:hover {
+  transform: rotate(90deg) translateX(96%);
+  color: var(--green);
+}
+
+.inside__line {
+  border: 1px solid var(--lightBeige);
+  flex: 0.5 1 0px;
+}
+
+.inside__icons section span {
+  transform: rotate(270deg);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.inside__icons section span:hover {
+  transform: rotate(270deg) translateY(-0.3rem);
 }
