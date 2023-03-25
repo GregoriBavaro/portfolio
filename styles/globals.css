@@ -175,6 +175,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -182,10 +186,16 @@ body {
   box-sizing: border-box;
   overflow: overlay;
   overflow-x: hidden;
+  
 }
 
 body {
-  background-color: rgb(18, 18, 18);
+  background-color: #1d1d1d;
+  text-align: center;
+}
+
+.parent{
+  max-width: 2000px;
 }
 
 a {

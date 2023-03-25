@@ -25,7 +25,7 @@ const About = () => {
         className={classes.container__header}
         initial={{ x: -600 }}
         animate={{ x: value }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.7 }}
       >
         <h1>About Me</h1>
       </m.div>

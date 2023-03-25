@@ -8,6 +8,7 @@
   min-height: 300svh;
   position: relative;
   overflow: hidden;
+  text-align: left;
 }
 
 .container__wrapper {
@@ -16,6 +17,7 @@
   width: 100%;
   padding: 2rem;
   height: 100%;
+  max-width: 2000px;
 }
 
 .container__images {
@@ -35,7 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  background-color: rgb(18, 18, 18);
+  background-color: #1d1d1d;
 }
 
 .container__text h4 {

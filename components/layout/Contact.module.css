@@ -1,122 +1,168 @@
 .container {
   position: relative;
   top: 0%;
-  height: 70vh;
-  height: 70svh;
+  height: 98vh;
+  height: 98svh;
   overflow: hidden;
+  width: 100%;
+  color: var(--lightBeige);
 }
 
 .container__wrapper {
-  display: flex;
-  top: 0%;
-  width: 100%;
+  display: relative;
   height: 100%;
-}
-
-.container__wrapper__icons,
-.container__wrapper__email {
-  flex: 0.2 0.2 0px;
-  position: relative;
   display: flex;
-  justify-content: center;
-}
-
-.wrapper__icons,
-.wrapper__email {
-  position: absolute;
-  bottom: 0%;
-  width: 5rem;
-  height: 25rem;
-  color: var(--lightBeige);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .container__wrapper__text {
-  flex: 1 1 0px;
-  display: flex;
-  justify-content: center;
-  padding: 4rem 4rem;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: left;
 }
 
-.wrapper__text {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  width: 50%;
+.text {
+  max-width: 100%;
+  color: var(--lightBeige);
 }
 
-.wrapper__text h1 {
-  color: var(--green);
-  font-weight: 400;
-  font-size: 4rem;
+.text__uppercase {
+  text-transform: uppercase;
 }
 
-.wrapper__text p {
-  color: var(--lightBeige)
+.text__line {
+  white-space: nowrap;
+  font-size: 9rem;
+  font-weight: 300;
+  line-height: 10.5rem;
+  background-color: rgb(29, 29, 29);
+  letter-spacing: -3px;
 }
 
-.wrapper__text button {
-  width: 10rem;
-  border: 1px solid var(--green);
+.text__uppercase span:nth-child(1) {
+  margin-top: 2rem;
+}
+
+.text__uppercase span:nth-child(3) {
+  letter-spacing: -7px;
+  line-height: 7rem;
   background-color: transparent;
-  padding: 1rem 0;
-  border-radius: 0.3rem;
-  cursor: pointer;
   color: var(--green)
 }
 
-.wrapper__text button:hover {
-  
-  background-color:rgba(45, 112, 100, 0.186) ;
-  
+.text__bottom {
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  margin-top: -1.9rem;
+  z-index: 1;
+  margin-left: -0.1rem;
 }
 
-.inside__email {
-  flex: 1 1 0px;
-  margin-left: 0.3rem;
+.text__bottom h3 {
+  font-size: 3rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
 }
 
-.inside__icons {
-  flex: 1 1 0px;
+.wrapper__icons::before {
+  content: "";
+  display: block;
+  width: 97.5%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 0.5px;
+  background: var(--lightBeige);
+  top: -4%;
+  position: absolute;
 }
 
-.inside__icons section {
-  transform: rotate(90deg) translateX(100%);
-  width: 10rem;
+.wrapper__icons {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: fit-content;
+  height: fit-content;
+  color: var(--lightBeige);
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+.wrapper__icons ul {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.wrapper__icons li a {
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 
-.inside__email h4 {
-  transform: rotate(90deg) translateX(100%);
-  cursor: pointer;
+.wrapper__icons li {
   transition: all 0.2s ease-out;
 }
 
-.inside__email h4:hover {
-  transform: rotate(90deg) translateX(96%);
-  color: var(--green);
+.wrapper__icons li a:hover {
+  transform: translateY(-0.3rem);
 }
 
-.inside__line {
+/* TOPICS */
+
+.text__topics__wrapper {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  max-width: 70rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.text__topics {
+  text-align: center;
+  height: 58px;
+  font: normal normal 500 2em/1.7em "Oswald", sans-serif;
+  overflow: hidden;
+  min-width: fit-content;
+  border-radius: 0.3rem;
   border: 1px solid var(--lightBeige);
-  flex: 0.5 1 0px;
+  transition: all 0.3s ease-in-out;
+  padding: 0 1rem;
 }
 
-.inside__icons section span {
-  transform: rotate(270deg);
-  cursor: pointer;
-  transition: all 0.2s ease-out;
+.text__topics a {
+  text-align: center;
+  display: block;
 }
 
-.inside__icons section span:hover {
-  transform: rotate(270deg) translateY(-0.3rem);
+.text__topics a:nth-child(1) {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 0em;
+}
+
+.text__topics:hover {
+  outline: none;
+}
+
+.text__topics:hover a:nth-child(1) {
+  margin-top: -1.7em;
+}
+
+.text__topics a:nth-child(2) {
+  color: var(--green);
 }

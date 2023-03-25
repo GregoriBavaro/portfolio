@@ -57,6 +57,7 @@ const HomePage = () => {
         initial={{ display: "none" }}
         animate={{ display: "inline-block" }}
         transition={{ delay: 6.8, duration: "1s ease-out" }}
+        className="parent"
       >
         <div id="about" ref={aboutRef}>
           <About />

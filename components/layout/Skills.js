@@ -41,7 +41,7 @@ const Skills = () => {
           className={classes.container__header}
           initial={{ right: 0 }}
           animate={{ right: value }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.7 }}
         >
           <h1>Skills</h1>
         </m.div>

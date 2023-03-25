@@ -1,12 +1,10 @@
 // import Spline from '@splinetool/react-spline';
 
-
-// const Canvas = () => {
-//     return (
-//         <Spline scene="https://prod.spline.design/jex5JxN2BLEOjTvJ/scene.splinecode" />
-
-//     )
+// export default function Canvas() {
+//   return (
+//     <Spline scene="https://prod.spline.design/yPrKyF5Ru5B7NTmL/scene.splinecode" />
+//   );
 // }
 
-// export default Canvas;
+
 

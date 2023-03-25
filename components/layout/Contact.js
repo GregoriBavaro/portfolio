@@ -1,6 +1,6 @@
 //Hooks
-import { useRef, useState } from "react";
-import { motion as m, useScroll, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react";
+import { motion as m } from "framer-motion";
 
 //CSS
 import classes from "../layout/Contact.module.css";
@@ -11,67 +11,68 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
+//Data
+import data from "../../data/data.json";
+
 const Contact = () => {
   const targetRef = useRef(null);
-  const { scrollY } = useScroll();
-  const [value, setValue] = useState();
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    setValue(latest - 6268);
-  });
+  const topics = [...data.talkAbout];
 
   return (
     <div ref={targetRef} className={classes.container}>
       <m.div className={classes.container__wrapper}>
-        <div className={classes.container__wrapper__icons}>
-          <m.div
-            initial={{ y: "100%" }}
-            whileInView={{ y: "10%" }}
-            className={classes.wrapper__icons}
-          >
-            <div className={classes.inside__icons}>
-              <section>
-                <span>
-                  <LinkedInIcon sx={{ "&:hover": { color: "var(--green)" } }} />
-                </span>
-                <span>
-                  <GitHubIcon sx={{ "&:hover": { color: "var(--green)" } }} />
-                </span>
-                <span>
-                  <InstagramIcon
-                    sx={{ "&:hover": { color: "var(--green)" } }}
-                  />
-                </span>
-                <span>
-                  <FacebookIcon sx={{ "&:hover": { color: "var(--green)" } }} />
-                </span>
-              </section>
-            </div>
-            <div className={classes.inside__line}></div>
-          </m.div>
-        </div>
+        <m.div
+          className={classes.wrapper__icons}
+        >
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/gregori-bavaro/" target="_blank">
+                <LinkedInIcon sx={{ scale: "2" }} />
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/GregoriBavaro" target="_blank">
+                <GitHubIcon sx={{ scale: "2" }} />
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/gregoribavaro/" target="_blank">
+                <InstagramIcon sx={{ scale: "2" }} />
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100087660054820" target="_blank">
+                <FacebookIcon sx={{ scale: "2" }} />
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </m.div>
         <div className={classes.container__wrapper__text}>
-          <div className={classes.wrapper__text}>
-            <h1>Get In Touch</h1>
-            <p>
-              I’m currently looking for new opportunities, my
-              inbox is always open. Whether you have a question or just want to
-              say hi, I’ll try my best to get back to you!
-            </p>
-            <button>Say Hello</button>
-          </div>
-        </div>
-        <div className={classes.container__wrapper__email}>
-          <m.div
-            initial={{ y: "100%" }}
-            whileInView={{ y: "10%" }}
-            className={classes.wrapper__email}
-          >
-            <div className={classes.inside__email}>
-              <h4>greg.gego@gmail.com</h4>
+          <div className={classes.text}>
+            <h3 className={classes.text__uppercase}>
+              <span className={classes.text__line}>let's</span>
+              <br />
+              <span className={classes.text__line}>connect</span>
+              <br />
+            </h3>
+            <div className={classes.text__bottom}>
+              <h3>i'm always interested about</h3>
             </div>
-            <div className={classes.inside__line}></div>
-          </m.div>
+          </div>
+          <div className={classes.text__topics__wrapper}>
+            {topics.map(({ href, name }, i) => {
+              return (
+                <div key={i} className={classes.text__topics}>
+                  <a href={href}>{name}</a>
+                  <a href={href}>{name}</a>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </m.div>
     </div>

@@ -33,7 +33,7 @@ const Projects = (props) => {
   if (!stateSkills) {
     animationText = {
       background:
-        "linear-gradient(to left, var(--lightBeige) 50%, #121212 50%) right",
+        "linear-gradient(to left, var(--lightBeige) 50%, #1d1d1d 50%) right",
       backgroundSize: "200%",
       backgroundPosition: isInView ? "left" : "right",
       transitionProperty: "background",
@@ -42,7 +42,7 @@ const Projects = (props) => {
   } else {
     animationText = {
       background:
-        "linear-gradient(to left, var(--lightBeige) 50%, #121212 50%) right",
+        "linear-gradient(to left, var(--lightBeige) 50%, #1d1d1d 50%) right",
       backgroundSize: "200%",
       backgroundPosition: stateSkills ? "right" : "left" ,
       opacity: stateSkills ? 0 : 1 ,

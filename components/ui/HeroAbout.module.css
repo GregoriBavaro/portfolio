@@ -6,7 +6,8 @@
   flex-direction: column;
   max-width: 15rem;
   gap: 2rem;
-  color : var(--lightBeige)
+  color : var(--lightBeige);
+  text-align: left;
 }
 
 .container h2 {
