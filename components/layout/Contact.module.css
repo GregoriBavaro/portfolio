@@ -48,7 +48,7 @@
   letter-spacing: -7px;
   line-height: 7rem;
   background-color: transparent;
-  color: var(--green)
+  color: var(--green);
 }
 
 .text__bottom {
@@ -57,6 +57,7 @@
   margin-top: -1.9rem;
   z-index: 1;
   margin-left: -0.1rem;
+  width: fit-content;
 }
 
 .text__bottom h3 {
@@ -65,7 +66,7 @@
   font-weight: 400;
   letter-spacing: -1px;
   margin-left: 0.5rem;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .wrapper__icons::before {
@@ -76,7 +77,7 @@
   transform: translate(-50%);
   height: 0.5px;
   background: var(--lightBeige);
-  top: -4%;
+  top: 0;
   position: absolute;
 }
 
@@ -87,12 +88,14 @@
   width: fit-content;
   height: fit-content;
   color: var(--lightBeige);
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem 0rem;
   width: 100%;
 }
 
 .wrapper__icons ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   gap: 2rem;
   list-style-type: none;
@@ -113,7 +116,7 @@
   transition: all 0.2s ease-out;
 }
 
-.wrapper__icons li a:hover {
+.wrapper__icons li:hover {
   transform: translateY(-0.3rem);
 }
 
@@ -129,7 +132,7 @@
   flex-wrap: wrap;
 }
 
-.text__topics {
+.text__topics, .contact__me {
   text-align: center;
   height: 58px;
   font: normal normal 500 2em/1.7em "Oswald", sans-serif;
@@ -141,12 +144,12 @@
   padding: 0 1rem;
 }
 
-.text__topics a {
+.text__topics a, .contact__me {
   text-align: center;
   display: block;
 }
 
-.text__topics a:nth-child(1) {
+.text__topics a:nth-child(1), .contact__me {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -155,7 +158,7 @@
   margin-top: 0em;
 }
 
-.text__topics:hover {
+.text__topics:hover, .contact__me:hover {
   outline: none;
 }
 
@@ -163,6 +166,28 @@
   margin-top: -1.7em;
 }
 
-.text__topics a:nth-child(2) {
+.contact__me:hover a:nth-child(1) {
+  margin-top: -2.4em;
+}
+
+.text__topics a:nth-child(2), .contact__me a:nth-child(2) {
   color: var(--green);
+}
+
+.wrapper__icons ul li:nth-child(5) {
+  margin-left: auto;
+  padding: 0rem 0rem 0.5rem;
+}
+
+.wrapper__icons ul:hover li:nth-child(5) {
+  transform: translateY(0rem);
+}
+
+
+.canvas {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  right: 0;
+  z-index: -100;
 }

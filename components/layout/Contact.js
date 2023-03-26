@@ -1,56 +1,61 @@
 //Hooks
 import { useRef } from "react";
-import { motion as m } from "framer-motion";
+import { motion as m, useInView } from "framer-motion";
+
+import Canvas from "../ui/Canvas"
 
 //CSS
 import classes from "../layout/Contact.module.css";
 
-//Icons
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-
 //Data
+import { icons } from "../../data/contact-icons";
 import data from "../../data/data.json";
 
 const Contact = () => {
   const targetRef = useRef(null);
   const topics = [...data.talkAbout];
 
+  const isInView = useInView(targetRef, { once: true, amount: "all" });
+
   return (
     <div ref={targetRef} className={classes.container}>
+      <div className={classes.canvas}>
+        <Canvas />
+      </div>
       <m.div className={classes.container__wrapper}>
-        <m.div
-          className={classes.wrapper__icons}
-        >
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/gregori-bavaro/" target="_blank">
-                <LinkedInIcon sx={{ scale: "2" }} />
-                Linkedin
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/GregoriBavaro" target="_blank">
-                <GitHubIcon sx={{ scale: "2" }} />
-                Github
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/gregoribavaro/" target="_blank">
-                <InstagramIcon sx={{ scale: "2" }} />
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/profile.php?id=100087660054820" target="_blank">
-                <FacebookIcon sx={{ scale: "2" }} />
-                Facebook
-              </a>
-            </li>
-          </ul>
-        </m.div>
+        {isInView && (
+          <m.div className={classes.wrapper__icons}>
+            <ul>
+              {icons.map(({ name, href, icon, animationDelay }, i) => {
+                return (
+                  <m.li
+                    initial={{ y: "200%" }}
+                    animate={{ y: "0" }}
+                    transition={{ duration: 0.1, delay: animationDelay }}
+                    key={i}
+                  >
+                    <a href={href} target="_blank">
+                      {icon}
+                      {name}
+                    </a>
+                  </m.li>
+                );
+              })}
+
+              <li>
+                <div className={classes.contact__me}>
+                  <a href="mailto:greg.gego@gmail.com?subject=🖐️Hey!">
+                    Contact me
+                  </a>
+                  <a href="mailto:greg.gego@gmail.com?subject=🖐️Hey!">
+                    Contact me
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </m.div>
+        )}
+
         <div className={classes.container__wrapper__text}>
           <div className={classes.text}>
             <h3 className={classes.text__uppercase}>
@@ -64,14 +69,22 @@ const Contact = () => {
             </div>
           </div>
           <div className={classes.text__topics__wrapper}>
-            {topics.map(({ href, name }, i) => {
-              return (
-                <div key={i} className={classes.text__topics}>
-                  <a href={href}>{name}</a>
-                  <a href={href}>{name}</a>
-                </div>
-              );
-            })}
+            {isInView &&
+              topics.map(({ href, name, animationDelay }, i) => {
+                return (
+                  <m.div key={i} className={classes.text__topics}>
+                    <m.a
+                      initial={{ y: "100%" }}
+                      animate={{ y: "0" }}
+                      transition={{ duration: 0.1, delay: animationDelay }}
+                      href={href}
+                    >
+                      {name}
+                    </m.a>
+                    <a href={href}>{name}</a>
+                  </m.div>
+                );
+              })}
           </div>
         </div>
       </m.div>

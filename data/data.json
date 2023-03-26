@@ -88,51 +88,54 @@
   "talkAbout": [
     {
       "href": "mailto:greg.gego@gmail.com?subject=🧑‍💻Let's talk how much coding is awesome and exciting!!",
-      "name": "Frontend development"
+      "name": "Frontend development",
+      "animationDelay": 0.1
     },
     {
       "href": "mailto:greg.gego@gmail.com?subject=🚀I have an amazing idea!!",
-      "name": "Startups"
+      "name": "Startups",
+      "animationDelay": 0.2
     },
     {
       "href": "mailto:greg.gego@gmail.com?subject=🧑‍💻I'm looking for a developer, let's talk!",
-      "name": "Website"
+      "name": "Website",
+      "animationDelay": 0.3
     },
     {
       "href": "mailto:greg.gego@gmail.com?subject=🍕Who doesn't love a pizza?",
-      "name": "Pizza"
-    },
-    {
-      "href": "mailto:greg.gego@gmail.com?subject=🤩Job offer!",
-      "name": "Projects"
+      "name": "Pizza",
+      "animationDelay": 0.4
     },
     {
       "href": "mailto:greg.gego@gmail.com?subject=🖌️Importance of a good UI / UX design",
-      "name": "UX/UI Design"
+      "name": "UX/UI Design",
+      "animationDelay": 0.5
     },
     {
       "href": "mailto:greg.gego@gmail.com?subject=👜I am looking for React.js developer, let's talk!",
-      "name": "React"
+      "name": "React",
+      "animationDelay": 0.6
+      
     },
     {
-      "href": "mailto:greg.gego@gmail.com?subject=👨‍💻Can you help me with my css?",
-      "name": "CSS"
+      "href": "mailto:greg.gego@gmail.com?subject=📰I have a job opportunity for you!",
+      "name": "JOB OFFERS",
+      "animationDelay": 0.7
     },
     {
-      "href": "mailto:greg.gego@gmail.com?subject=📰I have a new job opportunity for you!",
-      "name": "JOB OFFERS"
+      "href": "mailto:greg.gego@gmail.com?subject=👨‍💻Let's talk about responsive web design best practices!",
+      "name": "Responsive Designs",
+      "animationDelay": 0.8
     },
     {
-      "href": "mailto:greg.gego@gmail.com?subject=👨‍💻Let's talk about responsive web design best practices",
-      "name": "Responsive Designs"
+      "href": "mailto:greg.gego@gmail.com?subject🤘Lets talk about new technologies!",
+      "name": "New Technologies",
+      "animationDelay": 0.9
     },
     {
-      "href": "mailto:greg.gego@gmail.com?subject🤘Lets talk about new technologies",
-      "name": "New Technologies"
-    },
-    {
-      "href": "mailto:greg.gego@gmail.com?subject=🧑‍🎓What are the best frontend courses?",
-      "name": "Courses"
+      "href": "mailto:greg.gego@gmail.com?subject=🧑‍🎓What are some good frontend courses?",
+      "name": "Courses",
+      "animationDelay": 1
     }
 
   ]
