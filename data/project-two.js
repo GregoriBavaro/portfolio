@@ -45,7 +45,8 @@ const ProjectTwo = () => {
       src: mobileTwo,
       y: ySix,
       x: xSix,
-      scale: 0.7
+      scale: 0.7,
+      className: "projectTwoLastPhoto"
     }
   ];
 

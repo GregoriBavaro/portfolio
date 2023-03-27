@@ -1,7 +1,7 @@
 //Hooks
 import Store from "../components/hooks/Store";
 import { useRef } from "react";
-import { motion as m } from "framer-motion";
+import { motion as m, useInView } from "framer-motion";
 
 //Components
 import Navigation from "../components/layout/Navigation";
@@ -12,6 +12,11 @@ import About from "../components/layout/About";
 import Projects from "../components/layout/Projects";
 import Skills from "../components/layout/Skills";
 import Contact from "../components/layout/Contact";
+import Footer from "../components/layout/Footer";
+
+//3D Modules
+import One from "../components/ui/One";
+import Two from "../components/ui/Two";
 
 //Data
 import ProjectOne from "../data/project-one";
@@ -21,16 +26,16 @@ import ProjectTwo from "../data/project-two";
 import classes from "../components/layout/Projects.module.css";
 
 const projectOneData = {
-  number: "1",
+  number: <One />,
   name: "MM9 Machinery",
   job1: "Front End Developer",
   job2: "Designer",
   description:
-    "Developed end-to-end solution for a client in the corrugated box manufacturing business. The main focus was to create a product that is user-friendly with amazing UX/UI, optimizing the application for maximum speed and building responsive styled components for a better overall user experience, especially for mobile and tablet users. Developed in React.js & .Net, with build in administrator panel.",
+    "Developed end-to-end solution for a client in the corrugated box manufacturing business. The main focus was to create a product that is user-friendly with amazing UX/UI, optimizing the application for maximum speed and building responsive styled components for a better overall user experience, especially for mobile and tablet users. Developed in React.js & .Net.",
 };
 
 const ProjectTwoData = {
-  number: "2",
+  number: <Two />,
   name: "Productivity App",
   job1: "Front End Developer",
   job2: "Designer",
@@ -68,6 +73,7 @@ const HomePage = () => {
             photos={projectOnePhotos}
             class={classes.container__p1}
           />
+
           <Projects
             dataObject={ProjectTwoData}
             photos={projectTwoPhotos}
@@ -81,6 +87,7 @@ const HomePage = () => {
           <Contact />
         </div>
       </m.div>
+      <Footer />
     </Store>
   );
 };

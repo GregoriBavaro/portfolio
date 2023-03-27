@@ -23,7 +23,7 @@ const NameSignSVG = () => {
           opacity: { delay, duration: 0.01 },
           fill: { delay: 2.3, duration: 1 },
           strokeWidth: { delay: 2.3, duration: 3 },
-          scale: {delay: 3.9, duration: 1}
+          scale: {delay: 3.7, duration: 1}
         },
       };
     },

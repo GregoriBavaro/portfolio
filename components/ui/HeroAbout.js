@@ -18,13 +18,21 @@ const HeroAbout = () => {
         stiffness: 20,
       }}
     >
-      <h2>Hello</h2>
-      <h1 className={classes.container__header}>
-        My name <br></br>is<span> Gregori</span>
-      </h1>
-      <p>
-        I build beautiful & interactive websites. Please take a look around!
-      </p>
+      <div className={classes.text}>
+        <h3 className={classes.text__uppercase}>
+          <span className={classes.text__line}>Hello</span>
+          <br />
+          <span className={classes.text__line}>
+            I'am <span> Gregori</span>
+          </span>
+          <br />
+        </h3>
+        <div className={classes.text__bottom}>
+          <h3>
+            I build beautiful & interactive websites
+          </h3>
+        </div>
+      </div>
     </m.div>
   );
 };

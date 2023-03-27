@@ -16,83 +16,80 @@ const Projects = (props) => {
   const [stateSkills, setStateSkills] = useContext(Context);
   const targetRef = useRef(null);
   const descriptionRef = useRef(false);
-  const isInView = useInView(descriptionRef, { once: false, amount: "all" });
+  const isInView = useInView(descriptionRef, { once: false, amount: "some" });
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start start", "end end"],
   });
 
- 
   const position = useTransform(scrollYProgress, (pos) => {
     return pos > 0 ? "fixed" : "relative";
   });
 
+  console.log(isInView);
 
-  let animationText = {};
-  if (!stateSkills) {
-    animationText = {
-      background:
-        "linear-gradient(to left, var(--lightBeige) 50%, #1d1d1d 50%) right",
-      backgroundSize: "200%",
-      backgroundPosition: isInView ? "left" : "right",
-      transitionProperty: "background",
-      transition: "1s ease-out",
+  let classAnimation = {};
+
+  if (isInView) {
+    classAnimation = {
+      scale: 1,
+      transition: ".4s ease-out",
     };
   } else {
-    animationText = {
-      background:
-        "linear-gradient(to left, var(--lightBeige) 50%, #1d1d1d 50%) right",
-      backgroundSize: "200%",
-      backgroundPosition: stateSkills ? "right" : "left" ,
-      opacity: stateSkills ? 0 : 1 ,
-      transitionProperty: "background",
+    classAnimation = { scale: 0, transition: ".4s ease-out" };
+  }
+  if (stateSkills) {
+    classAnimation = {
+      scale: 0,
       transition: ".4s ease-out",
     };
   }
 
   return (
-    <m.div ref={targetRef} className={props.class}>
+    <m.div ref={targetRef} className={classes.container}>
       <m.div style={{ position }} className={classes.container__wrapper}>
         <AnimatePresence>
           <m.div
             ref={descriptionRef}
             className={classes.container__text}
-            // animate={{display: state ? "none" : "flex"}}
-            style={{
-              opacity: isInView ? 1 : 0,
-              transition: ".1s ease-in-out",
-            }}
+            style={classAnimation}
           >
-            <m.h1 style={animationText}>{props.dataObject.number}</m.h1>
-            <div className={classes.container__text__about}>
-              <m.h2 ref={descriptionRef} style={animationText}>
-                {props.dataObject.name}
-              </m.h2>
-              <m.h3 ref={descriptionRef} style={animationText}>
-                {props.dataObject.job1}
-                <span>&#x2022;</span>
-                {props.dataObject.job2}
-              </m.h3>
-              <m.p ref={descriptionRef} style={animationText}>
-                {props.dataObject.description}
-              </m.p>
+            <div className={classes.container__3D}>
+              {props.dataObject.number}
             </div>
-            <m.h4 ref={descriptionRef} style={animationText}>
-              Web App
-            </m.h4>
+            <div className={classes.container__text__about}>
+              <div className={classes.text}>
+                <h3 className={classes.text__uppercase}>
+                  <span className={classes.text__line}>
+                    {props.dataObject.name}
+                  </span>
+                  <br />
+                  <span className={classes.text__line}>
+                    {props.dataObject.job1}
+                    <span>&#x2022;</span>
+                    {props.dataObject.job2}
+                  </span>
+                  <br />
+                </h3>
+                <div className={classes.text__bottom}>
+                  <h3>{props.dataObject.description}</h3>
+                </div>
+              </div>
+            </div>
+            <h4>Web App</h4>
           </m.div>
         </AnimatePresence>
 
         <div className={classes.container__images}>
-          {props.photos.map(({ alt, src, y, x, scale }, i) => {
+          {props.photos.map(({ alt, src, y, x, scale, className }, i) => {
             return (
               <m.div
                 key={i}
                 style={{ y, right: x, scale }}
                 className={classes.container__images__wrapper}
               >
-                <img src={src.src} alt={alt} />
+                <img src={src.src} alt={alt} className={className} />
               </m.div>
             );
           })}

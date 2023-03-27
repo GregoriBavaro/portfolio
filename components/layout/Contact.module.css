@@ -1,8 +1,8 @@
 .container {
   position: relative;
   top: 0%;
-  height: 98vh;
-  height: 98svh;
+  height: 85vh;
+  height: 85svh;
   overflow: hidden;
   width: 100%;
   color: var(--lightBeige);
@@ -66,58 +66,7 @@
   font-weight: 400;
   letter-spacing: -1px;
   margin-left: 0.5rem;
-  text-transform: uppercase
-}
-
-.wrapper__icons::before {
-  content: "";
-  display: block;
-  width: 97.5%;
-  left: 50%;
-  transform: translate(-50%);
-  height: 0.5px;
-  background: var(--lightBeige);
-  top: 0;
-  position: absolute;
-}
-
-.wrapper__icons {
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  width: fit-content;
-  height: fit-content;
-  color: var(--lightBeige);
-  padding: 1rem 2rem 0rem;
-  width: 100%;
-}
-
-.wrapper__icons ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 2rem;
-  list-style-type: none;
-}
-
-.wrapper__icons li a {
-  cursor: pointer;
-  transition: all 0.2s ease-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
   text-transform: uppercase;
-  font-size: 1.4rem;
-}
-
-.wrapper__icons li {
-  transition: all 0.2s ease-out;
-}
-
-.wrapper__icons li:hover {
-  transform: translateY(-0.3rem);
 }
 
 /* TOPICS */
@@ -132,7 +81,7 @@
   flex-wrap: wrap;
 }
 
-.text__topics, .contact__me {
+.text__topics {
   text-align: center;
   height: 58px;
   font: normal normal 500 2em/1.7em "Oswald", sans-serif;
@@ -144,12 +93,12 @@
   padding: 0 1rem;
 }
 
-.text__topics a, .contact__me {
+.text__topics a {
   text-align: center;
   display: block;
 }
 
-.text__topics a:nth-child(1), .contact__me {
+.text__topics a:nth-child(1) {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -158,7 +107,7 @@
   margin-top: 0em;
 }
 
-.text__topics:hover, .contact__me:hover {
+.text__topics:hover {
   outline: none;
 }
 
@@ -166,21 +115,14 @@
   margin-top: -1.7em;
 }
 
-.contact__me:hover a:nth-child(1) {
-  margin-top: -2.4em;
-}
 
-.text__topics a:nth-child(2), .contact__me a:nth-child(2) {
+.text__topics a:nth-child(2) {
   color: var(--green);
 }
 
 .wrapper__icons ul li:nth-child(5) {
   margin-left: auto;
   padding: 0rem 0rem 0.5rem;
-}
-
-.wrapper__icons ul:hover li:nth-child(5) {
-  transform: translateY(0rem);
 }
 
 

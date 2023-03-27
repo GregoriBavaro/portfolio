@@ -3,6 +3,7 @@ import mobileTwo from "../images/projectOne/mobile2.png";
 import tabletOne from "../images/projectOne/tablet2.png";
 import tabletTwo from "../images/projectOne/tablet1.png";
 
+
 import { useScroll, useTransform } from "framer-motion";
 
 const ProjectOne = () => {

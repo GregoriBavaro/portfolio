@@ -6,45 +6,98 @@
 }
 
 .container__wrapper {
-  display: flex;
-  top: 0%;
-  width: 100%;
-  padding: 2rem;
-  height: 100%;
-}
-
-
-.container__header {
-  position: absolute;
-  top: 25%;
-  font-size: 5rem;
-  text-transform: uppercase;
-  opacity: 0.3;
-}
-
-.container__text {
+  display: relative;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin: auto;
+  padding: 1%;
+}
+
+.text {
+  flex: 1 1 0;
   color: var(--lightBeige);
-  width: 80%;
+  text-align: left;
+  padding: 0 1rem 0 0;
+}
+
+.text__uppercase {
+  text-transform: uppercase;
+}
+
+.text__line {
+  white-space: nowrap;
+  font-size: 9rem;
   font-weight: 300;
+  line-height: 10.5rem;
+  background-color: rgb(29, 29, 29);
+  letter-spacing: -3px;
 }
 
-.container__text__skills , .container__text__dSkills {
-  flex: 1 1 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.text__uppercase span:nth-child(1) {
+  margin-top: 2rem;
 }
 
+.text__uppercase span:nth-child(3) {
+  letter-spacing: -7px;
+  line-height: 7rem;
+  background-color: transparent;
+  color: var(--green);
+}
 
-.container__text ul {
+.text__bottom {
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  margin-top: -1.9rem;
+  z-index: 1;
+  margin-left: -0.1rem;
+  width: fit-content;
+}
+
+.text__bottom h3 {
   font-size: 2rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+.text__skills__wrapper {
+  flex: 1 1 0;
+  height: 80%;
+  padding: 2rem 0 0 1rem;
+}
+
+.text__skills__wrapper ul {
   list-style-type: none;
-  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--lightBeige);
+  gap: 2rem;
+}
+
+.text__skills__wrapper ul li {
+  width: 100%;
+}
+
+.li__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 3px solid var(--lightBeige);
+  position: relative;
+}
+
+.li__div h3 {
+  padding: 0 0 0.5rem;
+}
+
+.li__div div {
+  width: 100%;
+  height: 0.2rem;
+  position: absolute;
+  bottom: -3px;
 }

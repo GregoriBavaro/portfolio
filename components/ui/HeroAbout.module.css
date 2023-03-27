@@ -1,26 +1,61 @@
 .container {
   position: absolute;
   top: 30%;
-  left: 20vw;
+  left: 1%;
   display: flex;
   flex-direction: column;
-  max-width: 15rem;
+  max-width: 50%;
   gap: 2rem;
   color : var(--lightBeige);
   text-align: left;
 }
 
-.container h2 {
+.text {
+  max-width: 100%;
+  color: var(--lightBeige);
+}
+
+.text__uppercase {
+  text-transform: uppercase;
+}
+
+.text__line {
+  white-space: nowrap;
+  font-size: 9rem;
+  font-weight: 300;
+  line-height: 10.5rem;
+  background-color: rgb(29, 29, 29);
+  letter-spacing: -3px;
+}
+
+.text__line span {
   color: var(--green);
-  margin-bottom: -2rem;
 }
 
-.container__header {
-  font-weight: 100;
-  font-size: 4rem;
-  line-height: 4.7rem;
+.text__uppercase span:nth-child(1) {
+  margin-top: 2rem;
 }
 
-.container__header span {
+.text__uppercase span:nth-child(3) {
+  letter-spacing: -7px;
+  line-height: 7rem;
+  background-color: transparent;
+}
+
+.text__bottom {
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  margin-top: -1.9rem;
+  z-index: 1;
+  margin-left: -0.1rem;
+  width: fit-content;
+}
+
+.text__bottom h3 {
+  font-size: 3rem;
+  line-height: 2.7rem;
   font-weight: 400;
+  letter-spacing: -1px;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
 }
