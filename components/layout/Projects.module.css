@@ -3,8 +3,8 @@
   top: 0%;
   margin-top: 5vh;
   margin-top: 5svh;
-  min-height: 300vh;
-  min-height: 300svh;
+  min-height: 400vh;
+  min-height: 400svh;
   position: relative;
   overflow: hidden;
   text-align: left;
@@ -16,7 +16,7 @@
   width: 100%;
   padding: 2rem;
   height: 100%;
-  max-width: 2000px;
+  max-width: 1980px;
 }
 
 .container__images {

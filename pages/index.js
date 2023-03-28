@@ -5,8 +5,6 @@ import { motion as m, useInView } from "framer-motion";
 
 //Components
 import Navigation from "../components/layout/Navigation";
-import Hero from "../components/ui/Hero";
-import Photo from "../components/ui/Photo";
 import AboutHero from "../components/ui/HeroAbout";
 import About from "../components/layout/About";
 import Projects from "../components/layout/Projects";
@@ -58,15 +56,14 @@ const HomePage = () => {
   return (
     <Store>
       <Navigation refs={[aboutRef, projectsRef, skillsRef, contactRef]} />
-      <Hero />
-      <AboutHero />
-      <Photo />
+      
       <m.div
         initial={{ display: "none" }}
         animate={{ display: "inline-block" }}
         transition={{ delay: 6.8, duration: "1s ease-out" }}
         className="parent"
       >
+        <AboutHero />
         <div id="about" ref={aboutRef}>
           <About />
         </div>

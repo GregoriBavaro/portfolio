@@ -39,12 +39,12 @@
 
 .header ul li h4 {
   padding: 1rem;
+  font-weight: 300;
 }
 
 .hamburger {
   z-index: 100;
 }
-
 
 .toBeige {
   color: #ffffff00;
@@ -53,7 +53,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   transition: 1.2s;
-  
 }
 
 .toGreen {

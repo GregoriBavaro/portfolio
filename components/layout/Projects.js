@@ -16,7 +16,7 @@ const Projects = (props) => {
   const [stateSkills, setStateSkills] = useContext(Context);
   const targetRef = useRef(null);
   const descriptionRef = useRef(false);
-  const isInView = useInView(descriptionRef, { once: false, amount: "some" });
+  const isInView = useInView(descriptionRef, { once: false, amount: "all" });
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -28,7 +28,7 @@ const Projects = (props) => {
   });
 
   let classAnimation = {};
-  let classAnimationText = {}
+  let classAnimationText = {};
 
   if (isInView) {
     classAnimation = {
@@ -36,33 +36,31 @@ const Projects = (props) => {
     };
     classAnimationText = {
       scale: 1,
-      transition: ".4s ease-out"
+      transition: ".4s ease-out",
     };
   } else {
     classAnimation = { opacity: 0 };
     classAnimationText = {
       scale: 0,
-      transition: ".4s ease-out"
+      transition: ".4s ease-out",
     };
   }
   if (stateSkills) {
     classAnimation = {
       opacity: 0,
-      
     };
     classAnimationText = {
       scale: 0,
-      transition: ".4s ease-out"
+      transition: ".4s ease-out",
     };
   }
-
   if (props.hideFirst) {
     classAnimation = {
       opacity: 0,
     };
     classAnimationText = {
       scale: 0,
-      transition: ".4s ease-out"
+      transition: ".4s ease-out",
     };
   }
 
@@ -80,7 +78,10 @@ const Projects = (props) => {
             </m.div>
             <div className={classes.container__text__about}>
               <div className={classes.text}>
-                <m.h3 style={classAnimationText} className={classes.text__uppercase}>
+                <m.h3
+                  style={classAnimationText}
+                  className={classes.text__uppercase}
+                >
                   <span className={classes.text__line}>
                     {props.dataObject.name}
                   </span>
@@ -92,7 +93,10 @@ const Projects = (props) => {
                   </span>
                   <br />
                 </m.h3>
-                <m.div style={classAnimationText} className={classes.text__bottom}>
+                <m.div
+                  style={classAnimationText}
+                  className={classes.text__bottom}
+                >
                   <h3>{props.dataObject.description}</h3>
                 </m.div>
               </div>
@@ -100,7 +104,6 @@ const Projects = (props) => {
             <m.h4 style={classAnimationText}>Web App</m.h4>
           </m.div>
         </AnimatePresence>
-
         <div className={classes.container__images}>
           {props.photos.map(({ alt, src, y, x, scale, className }, i) => {
             return (
