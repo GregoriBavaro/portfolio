@@ -12,10 +12,6 @@ import Skills from "../components/layout/Skills";
 import Contact from "../components/layout/Contact";
 import Footer from "../components/layout/Footer";
 
-//3D Modules
-import One from "../components/ui/One";
-import Two from "../components/ui/Two";
-
 //Data
 import ProjectOne from "../data/project-one";
 import ProjectTwo from "../data/project-two";
@@ -24,7 +20,7 @@ import ProjectTwo from "../data/project-two";
 import classes from "../components/layout/Projects.module.css";
 
 const projectOneData = {
-  number: <One />,
+  number: "1",
   name: "MM9 Machinery",
   job1: "Front End Developer",
   job2: "Designer",
@@ -33,7 +29,7 @@ const projectOneData = {
 };
 
 const ProjectTwoData = {
-  number: <Two />,
+  number: "2",
   name: "Productivity App",
   job1: "Front End Developer",
   job2: "Designer",
@@ -56,11 +52,10 @@ const HomePage = () => {
   return (
     <Store>
       <Navigation refs={[aboutRef, projectsRef, skillsRef, contactRef]} />
-      
       <m.div
         initial={{ display: "none" }}
         animate={{ display: "inline-block" }}
-        transition={{ delay: 6.8, duration: "1s ease-out" }}
+        transition={{ delay: 3.5, duration: 0.1 }}
         className="parent"
       >
         <AboutHero />

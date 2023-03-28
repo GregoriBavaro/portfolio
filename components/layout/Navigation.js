@@ -35,10 +35,10 @@ const Navigation = (props) => {
       if (e.target.innerText === "projects") {
         props.refs[1].current?.scrollIntoView({ behavior: "smooth" });
       }
-      if(e.target.innerText === "skills") {
+      if (e.target.innerText === "skills") {
         props.refs[2].current?.scrollIntoView({ behavior: "smooth" });
       }
-      if(e.target.innerText === "contact") {
+      if (e.target.innerText === "contact") {
         props.refs[3].current?.scrollIntoView({ behavior: "smooth" });
       }
     }, 2800);
@@ -50,9 +50,12 @@ const Navigation = (props) => {
         <LogoAnimation />
         <m.div
           className={classes.hamburger}
-          initial={{ y: "-300%" }}
-          animate={{ y: 0 }}
-          transition={{ y: { delay: 6, duration: 1 } }}
+          initial={{ opacity: 0, x: "300%" }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            x: { delay: 2.5, duration: 0.5 },
+            opacity: { delay: 2.5, duration: 0.5 },
+          }}
         >
           <Hamburger
             color="var(--lightBeige)"

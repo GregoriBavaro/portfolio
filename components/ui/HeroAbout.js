@@ -9,14 +9,10 @@ const HeroAbout = () => {
     <div className={classes.hero}>
       <m.div
         className={classes.container}
-        initial={{ x: "-300%" }}
-        animate={{ x: "0" }}
+        initial={{ x: "-200%" }}
+        animate={{ x: 0 }}
         transition={{
-          delay: 6,
-          ease: "easeInOut",
-          duration: 2,
-          type: "spring",
-          stiffness: 20,
+          x: { delay: 3.5, duration: 0.8 },
         }}
       >
         <div className={classes.text}>
@@ -31,7 +27,14 @@ const HeroAbout = () => {
           </div>
         </div>
       </m.div>
-      <div className={classes.container__two}>
+      <m.div
+        className={classes.container__two}
+        initial={{ x: "200%" }}
+        animate={{ x: 0 }}
+        transition={{
+          x: { delay: 3.5, duration: 0.8 },
+        }}
+      >
         <div className={classes.container__wrapper}>
           <div className={classes.container__two__day}>
             <h1>{new Date().toLocaleString("en-US", { day: "2-digit" })}</h1>
@@ -43,7 +46,7 @@ const HeroAbout = () => {
             </p>
           </div>
         </div>
-      </div>
+      </m.div>
     </div>
   );
 };

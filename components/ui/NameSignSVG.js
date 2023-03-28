@@ -19,11 +19,11 @@ const NameSignSVG = () => {
         scale: [null, 0.8, 1],
         strokeWidth: 0,
         transition: {
-          pathLength: { delay, type: "spring", duration: 2, bounce: 0 },
+          pathLength: { delay, type: "spring", duration: 1, bounce: 0 },
           opacity: { delay, duration: 0.01 },
-          fill: { delay: 2.3, duration: 1 },
+          fill: { delay: 1.3, duration: 1 },
           strokeWidth: { delay: 2.3, duration: 3 },
-          scale: {delay: 3.7, duration: 1}
+          scale: {delay: 2.5, duration: 1}
         },
       };
     },

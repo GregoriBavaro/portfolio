@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/nheonxa-free-trial");
+
 .container {
   width: 100%;
   top: 0%;
@@ -46,6 +48,12 @@
 
 .container__3D {
   width: fit-content;
+}
+
+.container__3D h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: 'Nheonxa Free Trial', sans-serif;
 }
 
 .container__text__about h3 {

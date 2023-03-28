@@ -74,7 +74,7 @@ const Projects = (props) => {
             style={classAnimation}
           >
             <m.div style={classAnimationText} className={classes.container__3D}>
-              {props.dataObject.number}
+              <h1>{props.dataObject.number}</h1>
             </m.div>
             <div className={classes.container__text__about}>
               <div className={classes.text}>
