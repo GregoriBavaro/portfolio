@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion as m, useInView } from "framer-motion";
 
 //Components
-import Canvas from "../ui/Canvas";
+import CanvasConnect from "../ui/CanvasConnect";
 
 //CSS
 import classes from "../layout/Contact.module.css";
@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <div ref={targetRef} className={classes.container}>
       {/* <div className={classes.canvas}>
-        <Canvas />
+        <CanvasConnect />
       </div> */}
       <m.div className={classes.container__wrapper}>
         <div className={classes.container__wrapper__text}>

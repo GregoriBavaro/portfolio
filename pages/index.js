@@ -51,6 +51,9 @@ const HomePage = () => {
   const projectsRef = useRef();
   const skillsRef = useRef();
   const contactRef = useRef();
+  const betweenProjects = useRef();
+
+  const isInView = useInView(betweenProjects, { once: false, amount: "some" });
 
   return (
     <Store>
@@ -72,12 +75,14 @@ const HomePage = () => {
             dataObject={projectOneData}
             photos={projectOnePhotos}
             class={classes.container__p1}
+            hideFirst={isInView}
           />
-
+          <div ref={betweenProjects}></div>
           <Projects
             dataObject={ProjectTwoData}
             photos={projectTwoPhotos}
             class={classes.container__p2}
+            hideFirst={isInView}
           />
         </div>
         <div ref={skillsRef}>

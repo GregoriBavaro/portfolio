@@ -27,22 +27,42 @@ const Projects = (props) => {
     return pos > 0 ? "fixed" : "relative";
   });
 
-  console.log(isInView);
-
   let classAnimation = {};
+  let classAnimationText = {}
 
   if (isInView) {
     classAnimation = {
+      opacity: 1,
+    };
+    classAnimationText = {
       scale: 1,
-      transition: ".4s ease-out",
+      transition: ".4s ease-out"
     };
   } else {
-    classAnimation = { scale: 0, transition: ".4s ease-out" };
+    classAnimation = { opacity: 0 };
+    classAnimationText = {
+      scale: 0,
+      transition: ".4s ease-out"
+    };
   }
   if (stateSkills) {
     classAnimation = {
+      opacity: 0,
+      
+    };
+    classAnimationText = {
       scale: 0,
-      transition: ".4s ease-out",
+      transition: ".4s ease-out"
+    };
+  }
+
+  if (props.hideFirst) {
+    classAnimation = {
+      opacity: 0,
+    };
+    classAnimationText = {
+      scale: 0,
+      transition: ".4s ease-out"
     };
   }
 
@@ -55,12 +75,12 @@ const Projects = (props) => {
             className={classes.container__text}
             style={classAnimation}
           >
-            <div className={classes.container__3D}>
+            <m.div style={classAnimationText} className={classes.container__3D}>
               {props.dataObject.number}
-            </div>
+            </m.div>
             <div className={classes.container__text__about}>
               <div className={classes.text}>
-                <h3 className={classes.text__uppercase}>
+                <m.h3 style={classAnimationText} className={classes.text__uppercase}>
                   <span className={classes.text__line}>
                     {props.dataObject.name}
                   </span>
@@ -71,13 +91,13 @@ const Projects = (props) => {
                     {props.dataObject.job2}
                   </span>
                   <br />
-                </h3>
-                <div className={classes.text__bottom}>
+                </m.h3>
+                <m.div style={classAnimationText} className={classes.text__bottom}>
                   <h3>{props.dataObject.description}</h3>
-                </div>
+                </m.div>
               </div>
             </div>
-            <h4>Web App</h4>
+            <m.h4 style={classAnimationText}>Web App</m.h4>
           </m.div>
         </AnimatePresence>
 

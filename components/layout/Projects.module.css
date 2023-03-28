@@ -45,7 +45,7 @@
 }
 
 .container__3D {
-  z-index: 0;
+  width: fit-content;
 }
 
 .container__text__about h3 {

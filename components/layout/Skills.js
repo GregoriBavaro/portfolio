@@ -8,36 +8,11 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 
+//Components
+import  CanvasSkills  from "../ui/CanvasSkills";
+
 //CSS
 import classes from "../layout/Skills.module.css";
-
-const skills = [
-  {
-    name: "HTML5",
-    width:
-      "linear-gradient(270deg, rgba(46,112,100,0) 33%, rgba(45,112,100,1) 33%);",
-  },
-  {
-    name: "CSS3",
-    width:
-      "linear-gradient(270deg, rgba(46,112,100,0) 20%, rgba(45,112,100,1) 20%);",
-  },
-  {
-    name: "JavaScript",
-    width:
-      "linear-gradient(270deg, rgba(46,112,100,0) 38%, rgba(45,112,100,1) 38%);",
-  },
-  {
-    name: "React",
-    width:
-      "linear-gradient(270deg, rgba(46,112,100,0) 42%, rgba(45,112,100,1) 42%);",
-  },
-  {
-    name: "C#",
-    width:
-      "linear-gradient(270deg, rgba(46,112,100,0) 65%, rgba(45,112,100,1) 65%);",
-  },
-];
 
 const Skills = () => {
   const [stateSkills, setStateSkills] = useContext(Context);
@@ -70,21 +45,16 @@ const Skills = () => {
           </div>
         </div>
         <div className={classes.text__skills__wrapper}>
-          <ul>
-            {skills.map(({ name, width }, i) => {
-              return (
-                <li key={i}>
-                  <div className={classes.li__div}>
-                    <h3>{name}</h3>
-                    <div
-                      style={{ background: width }}
-                      className={classes.inside}
-                    ></div>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+          {isInView && (
+            <m.div
+              className={classes.skills3D}
+              initial={{ scale: 0 }}
+              animate={{ scale: [0, 2, 1] }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <CanvasSkills />
+            </m.div>
+          )}
         </div>
       </m.div>
     </div>

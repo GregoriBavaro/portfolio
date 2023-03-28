@@ -118,11 +118,6 @@
       
     },
     {
-      "href": "mailto:greg.gego@gmail.com?subject=📰I have a job opportunity for you!",
-      "name": "JOB OFFERS",
-      "animationDelay": 0.7
-    },
-    {
       "href": "mailto:greg.gego@gmail.com?subject=👨‍💻Let's talk about responsive web design best practices!",
       "name": "Responsive Designs",
       "animationDelay": 0.8
@@ -131,11 +126,6 @@
       "href": "mailto:greg.gego@gmail.com?subject🤘Lets talk about new technologies!",
       "name": "New Technologies",
       "animationDelay": 0.9
-    },
-    {
-      "href": "mailto:greg.gego@gmail.com?subject=🧑‍🎓What are some good frontend courses?",
-      "name": "Courses",
-      "animationDelay": 1
     }
 
   ]

@@ -1,9 +1,9 @@
 //Hooks
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { motion as m, useInView } from "framer-motion";
 
 //Components
-import Canvas from "../ui/Canvas";
+import { Canvas } from "../ui/Canvas";
 
 //CSS
 import classes from "../layout/About.module.css";
@@ -28,7 +28,7 @@ const About = () => {
 
           <div className={classes.text__bottom}>
             <h3>
-              I am Creative and skillful front-end web developer with a passion
+              I am Creative and skillful frontend web developer with a passion
               for design and creating elegant solutions. I care deeply about
               user experience with a serious passion for UI design and new
               technologies.I love to create beautiful and performant products
@@ -37,13 +37,16 @@ const About = () => {
           </div>
         </m.div>
       )}
-      {isInView && (<m.div className={classes.threeD}
-        initial={{ scale: 0 }}
-        animate={{ scale: [0, 2, 1] }}
-        transition={{ duration: 0.8, delay: 0.6  }}
-      >
-        <Canvas />
-      </m.div>)}
+      {isInView && (
+        <m.div
+          className={classes.threeD}
+          initial={{ scale: 0 }}
+          animate={{ scale: [0, 2, 1] }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <Canvas />
+        </m.div>
+      )}
     </m.div>
   );
 };
