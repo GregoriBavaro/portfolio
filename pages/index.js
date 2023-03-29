@@ -11,6 +11,7 @@ import Projects from "../components/layout/Projects";
 import Skills from "../components/layout/Skills";
 import Contact from "../components/layout/Contact";
 import Footer from "../components/layout/Footer";
+import DivAnimations from "../components/ui/DivAnimations";
 
 //Data
 import ProjectOne from "../data/project-one";

@@ -3,6 +3,8 @@
   top: 0%;
   height: 85vh;
   height: 85svh;
+  margin-top: 30vh;
+  margin-top: 30svh;
   overflow: hidden;
   width: 100%;
   color: var(--lightBeige);

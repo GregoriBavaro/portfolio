@@ -13,7 +13,9 @@ import {
 import classes from "../layout/Projects.module.css";
 
 const Projects = (props) => {
-  const [stateSkills, setStateSkills] = useContext(Context);
+  const { skills, contact } = useContext(Context);
+  const [stateSkills] = skills;
+  const [stateContact] = contact;
   const targetRef = useRef(null);
   const descriptionRef = useRef(false);
   const isInView = useInView(descriptionRef, { once: false, amount: "all" });
@@ -45,7 +47,7 @@ const Projects = (props) => {
       transition: ".4s ease-out",
     };
   }
-  if (stateSkills) {
+  if (stateSkills || stateContact) {
     classAnimation = {
       opacity: 0,
     };

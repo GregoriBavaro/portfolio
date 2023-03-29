@@ -18,9 +18,9 @@ const About = () => {
       {isInView && (
         <m.div
           className={classes.text}
-          initial={{ x: "-150%" }}
+          initial={{ x: "-120%" }}
           animate={{ x: "0" }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
           <h3 className={classes.text__uppercase}>
             <span className={classes.text__line}>About Me</span>

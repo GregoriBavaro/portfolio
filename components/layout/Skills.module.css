@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/duckling");
+
 .container {
   position: relative;
   top: 0%;
@@ -12,6 +14,7 @@
   justify-content: center;
   align-items: center;
   padding: 1%;
+  
 }
 
 .text {
@@ -70,12 +73,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
 
 .skills3D {
   height:100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  z-index: 100;
+  
 }
 
 .text__skills__wrapper ul {
@@ -109,4 +117,22 @@
   height: 0.2rem;
   position: absolute;
   bottom: -3px;
+}
+
+.arrow {
+  position: absolute;
+  height: 45%;
+  width: 30%;
+  z-index: -1;
+  bottom: 0;
+  left: 30%;
+  background-color: transparent;
+}
+
+.arrow h1 {
+  position: absolute;
+  bottom: 10%;
+  font-family: "Duckling", sans-serif;
+  transform: rotate(320deg);
+  color: var(--lightBeige);
 }

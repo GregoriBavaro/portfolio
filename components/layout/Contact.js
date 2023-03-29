@@ -1,26 +1,29 @@
 //Hooks
-import { useRef } from "react";
+import { useRef, useContext, useEffect } from "react";
 import { motion as m, useInView } from "framer-motion";
-
-//Components
-import CanvasConnect from "../ui/CanvasConnect";
+import { Context } from "../hooks/Store";
 
 //CSS
 import classes from "../layout/Contact.module.css";
 
+//Data
 import data from "../../data/data.json";
 
 const Contact = () => {
+  const { contact } = useContext(Context);
+  const [stateContact, setStateContact] = contact;
   const targetRef = useRef(null);
   const topics = [...data.talkAbout];
 
-  const isInView = useInView(targetRef, { once: true, amount: "all" });
+  const isInView = useInView(targetRef, { once: true, amount: "some" });
+  const isInViewContact = useInView(targetRef, { once: false, amount: "some" });
+
+  useEffect(() => {
+    setStateContact(isInViewContact);
+  }, [isInViewContact]);
 
   return (
     <div ref={targetRef} className={classes.container}>
-      {/* <div className={classes.canvas}>
-        <CanvasConnect />
-      </div> */}
       <m.div className={classes.container__wrapper}>
         <div className={classes.container__wrapper__text}>
           <div className={classes.text}>
