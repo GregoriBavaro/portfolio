@@ -27,25 +27,18 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  padding:0 5rem;
-  
+  padding: 0 5rem;
 }
 
 .container__two {
   flex: 1 1 0px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  height: 100%;
-}
-
-.container__two__day {
+  margin-bottom: auto;
 }
 
 .container__two__day h1 {
   font-size: 15rem;
   font-weight: 300;
-  font-family: 'Nheonxa Free Trial', sans-serif;
+  font-family: "Nheonxa Free Trial", sans-serif;
   line-height: 24rem;
 }
 
@@ -54,7 +47,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 5.5rem
+  margin-top: 5.5rem;
 }
 
 .container__two__month h1 {
@@ -73,11 +66,8 @@
 }
 
 .text__line {
-  /* white-space: nowrap; */
   font-size: 12.1rem;
   font-weight: 300;
-  /* line-height: 4rem; */
-  /* background-color: rgb(29, 29, 29); */
   letter-spacing: -14.2px;
   position: absolute;
   top: 16%;
@@ -109,12 +99,79 @@
   font-family: "Duckling", sans-serif;
 }
 
-
 .container__two__svg {
   position: absolute;
   height: 100%;
   width: 65rem;
   top: 0;
   right: -50%;
-  z-index: -1;
+  z-index: -100;
+}
+
+@media (max-width: 1460px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .container {
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .container__two {
+    flex: 0 0 0px;
+    margin-left: auto;
+  }
+
+  .container__two__day h1 {
+    font-size: 10rem;
+    line-height: 15rem;
+  }
+
+  .container__two__month {
+    margin-top: 3rem;
+  }
+
+  .container__two__svg {
+    top: 0;
+    right: -100%;
+  }
+
+  .text__line {
+    top: 39%;
+  }
+
+  .text__bottom {
+    top: 78%;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container__two__svg {
+    top: 20%;
+    right: -100%;
+    width: 55rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .container__two__svg {
+    display: none;
+  }
+
+  .text__bottom {
+    top: 82%;
+  }
+
+  .text__line {
+    font-size: 10rem;
+    top: 49%;
+  }
+
+  .text__bottom h3 {
+    font-size: 9.8rem;
+    line-height: 8rem;
+  }
 }

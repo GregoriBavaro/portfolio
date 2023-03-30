@@ -196,6 +196,7 @@ body {
 
 .parent{
   max-width: 1980px;
+  width: 100%;
 }
 
 a {
@@ -209,7 +210,5 @@ a {
   }
 }
 
-.useInView {
-  border: 2px solid red;
-}
+
 

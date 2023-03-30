@@ -43,7 +43,7 @@
 
 .text__uppercase span:nth-child(3) {
   letter-spacing: -7px;
-  line-height: 7rem;
+  line-height: 0rem;
   background-color: transparent;
   color: var(--green);
 }
@@ -135,4 +135,10 @@
   font-family: "Duckling", sans-serif;
   transform: rotate(320deg);
   color: var(--lightBeige);
+}
+
+.text__line span:nth-child(1) {
+  font-family: "Duckling", sans-serif;
+  font-size: 3rem;
+  color: var(--green)
 }

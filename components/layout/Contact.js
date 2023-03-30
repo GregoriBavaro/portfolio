@@ -27,9 +27,9 @@ const Contact = () => {
 
   return (
     <div ref={targetRef} className={classes.container}>
-      <div className={classes.canvasContainer}>
+      {/* <div className={classes.canvasContainer}>
         <CircleColorsSvg />
-      </div>
+      </div> */}
       <m.div className={classes.container__wrapper}>
         <div className={classes.container__wrapper__text}>
           <div className={classes.text}>

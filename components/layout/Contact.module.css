@@ -132,8 +132,8 @@
   position: absolute;
   height: 110%;
   width: 50%;
-  right: -20%;
-  top: -10rem;
+  right: 0%;
+  top: 0%;
   z-index: -1;
   overflow: hidden;
 }

@@ -3,9 +3,7 @@ import { Context } from "../hooks/Store";
 import { useRef, useState, useContext, useEffect } from "react";
 import {
   motion as m,
-  useScroll,
   useInView,
-  useMotionValueEvent,
 } from "framer-motion";
 
 //Components
@@ -37,7 +35,7 @@ const Skills = () => {
           transition={{ duration: 0.4, delay: 0.3 }}
         >
           <h3 className={classes.text__uppercase}>
-            <span className={classes.text__line}>Skills &</span>
+            <span className={classes.text__line}>Skills <span>&</span></span>
             <br />
             <span className={classes.text__line}>Experience</span>
             <br />
