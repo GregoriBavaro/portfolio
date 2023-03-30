@@ -45,7 +45,7 @@
   ],
   "navbarAnimatedElements": [
     {
-      "classDiv": "navBeige",
+      "classDiv": "navGreen",
       "animateDelay": 0.3,
       "animateDuration": 0.5,
       "exitDelay": 2.2,
@@ -55,7 +55,7 @@
       
     },
     {
-      "classDiv": "navGreen",
+      "classDiv": "navBlack",
       "animateDelay": 0.8,
       "animateDuration": 0.2,
       "exitDelay": 1.7,
@@ -65,7 +65,7 @@
       
     },
     {
-      "classDiv": "navBeige",
+      "classDiv": "navGreen",
       "animateDelay": 1.3,
       "animateDuration": 0.2,
       "exitDelay": 1.2,

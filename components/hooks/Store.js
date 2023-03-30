@@ -11,9 +11,6 @@ const Store = ({ children }) => {
   const [stateSkills, setStateSkills] = useState(initialState);
   const [stateContact, setStateContact] = useState(initialState);
 
-  console.log(`skills ${stateSkills}`);
-  console.log(`contact ${stateContact}`);
-
   return (
     <Context.Provider
       value={{

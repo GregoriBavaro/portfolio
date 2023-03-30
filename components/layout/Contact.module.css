@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/duckling");
+
 .container {
   position: relative;
   top: 0%;
@@ -5,9 +7,9 @@
   height: 85svh;
   margin-top: 30vh;
   margin-top: 30svh;
-  overflow: hidden;
   width: 100%;
   color: var(--lightBeige);
+  /* overflow: hidden; */
 }
 
 .container__wrapper {
@@ -117,7 +119,6 @@
   margin-top: -1.7em;
 }
 
-
 .text__topics a:nth-child(2) {
   color: var(--green);
 }
@@ -127,11 +128,13 @@
   padding: 0rem 0rem 0.5rem;
 }
 
-
-.canvas {
+.canvasContainer {
   position: absolute;
-  height: 100%;
-  width: 40%;
-  right: 0;
+  height: 110%;
+  width: 50%;
+  right: -20%;
+  top: -10rem;
   z-index: -1;
+  overflow: hidden;
 }
+

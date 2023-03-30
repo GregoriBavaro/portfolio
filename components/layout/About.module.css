@@ -3,8 +3,8 @@
   width: 100%;
   margin-top: 10vh;
   margin-top: 10svh;
-  height: 90vh;
-  height: 90svh;
+  height: 100vh;
+  height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,6 +15,7 @@
 .text {
   flex: 1 1 0px;
   color: var(--lightBeige);
+  
 }
 
 .threeD {
@@ -65,3 +66,4 @@
   margin-left: 0.5rem;
   text-transform: uppercase;
 }
+
