@@ -215,12 +215,12 @@
 
 @media (max-width: 500px) {
   .text__bottom {
-    top: 91%;
+    top: 92%;
   }
 
   .text__line {
     font-size: 6.07rem;
-    top: 69%;
+    top: 70%;
     letter-spacing: -10px;
   }
 
@@ -232,20 +232,18 @@
 }
 
 @media (max-width: 430px) {
-  .text__bottom {
-    top: 81%;
-  }
+  
 
   .text__line {
     font-size: 5.4rem;
-    top: 60.7%;
-    letter-spacing: -10px;
+    top: 71.7%;
+    letter-spacing: -9px;
   }
 
   .text__bottom h3 {
     font-size: 5rem;
     line-height: 4.4rem;
-    letter-spacing: -4.5px;
+    letter-spacing: -3.9px;
   }
 
   .container__two__svg__wave {

@@ -1,6 +1,6 @@
 //Hooks
 import { Context } from "../hooks/Store";
-import { useRef, useContext, useEffect } from "react";
+import { useRef, useContext} from "react";
 import {
   motion as m,
   useScroll,
@@ -90,8 +90,6 @@ const Projects = (props) => {
                   <br />
                   <span className={classes.text__line}>
                     {props.dataObject.job1}
-                    <span>&#x2022;</span>
-                    {props.dataObject.job2}
                   </span>
                   <br />
                 </m.h3>
@@ -103,7 +101,6 @@ const Projects = (props) => {
                 </m.div>
               </div>
             </div>
-            <m.h4 style={classAnimationText}>Web App</m.h4>
           </m.div>
         </AnimatePresence>
         <div className={classes.container__images}>

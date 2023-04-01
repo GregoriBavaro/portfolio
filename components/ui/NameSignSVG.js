@@ -8,14 +8,14 @@ const NameSignSVG = () => {
       opacity: 0,
       fill: "rgb(29, 29, 29)",
       strokeWidth: 3,
-      scale: 1
+      scale: 1,
     },
     visible: (i) => {
       const delay = 1;
       return {
         pathLength: 1,
         opacity: 1,
-        fill: "rgb(215, 189, 184)", 
+        fill: "rgb(215, 189, 184)",
         scale: [null, 0.8, 1],
         strokeWidth: 0,
         transition: {
@@ -23,7 +23,7 @@ const NameSignSVG = () => {
           opacity: { delay, duration: 0.01 },
           fill: { delay: 1.3, duration: 1 },
           strokeWidth: { delay: 2.3, duration: 3 },
-          scale: {delay: 2.5, duration: 1}
+          scale: { delay: 2.5, duration: 1 },
         },
       };
     },
@@ -105,7 +105,6 @@ const NameSignSVG = () => {
           variants={draw}
         />
       </m.g>
-      
     </m.svg>
   );
 };

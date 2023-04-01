@@ -16,22 +16,22 @@ const ProjectOne = () => {
   const size = useWindowSize();
 
   const [itemOneSettings, setItemOneSettings] = useState({
-    x: "-5%",
-    yTop: "60%",
+    x: "5%",
+    yTop: "70%",
     yBottom: "-360%",
     img: tabletOne,
-    scale: 0.9,
+    scale: 0.8,
   }); // Item 0ne //
 
   const [itemTwoSettings, setItemTwoSettings] = useState({
-    x: "-6%",
-    yTop: "80%",
-    yBottom: "-380%",
+    x: "5%",
+    yTop: "100%",
+    yBottom: "-410%",
     scale: 0.8,
   }); // Item Two //
 
   const [itemThreeSettings, setItemThreeSettings] = useState({
-    x: "50%",
+    x: "30%",
     yTop: "290%",
     yBottom: "-400%",
     scale: 1,
@@ -48,28 +48,28 @@ const ProjectOne = () => {
   //---------------------------------------------------------------------------------------------------------------//
 
   useEffect(() => {
-    if (size.width < 1314) {
+    if (size.width < 1520) {
       setItemOneSettings({
-        x: "22%",
-        yTop: "60%",
-        yBottom: "-450%",
-        img: mobileFour,
+        x: "30%",
+        yTop: "70%",
+        yBottom: "-360%",
+        img: mobileTwo,
         scale: 0.9,
       }); // Item One //
       setItemTwoSettings({
-        x: "8%",
-        yTop: "80%",
-        yBottom: "-380%",
+        x: "5%",
+        yTop: "100%",
+        yBottom: "-420%",
         scale: 0.8,
       }); // Item Two //
       setItemThreeSettings({
-        x: "30%",
-        yTop: "210%",
+        x: "27%",
+        yTop: "240%",
         yBottom: "-460%",
         scale: 0.8,
       }); // Item Three //
       setItemFourSettings({
-        x: "5%",
+        x: "4%",
         yTop: "250%",
         yBottom: "-370%",
         img: mobileFive,
@@ -77,20 +77,20 @@ const ProjectOne = () => {
       }); // Item Four //
     } else {
       setItemOneSettings({
-        x: "-5%",
-        yTop: "60%",
+        x: "5%",
+        yTop: "70%",
         yBottom: "-360%",
         img: tabletOne,
-        scale: 0.9,
+        scale: 0.8,
       }); // Item One //
       setItemTwoSettings({
-        x: "-6%",
-        yTop: "80%",
-        yBottom: "-380%",
+        x: "5%",
+        yTop: "100%",
+        yBottom: "-410%",
         scale: 0.8,
       }); // Item Two //
       setItemThreeSettings({
-        x: "50%",
+        x: "30%",
         yTop: "290%",
         yBottom: "-400%",
         scale: 1,
@@ -103,43 +103,63 @@ const ProjectOne = () => {
         scale: 1,
       }); // Item Two //
     }
-    if (size.width < 800) {
-      setItemFourSettings({
-        x: "5%",
-        yTop: "250%",
-        yBottom: "-480%",
-        img: mobileFive,
-        scale: 0.9,
-      }); // Item Two //
-    }
-    if (size.width < 580) {
+    if (size.width < 1120) {
       setItemOneSettings({
-        x: "-6%",
-        yTop: "60%",
-        yBottom: "-420%",
-        img: mobileFour,
-        scale: 0.7,
+        x: "20%",
+        yTop: "70%",
+        yBottom: "-360%",
+        img: mobileTwo,
+        scale: 0.9,
       }); // Item One //
       setItemTwoSettings({
-        x: "-6%",
+        x: "2%",
         yTop: "150%",
-        yBottom: "-500%",
-        scale: 0.7,
+        yBottom: "-450%",
+        scale: 0.8,
       }); // Item Two //
       setItemThreeSettings({
-        x: "-6%",
-        yTop: "390%",
-        yBottom: "-640%",
-        scale: 0.7,
+        x: "17%",
+        yTop: "240%",
+        yBottom: "-460%",
+        scale: 0.8,
       }); // Item Three //
       setItemFourSettings({
-        x: "-6%",
-        yTop: "250%",
-        yBottom: "-540%",
+        x: "2%",
+        yTop: "340%",
+        yBottom: "-500%",
         img: mobileFive,
-        scale: 0.7,
+        scale: 0.9,
       }); // Item Four //
     }
+    if (size.width < 525) {
+      setItemOneSettings({
+        x: "20%",
+        yTop: "70%",
+        yBottom: "-360%",
+        img: mobileTwo,
+        scale: 0.6,
+      }); // Item One //
+      setItemTwoSettings({
+        x: "2%",
+        yTop: "150%",
+        yBottom: "-450%",
+        scale: 0.6,
+      }); // Item Two //
+      setItemThreeSettings({
+        x: "17%",
+        yTop: "240%",
+        yBottom: "-460%",
+        scale: 0.6,
+      }); // Item Three //
+      setItemFourSettings({
+        x: "2%",
+        yTop: "340%",
+        yBottom: "-500%",
+        img: mobileFive,
+        scale: 0.6,
+      }); // Item Four //
+    }
+    
   }, [size.width]);
 
   const y = useTransform(
@@ -193,7 +213,7 @@ const ProjectOne = () => {
     },
     {
       alt: "mobile view",
-      src: mobileTwo,
+      src: mobileFour,
       y: yTwo,
       x: xTwo,
       scale: itemTwoSettings.scale,

@@ -68,7 +68,6 @@
 @media (max-width: 1060px) {
   .container {
     flex-direction: column;
-    text-align: center;
     margin-top: 20vh;
     margin-top: 20svh;
   }

@@ -144,9 +144,9 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .text__line {
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 2.8rem;
   }
 
