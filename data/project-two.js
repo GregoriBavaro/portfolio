@@ -3,13 +3,16 @@ import { useScroll, useTransform } from "framer-motion";
 import useWindowSize from "../components/hooks/use-windowDimensions";
 import { useEffect, useState } from "react";
 
+
 //Photos
-import desktopOne from "/images/projectTwo/desktop1.png";
-import desktopTwo from "/images/projectTwo/desktop2.png";
-import mobileTwo from "/images/projectTwo/mobile2.png";
-import mobile from "/images/projectTwo/mobile.png";
-import mobileThree from "/images/projectTwo/mobile3.png";
-import mobileFour from "/images/projectTwo/mobile4.png";
+// import desktopOne from "/images/projectTwo/desktop1.png";
+// import desktopTwo from "/images/projectTwo/desktop2.png";
+// import mobileTwo from "/images/projectTwo/mobile2.png";
+// import mobile from "/images/projectTwo/mobile.png";
+// import mobileThree from "/images/projectTwo/mobile3.png";
+// import mobileFour from "/images/projectTwo/mobile4.png";
+
+
 
 const ProjectTwo = () => {
   const { scrollYProgress } = useScroll();
@@ -17,7 +20,7 @@ const ProjectTwo = () => {
 
   const [itemOneSettings, setItemOneSettings] = useState({
     x: "5%",
-    img: desktopTwo,
+    img: "https://i.postimg.cc/SsP7Ng02/desktop2.png",
     scale: 1.2,
     yTop: "290%",
     yBottom: "-200%",
@@ -33,7 +36,7 @@ const ProjectTwo = () => {
   const [itemThreeSettings, setItemThreeSettings] = useState({
     x: "13%",
     scale: 1.2,
-    img: desktopOne,
+    img: "https://i.postimg.cc/NFVNSgGn/desktop1.png",
     yTop: "780%",
     yBottom: "-250%",
   }); // Item Three //
@@ -49,7 +52,7 @@ const ProjectTwo = () => {
     if (size.width < 1520) {
       setItemOneSettings({
         x: "30%",
-        img: mobileThree,
+        img: "https://i.postimg.cc/g0WG1pnr/mobile3.png",
         scale: 0.9,
         yTop: "290%",
         yBottom: "-200%",
@@ -65,7 +68,7 @@ const ProjectTwo = () => {
       setItemThreeSettings({
         x: "27%",
         scale: 0.9,
-        img: mobileFour,
+        img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
         yTop: "780%",
         yBottom: "-290%",
       }); // Item Three //
@@ -79,7 +82,7 @@ const ProjectTwo = () => {
     } else {
       setItemOneSettings({
         x: "5%",
-        img: desktopTwo,
+        img: "https://i.postimg.cc/SsP7Ng02/desktop2.png",
         scale: 1.2,
         yTop: "290%",
         yBottom: "-200%",
@@ -95,7 +98,7 @@ const ProjectTwo = () => {
       setItemThreeSettings({
         x: "13%",
         scale: 1.2,
-        img: desktopOne,
+        img: "https://i.postimg.cc/NFVNSgGn/desktop1.png",
         yTop: "780%",
         yBottom: "-250%",
       }); // Item Three //
@@ -110,7 +113,7 @@ const ProjectTwo = () => {
     if (size.width < 1120) {
       setItemOneSettings({
         x: "20%",
-        img: mobileThree,
+        img: "https://i.postimg.cc/g0WG1pnr/mobile3.png",
         scale: 0.9,
         yTop: "290%",
         yBottom: "-200%",
@@ -126,7 +129,7 @@ const ProjectTwo = () => {
       setItemThreeSettings({
         x: "17%",
         scale: 0.9,
-        img: mobileFour,
+        img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
         yTop: "780%",
         yBottom: "-290%",
       }); // Item Three //
@@ -141,7 +144,7 @@ const ProjectTwo = () => {
     if (size.width < 525) {
       setItemOneSettings({
         x: "20%",
-        img: mobileThree,
+        img: "https://i.postimg.cc/g0WG1pnr/mobile3.png",
         scale: 0.6,
         yTop: "290%",
         yBottom: "-200%",
@@ -157,7 +160,7 @@ const ProjectTwo = () => {
       setItemThreeSettings({
         x: "17%",
         scale: 0.6,
-        img: mobileFour,
+        img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
         yTop: "640%",
         yBottom: "-290%",
       }); // Item Three //
@@ -222,7 +225,7 @@ const ProjectTwo = () => {
     }, // Item One //
     {
       alt: "mobile view",
-      src: mobile,
+      src: "https://i.postimg.cc/qMyYS3nX/mobile.png",
       y: yTwo,
       x: xTwo,
       scale: itemTwoSettings.scale,
@@ -236,7 +239,7 @@ const ProjectTwo = () => {
     }, // Item Three //
     {
       alt: "mobile view",
-      src: mobileTwo,
+      src: "https://i.postimg.cc/RFvVJmB2/mobile2.png",
       y: ySix,
       x: xSix,
       scale: itemFourSettings.scale,

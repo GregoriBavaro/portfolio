@@ -4,12 +4,12 @@ import useWindowSize from "../components/hooks/use-windowDimensions";
 import { useEffect, useState } from "react";
 
 //Photos
-import mobileOne from "/images/projectOne/mobile1.png";
-import mobileTwo from "/images/projectOne/mobile2.png";
-import tabletOne from "/images/projectOne/tablet2.png";
-import tabletTwo from "/images/projectOne/tablet1.png";
-import mobileFour from "/images/projectOne/mobile4.png";
-import mobileFive from "/images/projectOne/mobile5.png";
+// import mobileOne from "/images/projectOne/mobile1.png";
+// import mobileTwo from "/images/projectOne/mobile2.png";
+// import tabletOne from "/images/projectOne/tablet2.png";
+// import tabletTwo from "/images/projectOne/tablet1.png";
+// import mobileFour from "/images/projectOne/mobile4.png";
+// import mobileFive from "/images/projectOne/mobile5.png";
 
 const ProjectOne = () => {
   const { scrollYProgress } = useScroll();
@@ -19,7 +19,7 @@ const ProjectOne = () => {
     x: "5%",
     yTop: "70%",
     yBottom: "-360%",
-    img: tabletOne,
+    img: "https://i.postimg.cc/1XwQvYsD/tablet2.png",
     scale: 0.8,
   }); // Item 0ne //
 
@@ -41,7 +41,7 @@ const ProjectOne = () => {
     x: "5%",
     yTop: "250%",
     yBottom: "-370%",
-    img: tabletTwo,
+    img: "https://i.postimg.cc/vTWJrgtz/tablet1.png",
     scale: 1,
   }); // Item Four //
 
@@ -53,7 +53,7 @@ const ProjectOne = () => {
         x: "30%",
         yTop: "70%",
         yBottom: "-360%",
-        img: mobileTwo,
+        img: "https://i.postimg.cc/2SdsbZS8/mobile2.png",
         scale: 0.9,
       }); // Item One //
       setItemTwoSettings({
@@ -72,7 +72,7 @@ const ProjectOne = () => {
         x: "4%",
         yTop: "250%",
         yBottom: "-370%",
-        img: mobileFive,
+        img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
         scale: 0.9,
       }); // Item Four //
     } else {
@@ -80,7 +80,7 @@ const ProjectOne = () => {
         x: "5%",
         yTop: "70%",
         yBottom: "-360%",
-        img: tabletOne,
+        img: "https://i.postimg.cc/1XwQvYsD/tablet2.png",
         scale: 0.8,
       }); // Item One //
       setItemTwoSettings({
@@ -99,7 +99,7 @@ const ProjectOne = () => {
         x: "5%",
         yTop: "250%",
         yBottom: "-370%",
-        img: tabletTwo,
+        img: "https://i.postimg.cc/vTWJrgtz/tablet1.png",
         scale: 1,
       }); // Item Two //
     }
@@ -108,7 +108,7 @@ const ProjectOne = () => {
         x: "20%",
         yTop: "70%",
         yBottom: "-360%",
-        img: mobileTwo,
+        img: "https://i.postimg.cc/2SdsbZS8/mobile2.png",
         scale: 0.9,
       }); // Item One //
       setItemTwoSettings({
@@ -127,7 +127,7 @@ const ProjectOne = () => {
         x: "2%",
         yTop: "340%",
         yBottom: "-500%",
-        img: mobileFive,
+        img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
         scale: 0.9,
       }); // Item Four //
     }
@@ -136,7 +136,7 @@ const ProjectOne = () => {
         x: "20%",
         yTop: "70%",
         yBottom: "-360%",
-        img: mobileTwo,
+        img: "https://i.postimg.cc/2SdsbZS8/mobile2.png",
         scale: 0.6,
       }); // Item One //
       setItemTwoSettings({
@@ -155,7 +155,7 @@ const ProjectOne = () => {
         x: "2%",
         yTop: "340%",
         yBottom: "-500%",
-        img: mobileFive,
+        img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
         scale: 0.6,
       }); // Item Four //
     }
@@ -213,7 +213,7 @@ const ProjectOne = () => {
     },
     {
       alt: "mobile view",
-      src: mobileFour,
+      src: "https://i.postimg.cc/XXSPXjMC/mobile3.png",
       y: yTwo,
       x: xTwo,
       scale: itemTwoSettings.scale,
@@ -227,7 +227,7 @@ const ProjectOne = () => {
     }, // Item Four //
     {
       alt: "tablet view",
-      src: mobileOne,
+      src: "https://i.postimg.cc/nzwbVfc4/mobile1.png",
       y: yThree,
       x: xThree,
       scale: itemThreeSettings.scale,
