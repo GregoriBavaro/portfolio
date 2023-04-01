@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/duckling");
 @import url("https://fonts.cdnfonts.com/css/nheonxa-free-trial");
+@import url('https://fonts.cdnfonts.com/css/babylon-font');
 
 .hero {
   display: flex;
@@ -40,7 +41,7 @@
 .container__two__day h1 {
   font-size: 15rem;
   font-weight: 300;
-  font-family: "Nheonxa Free Trial", sans-serif;
+  font-family: 'Babylon Font', sans-serif;
   line-height: 24rem;
 }
 
