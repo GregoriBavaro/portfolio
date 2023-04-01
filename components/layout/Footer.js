@@ -29,7 +29,7 @@ const Footer = () => {
                 >
                   <a href={href} target="_blank">
                     {icon}
-                    {name}
+                    <span className={classes.nameOfIcon}>{name}</span>
                   </a>
                 </m.li>
               );

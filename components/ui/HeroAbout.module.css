@@ -10,7 +10,8 @@
   height: 90vh;
   height: 90svh;
   color: var(--lightBeige);
-  padding: 1%;
+  padding: 0%;
+  
 }
 
 .container {
@@ -21,6 +22,7 @@
   text-align: left;
   flex: 1 1 0px;
   height: 40rem;
+  padding: 1%;
 }
 
 .container__wrapper {
@@ -59,6 +61,7 @@
   color: var(--lightBeige);
   position: relative;
   height: 100%;
+
 }
 
 .text__uppercase {
@@ -79,7 +82,6 @@
   margin-top: -1.9rem;
   z-index: 1;
   margin-left: -0.1rem;
-  /* width: fit-content; */
   top: 55%;
   height: 20rem;
 }
@@ -105,6 +107,15 @@
   width: 65rem;
   top: 0;
   right: -50%;
+  z-index: -100;
+}
+
+.container__two__svg__wave {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  top: 50%;
+  right: 0;
   z-index: -100;
 }
 
@@ -157,10 +168,6 @@
 }
 
 @media (max-width: 940px) {
-  .container__two__svg {
-    display: none;
-  }
-
   .text__bottom {
     top: 82%;
   }
@@ -173,5 +180,84 @@
   .text__bottom h3 {
     font-size: 9.8rem;
     line-height: 8rem;
+  }
+
+  .container__two__day h1 {
+    font-size: 7rem;
+    line-height: 13rem;
+  }
+
+  .container__two__month h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .text__bottom {
+    top: 88%;
+  }
+
+  .text__line {
+    font-size: 8.07rem;
+    top: 60%;
+  }
+
+  .text__bottom h3 {
+    font-size: 7.8rem;
+    line-height: 6rem;
+  }
+
+  .container__two__day h1 {
+    font-size: 6rem;
+    line-height: 12rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .text__bottom {
+    top: 91%;
+  }
+
+  .text__line {
+    font-size: 6.07rem;
+    top: 69%;
+    letter-spacing: -10px;
+  }
+
+  .text__bottom h3 {
+    font-size: 5.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .text__bottom {
+    top: 81%;
+  }
+
+  .text__line {
+    font-size: 5.4rem;
+    top: 60.7%;
+    letter-spacing: -10px;
+  }
+
+  .text__bottom h3 {
+    font-size: 5rem;
+    line-height: 4.4rem;
+    letter-spacing: -4.5px;
+  }
+
+  .container__two__svg__wave {
+    top: 100%;
+  }
+
+  .container__two__day h1 {
+    font-size: 5rem;
+    line-height: 12rem;
+  }
+
+  .container__two__month h1 {
+    font-size: 1.3rem;
   }
 }

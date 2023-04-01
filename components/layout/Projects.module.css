@@ -53,7 +53,7 @@
 .container__3D h1 {
   font-size: 3rem;
   font-weight: 300;
-  font-family: 'Nheonxa Free Trial', sans-serif;
+  font-family: "Nheonxa Free Trial", sans-serif;
 }
 
 .container__text__about h3 {
@@ -131,3 +131,43 @@
   margin-left: 0.5rem;
   text-transform: uppercase;
 }
+
+@media (max-width: 1314px) {
+  .container__images {
+    width: 100%;
+    position: absolute;
+    height: 96vh;
+    height: 96svh;
+    z-index: 100;
+    right: 0;
+  }
+
+  .container__images__wrapper img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    z-index: 100;
+  }
+
+  .container__text {
+    height: 96vh;
+    height: 96svh;
+    color: var(--lightBeige);
+    gap: 5rem;
+    z-index: -1;
+    width: 20rem;
+    position: absolute;
+  }
+
+  .text__uppercase span:nth-child(3) {
+    font-size: 2rem;
+  }
+
+  .container {
+    min-height: 500vh;
+    min-height: 500svh;
+  }
+
+}
+
+

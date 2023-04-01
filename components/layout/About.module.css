@@ -15,7 +15,6 @@
 .text {
   flex: 1 1 0px;
   color: var(--lightBeige);
-  
 }
 
 .threeD {
@@ -37,7 +36,6 @@
   letter-spacing: -3px;
   color: var(--green);
 }
-
 
 .text__uppercase span:nth-child(1) {
   margin-top: 2rem;
@@ -67,3 +65,40 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 1060px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20vh;
+    margin-top: 20svh;
+  }
+
+  .text {
+    flex: 0 0px;
+  }
+
+  .threeD {
+    max-height: 30rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .text__line {
+    font-size: 7rem;
+  }
+
+  .text__bottom h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .text__line {
+    font-size: 5rem;
+    line-height: 8.5rem;
+  }
+
+  .threeD {
+    max-height: 23rem;
+  }
+}

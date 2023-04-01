@@ -9,9 +9,6 @@ import classes from "../layout/Contact.module.css";
 //Data
 import data from "../../data/data.json";
 
-//3DModules
-import CircleColorsSvg from "../ui/CircleColorsSvg";
-
 const Contact = () => {
   const { contact } = useContext(Context);
   const [stateContact, setStateContact] = contact;
@@ -27,9 +24,6 @@ const Contact = () => {
 
   return (
     <div ref={targetRef} className={classes.container}>
-      {/* <div className={classes.canvasContainer}>
-        <CircleColorsSvg />
-      </div> */}
       <m.div className={classes.container__wrapper}>
         <div className={classes.container__wrapper__text}>
           <div className={classes.text}>

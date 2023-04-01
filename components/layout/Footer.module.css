@@ -45,6 +45,7 @@
   flex-direction: row;
   gap: 2rem;
   list-style-type: none;
+  margin-left: 0.5rem;
 }
 
 .wrapper__icons li a {
@@ -58,9 +59,6 @@
   font-size: 1.4rem;
 }
 
-
-
-
 .contact__me {
   text-align: center;
   height: 58px;
@@ -72,7 +70,6 @@
   transition: all 0.3s ease-in-out;
   padding: 0 1rem;
 }
-
 
 .contact__me {
   text-align: center;
@@ -107,4 +104,39 @@
 
 .wrapper__icons ul:hover li:nth-child(5) {
   transform: translateY(0rem);
+}
+
+@media (max-width: 800px) {
+  .nameOfIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact__me {
+    display: none;
+  }
+
+  .wrapper__icons ul {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 0rem;
+  }
+
+  .wrapper__icons ul li:nth-child(5) {
+    display: none;
+  }
+
+  .wrapper__icons::before {
+    width: 90%;
+    top: -1rem;
+  }
+
+  .wrapper__icons {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 2% 0rem;
+    width: 100%;
+  }
 }

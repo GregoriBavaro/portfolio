@@ -128,13 +128,42 @@
   padding: 0rem 0rem 0.5rem;
 }
 
-.canvasContainer {
-  position: absolute;
-  height: 110%;
-  width: 50%;
-  right: 0%;
-  top: 0%;
-  z-index: -1;
-  overflow: hidden;
+@media (max-width: 600px) {
+  .text__line {
+    font-size: 7rem;
+    line-height: 6.5rem;
+  }
+
+  .text__bottom h3 {
+    font-size: 2.5rem;
+  }
+
+  .text__topics {
+    height: 55px;
+    font: normal normal 500 1.7em/1.7em "Oswald", sans-serif;
+  }
 }
 
+@media (max-width: 400px) {
+  .text__line {
+    font-size: 4rem;
+    line-height: 2.8rem;
+  }
+
+  .text__bottom h3 {
+    font-size: 1.7rem;
+  }
+
+  .text__bottom {
+    margin-top: -1rem;
+  }
+
+  .text__uppercase span:nth-child(3) {
+    line-height: 5rem;
+  }
+
+  .text__topics {
+    height: 42px;
+    font: normal normal 500 1.3em/1.7em "Oswald", sans-serif;
+  }
+}
