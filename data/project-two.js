@@ -4,12 +4,12 @@ import useWindowSize from "../components/hooks/use-windowDimensions";
 import { useEffect, useState } from "react";
 
 //Photos
-import desktopOne from "../images/projectTwo/desktop1.png";
-import desktopTwo from "../images/projectTwo/desktop2.png";
-import mobileTwo from "../images/projectTwo/mobile2.png";
-import mobile from "../images/projectTwo/mobile.png";
-import mobileThree from "../images/projectTwo/mobile3.png";
-import mobileFour from "../images/projectTwo/mobile4.png";
+import desktopOne from "/images/projectTwo/desktop1.png";
+import desktopTwo from "/images/projectTwo/desktop2.png";
+import mobileTwo from "/images/projectTwo/mobile2.png";
+import mobile from "/images/projectTwo/mobile.png";
+import mobileThree from "/images/projectTwo/mobile3.png";
+import mobileFour from "/images/projectTwo/mobile4.png";
 
 const ProjectTwo = () => {
   const { scrollYProgress } = useScroll();
