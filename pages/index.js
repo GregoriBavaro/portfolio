@@ -13,6 +13,7 @@ import Skills from "../components/layout/Skills";
 import Contact from "../components/layout/Contact";
 import Footer from "../components/layout/Footer";
 import WaveSvg from "../components/ui/WaveSvg";
+import ProjectsHeader from "@/components/layout/ProjectsHeader";
 
 //Data
 import ProjectOne from "../data/project-one";
@@ -81,6 +82,7 @@ const HomePage = () => {
           <div id="about" ref={aboutRef}>
             <About />
           </div>
+          <ProjectsHeader />
           <div id="projects" ref={projectsRef}>
             <Projects
               dataObject={projectOneData}

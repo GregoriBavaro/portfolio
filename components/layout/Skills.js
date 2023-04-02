@@ -10,6 +10,49 @@ import Arrow from "../ui/Arrow";
 //CSS
 import classes from "../layout/Skills.module.css";
 
+const developerItems = [
+  {
+    letter: "E",
+    delay: 0.2,
+  },
+  {
+    letter: "X",
+    delay: 0.3,
+  },
+  {
+    letter: "P",
+    delay: 0.4,
+  },
+  {
+    letter: "E",
+    delay: 0.5,
+  },
+  {
+    letter: "R",
+    delay: 0.6,
+  },
+  {
+    letter: "I",
+    delay: 0.7,
+  },
+  {
+    letter: "E",
+    delay: 0.8,
+  },
+  {
+    letter: "N",
+    delay: 0.9,
+  },
+  {
+    letter: "C",
+    delay: 1,
+  },
+  {
+    letter: "E",
+    delay: 1.1,
+  },
+];
+
 const Skills = () => {
   const { skills } = useContext(Context);
   const [stateSkills, setStateSkills] = skills;
@@ -25,20 +68,21 @@ const Skills = () => {
     <div ref={targetRef} className={classes.container}>
       <div className={classes.container__wrapper}>
         {isInViewSkills && (
-          <m.div
-            className={classes.text}
-            initial={{ x: "-150%" }}
-            animate={{ x: "0" }}
-            transition={{ duration: 0.4, delay: 0.3 }}
-          >
-            <h3 className={classes.text__uppercase}>
-              <span className={classes.text__line}>
-                Skills <span>&</span>
-              </span>
-              <br />
-              <span className={classes.text__line}>Experience</span>
-              <br />
-            </h3>
+          <div className={classes.text}>
+            <div className={classes.text__skills}>
+              {developerItems.map(({ letter, delay }, i) => {
+                return (
+                  <m.span
+                    initial={{ y: "200%" }}
+                    animate={{ y: "0%" }}
+                    transition={{ delay: delay, duration: 1 }}
+                    key={i}
+                  >
+                    {letter}
+                  </m.span>
+                );
+              })}
+            </div>
             <div className={classes.text__bottom}>
               <h3>
                 Since beginning my journey as a web developer, i’ve collaborated
@@ -49,7 +93,7 @@ const Skills = () => {
                 beautiful animations and user-friendly interfaces.
               </h3>
             </div>
-          </m.div>
+          </div>
         )}
         <div className={classes.text__skills__wrapper}>
           {isInViewSkills && (
@@ -60,7 +104,6 @@ const Skills = () => {
                 animate={{ scale: [0, 2, 1] }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                
                 <CanvasSkills />
 
                 <m.div
@@ -69,7 +112,6 @@ const Skills = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.8, delay: 2.5 }}
                 >
-                 
                   <div className={classes.arrowSvg}>
                     <Arrow />
                     <h1>Hover me</h1>

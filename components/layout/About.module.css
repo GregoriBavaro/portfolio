@@ -1,5 +1,4 @@
 .container {
-  position: relative;
   margin-top: 10vh;
   margin-top: 10svh;
   height: 100vh;
@@ -50,18 +49,6 @@
   margin-left: 0.3em;
 }
 
-
-
-.text__uppercase span:nth-child(1) {
- 
-}
-
-
-
-.text__bottom {
-  width: fit-content;
-}
-
 .text__bottom h3 {
   font-size: var(--fs-600);
   font-weight: 400;
@@ -73,23 +60,15 @@
     flex-direction: column;
     margin-top: 20vh;
     margin-top: 20svh;
-  }
-
-  .text {
-    flex: 0 0px;
+    height: auto;
   }
 
   .threeD {
-    max-height: 30rem;
+    flex: none;
+    z-index: -100;
+    height: 40vh;
+    width: 100%;
   }
 }
 
 
-
-@media (max-width: 460px) {
-
-
-  .threeD {
-    max-height: 23rem;
-  }
-}

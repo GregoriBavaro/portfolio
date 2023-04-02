@@ -39,12 +39,12 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 
-  --fs-xxl: clamp(3.5rem, 12vw + 1rem, 12rem); 
+  --fs-xxl: clamp(4rem, 10vw + 1rem, 12rem); 
   --fs-xl: clamp(4rem, 10vw + 1rem, 7rem);
   --fs-l: clamp(2.7rem, 5vw + 1rem, 4rem);
   --fs-600: clamp(1rem, 3vw + 1rem, 2rem);
-  --fs-500: 1.25rem;
-  --fs-400: 1rem;
+  --fs-500: clamp(0.7rem, 3vw + 1rem, 1.5rem);
+  --fs-400: clamp(0.5rem, 6vw + 1rem, 1.2rem);
 
   --beige: rgb(172, 136, 97);
   --lightBeige: rgb(215, 189, 184);
@@ -171,7 +171,7 @@
   color: var(--purple);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
 
 * {
   box-sizing: border-box;

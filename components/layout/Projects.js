@@ -12,6 +12,8 @@ import {
 //CSS
 import classes from "../layout/Projects.module.css";
 
+
+
 const Projects = (props) => {
   const { skills, contact } = useContext(Context);
   const [stateSkills] = skills;

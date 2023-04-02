@@ -31,29 +31,29 @@
   color: var(--lightBeige);
 }
 
-.text__uppercase {
+
+.text__connect {
   text-transform: uppercase;
+  font-family: "evermoreregular";
+  padding: 1rem 0 0;
+  overflow: hidden;
 }
 
-.text__line {
-  white-space: nowrap;
-  font-size: var(--fs-xl);
-  font-weight: 300;
-  line-height: 10.5rem;
-  background-color: rgb(29, 29, 29);
-  letter-spacing: -3px;
-}
-
-.text__uppercase span:nth-child(1) {
-  margin-top: 2rem;
-}
-
-.text__uppercase span:nth-child(3) {
-  letter-spacing: -7px;
-  line-height: 7rem;
-  background-color: transparent;
+.text__connect span {
+  font-size: var(--fs-l);
+  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
+  display: inline-block;
   color: var(--green);
+  
 }
+
+.text__connect span:not(:first-child) {
+  margin-left: -0.3em;
+}
+
+
+
+
 
 
 .text__bottom h3 {
@@ -78,7 +78,7 @@
 .text__topics {
   text-align: center;
   height: 58px;
-  font: normal normal 500 2em/1.7em "Oswald", sans-serif;
+  font: normal normal 500 var(--fs-400)/2.3em "Oswald", sans-serif;
   overflow: hidden;
   min-width: fit-content;
   border-radius: 0.3rem;
@@ -106,7 +106,7 @@
 }
 
 .text__topics:hover a:nth-child(1) {
-  margin-top: -1.7em;
+  margin-top: -2.3em;
 }
 
 .text__topics a:nth-child(2) {

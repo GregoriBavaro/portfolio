@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+    text-align: left;
+    padding: 1%;
+}
+
+.text__projects {
+  text-transform: uppercase;
+  font-family: "evermoreregular";
+  padding: 1rem 0 0;
+  overflow: hidden;
+}
+
+.text__projects span {
+  font-size: var(--fs-l);
+  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  color: var(--green);
+  line-height: 7rem;
+}
+
+.text__projects span:not(:first-child) {
+  margin-left: -0.3em;
+}

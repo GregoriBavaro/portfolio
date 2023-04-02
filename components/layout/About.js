@@ -11,36 +11,36 @@ import classes from "../layout/About.module.css";
 const developerItems = [
   {
     letter: "A",
-    delay: .2,
+    delay: 0.2,
   },
   {
     letter: "B",
-    delay: .3,
+    delay: 0.3,
   },
   {
     letter: "O",
-    delay: .4,
+    delay: 0.4,
   },
   {
     letter: "U",
-    delay: .5,
+    delay: 0.5,
   },
   {
     letter: "T",
-    delay: .6,
+    delay: 0.6,
   },
   {
     letter: "\u00A0",
-    delay: .6,
+    delay: 0.6,
   },
   {
     letter: "M",
-    delay: .7,
+    delay: 0.7,
   },
   ,
   {
     letter: "E",
-    delay: .8,
+    delay: 0.8,
   },
 ];
 
@@ -52,12 +52,7 @@ const About = () => {
   return (
     <m.div ref={targetRef} className={classes.container}>
       {isInView && (
-        <m.div
-          className={classes.text}
-          initial={{ x: "-120%" }}
-          animate={{ x: "0" }}
-          transition={{ duration: 0.4, delay: 0.1 }}
-        >
+        <div className={classes.text}>
           <div className={classes.text__aboutMe}>
             {developerItems.map(({ letter, delay }, i) => {
               return (
@@ -72,7 +67,6 @@ const About = () => {
               );
             })}
           </div>
-
           <div className={classes.text__bottom}>
             <h3>
               I am Creative and skillful frontend web developer with a passion
@@ -82,7 +76,7 @@ const About = () => {
               with delightful user experiences.
             </h3>
           </div>
-        </m.div>
+        </div>
       )}
       {isInView && (
         <m.div

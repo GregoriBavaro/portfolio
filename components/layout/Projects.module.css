@@ -1,15 +1,16 @@
-@import url("https://fonts.cdnfonts.com/css/nheonxa-free-trial");
+
 
 .container {
   width: 100%;
   top: 0%;
-  margin-top: 5vh;
-  margin-top: 5svh;
+  margin-top: 10vh;
+  margin-top: 10svh;
   min-height: 500vh;
   min-height: 500svh;
   position: relative;
   overflow: hidden;
   text-align: left;
+  
 }
 
 .container__wrapper {
@@ -44,22 +45,21 @@
   z-index: -1;
   width: 37%;
   position: absolute;
-}
 
+}
 
 
 .container__3D h1 {
-  font-size: var(--fs-l);
+  font-size: var(--fs-600);
   font-weight: 300;
-  font-family: 'nheonxa_regular';
+  font-family: "evermoreregular";
+  line-height: 6rem;
 }
-
 
 
 .container__text__about h3 span {
   padding: 0 0.7rem;
 }
-
 
 
 .container__images__wrapper {
@@ -79,6 +79,9 @@
 
 .text {
   color: var(--lightBeige);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem
 }
 
 .text__uppercase {
@@ -87,10 +90,11 @@
 
 .text__line {
   white-space: nowrap;
-  font-size: var(--fs-l);
+  font-size: var(--fs-600);
   font-weight: 300;
   background-color: rgb(29, 29, 29);
   letter-spacing: -1px;
+  
 }
 
 
@@ -98,7 +102,8 @@
   letter-spacing: -1px;
   background-color: transparent;
   color: var(--green);
-  font-size: var(--fs-l);
+  font-size: var(--fs-500);
+  
 }
 
 .text__bottom {
@@ -109,7 +114,7 @@
 }
 
 .text__bottom h3 {
-  font-size: var(--fs-600);
+  font-size: var(--fs-400);
   font-weight: 300;
 }
 
