@@ -212,5 +212,13 @@ a {
   }
 }
 
+@font-face {
+  font-family: 'evermoreregular';
+  src:url("../public/static/fonts/evermore-wydmo-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 

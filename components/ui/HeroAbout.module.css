@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/duckling");
-@import url("https://fonts.cdnfonts.com/css/evermore");
+
 
 .hero {
   height: 90vh;
@@ -53,7 +53,7 @@
 
 .text {
   color: var(--lightBeige);
-  font-family: "Evermore", sans-serif;
+  font-family: 'evermoreregular';
 }
 
 .text span {
@@ -62,7 +62,7 @@
 }
 
 .text span:not(:first-child) {
-  margin-left: -0.30em;
+  margin-left: -0.3em;
 }
 
 .container__two__svg {
