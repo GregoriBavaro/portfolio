@@ -8,6 +8,42 @@ import { Canvas } from "../ui/Canvas";
 //CSS
 import classes from "../layout/About.module.css";
 
+const developerItems = [
+  {
+    letter: "A",
+    delay: .2,
+  },
+  {
+    letter: "B",
+    delay: .3,
+  },
+  {
+    letter: "O",
+    delay: .4,
+  },
+  {
+    letter: "U",
+    delay: .5,
+  },
+  {
+    letter: "T",
+    delay: .6,
+  },
+  {
+    letter: "\u00A0",
+    delay: .6,
+  },
+  {
+    letter: "M",
+    delay: .7,
+  },
+  ,
+  {
+    letter: "E",
+    delay: .8,
+  },
+];
+
 const About = () => {
   const targetRef = useRef();
 
@@ -22,9 +58,20 @@ const About = () => {
           animate={{ x: "0" }}
           transition={{ duration: 0.4, delay: 0.1 }}
         >
-          <h3 className={classes.text__uppercase}>
-            <span className={classes.text__line}>About Me</span>
-          </h3>
+          <div className={classes.text__aboutMe}>
+            {developerItems.map(({ letter, delay }, i) => {
+              return (
+                <m.span
+                  initial={{ y: "200%" }}
+                  animate={{ y: "0%" }}
+                  transition={{ delay: delay, duration: 1 }}
+                  key={i}
+                >
+                  {letter}
+                </m.span>
+              );
+            })}
+          </div>
 
           <div className={classes.text__bottom}>
             <h3>

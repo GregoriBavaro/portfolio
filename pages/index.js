@@ -12,6 +12,7 @@ import Projects from "../components/layout/Projects";
 import Skills from "../components/layout/Skills";
 import Contact from "../components/layout/Contact";
 import Footer from "../components/layout/Footer";
+import WaveSvg from "../components/ui/WaveSvg";
 
 //Data
 import ProjectOne from "../data/project-one";
@@ -56,6 +57,20 @@ const HomePage = () => {
       </Head>
       <Store>
         <Navigation refs={[aboutRef, projectsRef, skillsRef, contactRef]} />
+        <m.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            scale: { delay: 4 },
+            opacity: { duration: 1.5, delay: 4.5},
+          }}
+          style={{
+            width: "100%",
+            position: "absolute",
+          }}
+        >
+          <WaveSvg />
+        </m.div>
         <m.div
           initial={{ display: "none" }}
           animate={{ display: "inline-block" }}

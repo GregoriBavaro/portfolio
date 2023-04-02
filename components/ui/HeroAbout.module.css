@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/duckling");
 
-
 .hero {
   height: 90vh;
   height: 90svh;
@@ -13,29 +12,34 @@
 
 .container {
   position: absolute;
-  text-align: left;
   bottom: 0;
   left: 0;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
 }
 
 .container__wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 0 5rem;
+  padding: 0rem 5rem;
 }
 
 .container__two {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 10%;
+}
+
+.container__two__day {
+  overflow: hidden;
 }
 
 .container__two__day h1 {
-  font-size: 7rem;
+  font-size: var(--fs-xxl);
   font-weight: 300;
-  line-height: 24rem;
-  font-family: "Evermore", sans-serif;
+  font-family: "nheonxa_regular";
 }
 
 .container__two__month {
@@ -43,7 +47,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 5.5rem;
+  margin-bottom: auto;
+  overflow: hidden;
 }
 
 .container__two__month h1 {
@@ -53,171 +58,20 @@
 
 .text {
   color: var(--lightBeige);
-  font-family: 'evermoreregular';
+  font-family: "evermoreregular";
+  width: fit-content;
+  margin-top: auto;
+  padding: 0 0 0 2rem;
 }
 
 .text span {
-  font-size: 7vw;
+  font-size: var(--fs-xxl);
   text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
+  display: inline-block;
 }
 
 .text span:not(:first-child) {
   margin-left: -0.3em;
 }
 
-.container__two__svg {
-  position: absolute;
-  height: 100%;
-  width: 65rem;
-  top: 0;
-  right: -50%;
-  z-index: -100;
-}
 
-.container__two__svg__wave {
-  position: absolute;
-  height: 100%;
-  width: 100vw;
-  top: 50%;
-  right: 0;
-  z-index: -100;
-}
-
-@media (max-width: 1460px) {
-  .hero {
-    flex-direction: column-reverse;
-  }
-
-  .container {
-    min-width: 100%;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .container__two {
-    flex: 0 0 0px;
-    margin-left: auto;
-  }
-
-  .container__two__day h1 {
-    font-size: 10rem;
-    line-height: 15rem;
-  }
-
-  .container__two__month {
-    margin-top: 3rem;
-  }
-
-  .container__two__svg {
-    top: 0;
-    right: -100%;
-  }
-
-  .text__line {
-    top: 39%;
-  }
-
-  .text__bottom {
-    top: 78%;
-    height: 10rem;
-  }
-}
-
-@media (max-width: 1150px) {
-  .container__two__svg {
-    top: 20%;
-    right: -100%;
-    width: 55rem;
-  }
-}
-
-@media (max-width: 940px) {
-  .text__bottom {
-    top: 82%;
-  }
-
-  .text__line {
-    font-size: 10rem;
-    top: 49%;
-  }
-
-  .text__bottom h3 {
-    font-size: 9.8rem;
-    line-height: 8rem;
-  }
-
-  .container__two__day h1 {
-    font-size: 7rem;
-    line-height: 13rem;
-  }
-
-  .container__two__month h1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 660px) {
-  .text__bottom {
-    top: 88%;
-  }
-
-  .text__line {
-    font-size: 8.07rem;
-    top: 60%;
-  }
-
-  .text__bottom h3 {
-    font-size: 7.8rem;
-    line-height: 6rem;
-  }
-
-  .container__two__day h1 {
-    font-size: 6rem;
-    line-height: 12rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .text__bottom {
-    top: 92%;
-  }
-
-  .text__line {
-    font-size: 6.07rem;
-    top: 70%;
-    letter-spacing: -10px;
-  }
-
-  .text__bottom h3 {
-    font-size: 5.8rem;
-    line-height: 4.8rem;
-    letter-spacing: -5px;
-  }
-}
-
-@media (max-width: 430px) {
-  .text__line {
-    font-size: 5.4rem;
-    top: 71.7%;
-    letter-spacing: -9px;
-  }
-
-  .text__bottom h3 {
-    font-size: 5rem;
-    line-height: 4.4rem;
-    letter-spacing: -3.9px;
-  }
-
-  .container__two__svg__wave {
-    top: 100%;
-  }
-
-  .container__two__day h1 {
-    font-size: 5rem;
-    line-height: 12rem;
-  }
-
-  .container__two__month h1 {
-    font-size: 1.3rem;
-  }
-}

@@ -46,43 +46,27 @@
   position: absolute;
 }
 
-.container__text h4 {
-  font-size: 1.7rem;
-  font-weight: 400;
-}
 
-.container__3D {
-  width: fit-content;
-}
 
 .container__3D h1 {
-  font-size: 3rem;
+  font-size: var(--fs-l);
   font-weight: 300;
-  font-family: "Nheonxa Free Trial", sans-serif;
+  font-family: 'nheonxa_regular';
 }
 
-.container__text__about h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
+
 
 .container__text__about h3 span {
   padding: 0 0.7rem;
 }
 
-.container__text h4 {
-  text-transform: uppercase;
-  margin-top: auto;
-  width: fit-content;
-}
+
 
 .container__images__wrapper {
   display: flex;
   justify-content: center;
   transition: all 0.2s ease-out;
   overflow-x: hidden;
-  height: 80vh;
-  height: 80svh;
   position: absolute;
 }
 
@@ -103,52 +87,34 @@
 
 .text__line {
   white-space: nowrap;
-  font-size: 2.5rem;
+  font-size: var(--fs-l);
   font-weight: 300;
-  line-height: 1.5rem;
   background-color: rgb(29, 29, 29);
   letter-spacing: -1px;
 }
 
-.text__uppercase span:nth-child(1) {
-  margin-top: 2rem;
-}
 
 .text__uppercase span:nth-child(3) {
   letter-spacing: -1px;
-  line-height: 5.5rem;
   background-color: transparent;
   color: var(--green);
-  font-size: 2.3rem;
+  font-size: var(--fs-l);
 }
 
 .text__bottom {
   position: relative;
-  background-color: rgb(29, 29, 29);
-  margin-top: -1.9rem;
   z-index: 1;
-  margin-left: 0.3em;
+  padding: 0 0 0 1rem;
   width: fit-content;
 }
 
 .text__bottom h3 {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  font-weight: 400;
-  margin-left: 0.5rem;
-  text-transform: uppercase;
+  font-size: var(--fs-600);
+  font-weight: 300;
 }
 
-@media (max-width: 1314px) {
-  .text__uppercase span:nth-child(3) {
-    font-size: 2rem;
-  }
-}
 
 @media (max-width: 890px) {
-  .text__uppercase span:nth-child(3) {
-    font-size: 2rem;
-  }
   .container__text {
     width: 20rem;
   }
@@ -165,27 +131,8 @@
 }
 
 @media (max-width: 400px) {
-  .text__uppercase span:nth-child(3) {
-    font-size: 1.5rem;
-  }
 
-  .text__bottom h3 {
-    font-size: 1.2rem;
-    line-height: 1.3rem;
-    font-weight: 300;
-  }
 
-  .container__3D h1 {
-    font-size: 2.3rem;
-  }
-
-  .text__line {
-    font-size: 2rem;
-  }
-
-  .container__text h4 {
-    font-size: 1.3rem;
-  }
 }
 
 @media (max-height: 850px) {

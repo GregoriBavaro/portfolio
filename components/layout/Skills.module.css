@@ -29,9 +29,8 @@
 
 .text__line {
   white-space: nowrap;
-  font-size: 9rem;
+  font-size: var(--fs-xl);
   font-weight: 300;
-  line-height: 10.5rem;
   background-color: rgb(29, 29, 29);
   letter-spacing: -3px;
 }
@@ -42,7 +41,6 @@
 
 .text__uppercase span:nth-child(3) {
   letter-spacing: -7px;
-  line-height: 0rem;
   background-color: transparent;
   color: var(--green);
 }
@@ -57,12 +55,10 @@
 }
 
 .text__bottom h3 {
-  font-size: 2rem;
-  line-height: 2.7rem;
+  font-size: var(--fs-600);
   font-weight: 400;
   letter-spacing: -1px;
   margin-left: 0.5rem;
-  text-transform: uppercase;
 }
 
 .text__skills__wrapper {
@@ -108,7 +104,7 @@
 
 .text__line span:nth-child(1) {
   font-family: "Duckling", sans-serif;
-  font-size: 3rem;
+  font-size: var(--fs-l);
   color: var(--green);
 }
 
@@ -158,26 +154,9 @@
   }
 }
 
-@media (max-width: 660px) {
-  .text__line {
-    font-size: 7rem;
-  }
 
-  .text__bottom h3 {
-    font-size: 1.8rem;
-  }
-
-  .arrow h1 {
-    font-size: 5vw;
-  }
-}
 
 @media (max-width: 460px) {
-  .text__line {
-    font-size: 5rem;
-    line-height: 8rem;
-  }
-
   .text__bottom {
     margin-top: -1.1rem;
   }

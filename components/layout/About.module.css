@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  width: 100%;
   margin-top: 10vh;
   margin-top: 10svh;
   height: 100vh;
@@ -15,6 +14,11 @@
 .text {
   flex: 1 1 0px;
   color: var(--lightBeige);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .threeD {
@@ -23,46 +27,45 @@
   z-index: -100;
 }
 
-.text__uppercase {
+.text__aboutMe {
   text-transform: uppercase;
+  font-family: "evermoreregular";
+  padding: 1rem 0 0;
+  overflow: hidden;
 }
 
-.text__line {
-  white-space: nowrap;
-  font-size: 9rem;
-  font-weight: 300;
-  line-height: 10.5rem;
-  background-color: rgb(29, 29, 29);
-  letter-spacing: -3px;
+.text__aboutMe span {
+  font-size: var(--fs-l);
+  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
+  display: inline-block;
   color: var(--green);
+  line-height: 7rem;
 }
+
+.text__aboutMe span:not(:first-child) {
+  margin-left: -0.3em;
+}
+
+.text__aboutMe span:nth-child(6) {
+  margin-left: 0.3em;
+}
+
+
 
 .text__uppercase span:nth-child(1) {
-  margin-top: 2rem;
+ 
 }
 
-.text__uppercase span:nth-child(3) {
-  letter-spacing: -7px;
-  line-height: 7rem;
-  background-color: transparent;
-}
+
 
 .text__bottom {
-  position: relative;
-  background-color: rgb(29, 29, 29);
-  margin-top: -1.9rem;
-  z-index: 1;
-  margin-left: -0.1rem;
   width: fit-content;
 }
 
 .text__bottom h3 {
-  font-size: 2.3rem;
-  line-height: 2.6rem;
+  font-size: var(--fs-600);
   font-weight: 400;
   letter-spacing: -1px;
-  margin-left: 0.5rem;
-  text-transform: uppercase;
 }
 
 @media (max-width: 1060px) {
@@ -81,21 +84,10 @@
   }
 }
 
-@media (max-width: 660px) {
-  .text__line {
-    font-size: 7rem;
-  }
 
-  .text__bottom h3 {
-    font-size: 1.8rem;
-  }
-}
 
 @media (max-width: 460px) {
-  .text__line {
-    font-size: 5rem;
-    line-height: 8.5rem;
-  }
+
 
   .threeD {
     max-height: 23rem;

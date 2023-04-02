@@ -15,30 +15,12 @@
 
 @keyframes animate {
   0% {
-    top: 50%;
-    left: 50%;
+    opacity: 1
   }
   100% {
-    top: 6px;
-    left: 0;
-    transform: translate(-100%, -60%);
-    scale: 0.3;
+    opacity: 0;
   }
 }
 
-@media (max-width: 740px) {
-  @keyframes animate {
-    0% {
-      top: 50%;
-      left: 50%;
-    }
-    100% {
-      top: 9px;
-      left: 20px;
-      transform: translate(-100%, -60%);
-      scale: 0.3;
-    }
-  }
-}
 
 

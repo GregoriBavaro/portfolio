@@ -38,6 +38,20 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --fs-xxl: clamp(3.5rem, 12vw + 1rem, 12rem); 
+  --fs-xl: clamp(4rem, 10vw + 1rem, 7rem);
+  --fs-l: clamp(2.7rem, 5vw + 1rem, 4rem);
+  --fs-600: clamp(1rem, 3vw + 1rem, 2rem);
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+
+  --beige: rgb(172, 136, 97);
+  --lightBeige: rgb(215, 189, 184);
+  --green: rgb(45, 112, 100);
+  --orange: rgb(181, 89, 64);
+  --purple: rgb(144, 100, 220);
+  --black: rgb(29, 29, 29);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,16 +110,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(66, 140, 126);
-}
-
-/* colors */
-:root {
-  --beige: rgb(172, 136, 97);
-  --lightBeige: rgb(215, 189, 184);
-  --green: rgb(45, 112, 100);
-  --orange: rgb(181, 89, 64);
-  --purple: rgb(144, 100, 220);
-  --black: rgb(29, 29, 29);
 }
 
 /* flying color div's */
@@ -183,20 +187,20 @@ html {
 
 html,
 body {
-  
   font-family: "Oswald", sans-serif;
   box-sizing: border-box;
   overflow: overlay;
   overflow-x: hidden;
-  
+  font-size: var(--fs-400);
 }
 
 body {
   background-color: #1d1d1d;
   text-align: center;
+  font-family: 'Andika', sans-serif;
 }
 
-.parent{
+.parent {
   max-width: 1980px;
   width: 100%;
 }
@@ -213,12 +217,20 @@ a {
 }
 
 @font-face {
-  font-family: 'evermoreregular';
-  src:url("../public/static/fonts/evermore-wydmo-webfont.woff") format('woff');
+  font-family: "evermoreregular";
+  src: url("../public/static/fonts/evermore-wydmo-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
+@font-face {
+  font-family: "nheonxa_regular";
+  src: url("../public/static/fonts/nheonxafreetrial-rgeqo-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 

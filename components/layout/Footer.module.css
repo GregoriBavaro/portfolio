@@ -56,7 +56,7 @@
   align-items: center;
   gap: 1rem;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: var(--fs-500);
 }
 
 .contact__me {

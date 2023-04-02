@@ -4,7 +4,7 @@ const NumberIncAnimation = ({ n }) => {
   const { number } = useSpring({
     from: { number: 0 },
     number: n,
-    delay: 4500,
+    delay: 5000,
     config: { mass: 1, tension: 20, friction: 5 },
   });
 
