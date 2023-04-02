@@ -11,6 +11,8 @@ import WaveSvg from "./WaveSvg";
 //CSS
 import classes from "./HeroAbout.module.css";
 
+const developer = ["D", "E", "V", "E", "L", "O", "P", "E", "R"]
+
 const HeroAbout = () => {
   const [svg, setSvg] = useState(
     <div className={classes.container__two__svg}>
@@ -53,22 +55,9 @@ const HeroAbout = () => {
         }}
       >
         <div className={classes.text}>
-          <h3 className={classes.text__uppercase}>
-            <m.span
-              className={classes.text__line}
-              initial={{ y: "55%" }}
-              animate={{ y: 0 }}
-              transition={{
-                y: { delay: 4, duration: 0.8 },
-              }}
-            >
-              Developer <span>&</span>
-            </m.span>
-            <br />
-          </h3>
-          <div className={classes.text__bottom}>
-            <h3>Code geek</h3>
-          </div>
+          {developer.map((letter, i) => {
+            return <span key={i}>{letter}</span>
+          })}
         </div>
       </m.div>
       <m.div

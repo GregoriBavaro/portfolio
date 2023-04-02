@@ -1,29 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/duckling");
-@import url("https://fonts.cdnfonts.com/css/nheonxa-free-trial");
-@import url('https://fonts.cdnfonts.com/css/babylon-font');
+@import url("https://fonts.cdnfonts.com/css/evermore");
 
 .hero {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   height: 90vh;
   height: 90svh;
   color: var(--lightBeige);
   padding: 0%;
-  
+  position: relative;
+  padding: 1%;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
-  gap: 2rem;
+  position: absolute;
   text-align: left;
-  flex: 1 1 0px;
-  height: 40rem;
-  padding: 1%;
+  bottom: 0;
+  left: 0;
 }
 
 .container__wrapper {
@@ -34,15 +26,16 @@
 }
 
 .container__two {
-  flex: 1 1 0px;
-  margin-bottom: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .container__two__day h1 {
-  font-size: 15rem;
+  font-size: 7rem;
   font-weight: 300;
-  font-family: 'Babylon Font', sans-serif;
   line-height: 24rem;
+  font-family: "Evermore", sans-serif;
 }
 
 .container__two__month {
@@ -60,46 +53,16 @@
 
 .text {
   color: var(--lightBeige);
-  position: relative;
-  height: 100%;
-
+  font-family: "Evermore", sans-serif;
 }
 
-.text__uppercase {
-  text-transform: uppercase;
+.text span {
+  font-size: 7vw;
+  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
 }
 
-.text__line {
-  font-size: 12.1rem;
-  font-weight: 300;
-  letter-spacing: -14.2px;
-  position: absolute;
-  top: 16%;
-}
-
-.text__bottom {
-  position: absolute;
-  background-color: rgb(29, 29, 29);
-  margin-top: -1.9rem;
-  z-index: 1;
-  margin-left: -0.1rem;
-  top: 55%;
-  height: 20rem;
-}
-
-.text__bottom h3 {
-  font-size: 12rem;
-  line-height: 9.3rem;
-  font-weight: 300;
-  letter-spacing: -9px;
-  text-transform: uppercase;
-}
-
-.text__line span {
-  color: var(--green);
-  text-transform: lowercase;
-  font-size: 3rem;
-  font-family: "Duckling", sans-serif;
+.text span:not(:first-child) {
+  margin-left: -0.30em;
 }
 
 .container__two__svg {
@@ -233,8 +196,6 @@
 }
 
 @media (max-width: 430px) {
-  
-
   .text__line {
     font-size: 5.4rem;
     top: 71.7%;
