@@ -1,7 +1,9 @@
 .container {
-    position: relative;
-    text-align: left;
-    padding: 1%;
+  position: relative;
+  text-align: left;
+  padding: 1%;
+  margin-top: 10vh;
+  margin-top: 10svh;
 }
 
 .text__projects {

@@ -201,8 +201,9 @@ body {
 }
 
 .parent {
-  max-width: 1980px;
+  max-width: 1920px;
   width: 100%;
+  
 }
 
 a {

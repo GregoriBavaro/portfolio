@@ -17,7 +17,7 @@ const ProjectOne = () => {
 
   const [itemOneSettings, setItemOneSettings] = useState({
     x: "5%",
-    yTop: "70%",
+    yTop: "170%",
     yBottom: "-360%",
     img: "https://i.postimg.cc/1XwQvYsD/tablet2.png",
     scale: 0.8,
@@ -25,24 +25,24 @@ const ProjectOne = () => {
 
   const [itemTwoSettings, setItemTwoSettings] = useState({
     x: "5%",
-    yTop: "100%",
+    yTop: "220%",
     yBottom: "-410%",
     scale: 0.8,
   }); // Item Two //
 
   const [itemThreeSettings, setItemThreeSettings] = useState({
-    x: "30%",
-    yTop: "290%",
+    x: "40%",
+    yTop: "380%",
     yBottom: "-400%",
-    scale: 1,
+    scale: 0.8,
   }); // Item Three //
 
   const [itemFourSettings, setItemFourSettings] = useState({
     x: "5%",
-    yTop: "250%",
+    yTop: "400%",
     yBottom: "-370%",
     img: "https://i.postimg.cc/vTWJrgtz/tablet1.png",
-    scale: 1,
+    scale: 0.8,
   }); // Item Four //
 
   //---------------------------------------------------------------------------------------------------------------//
@@ -78,29 +78,29 @@ const ProjectOne = () => {
     } else {
       setItemOneSettings({
         x: "5%",
-        yTop: "70%",
+        yTop: "170%",
         yBottom: "-360%",
         img: "https://i.postimg.cc/1XwQvYsD/tablet2.png",
         scale: 0.8,
       }); // Item One //
       setItemTwoSettings({
         x: "5%",
-        yTop: "100%",
+        yTop: "220%",
         yBottom: "-410%",
         scale: 0.8,
       }); // Item Two //
       setItemThreeSettings({
-        x: "30%",
-        yTop: "290%",
+        x: "40%",
+        yTop: "380%",
         yBottom: "-400%",
-        scale: 1,
+        scale: 0.8,
       }); // Item Three //
       setItemFourSettings({
         x: "5%",
-        yTop: "250%",
+        yTop: "400%",
         yBottom: "-370%",
         img: "https://i.postimg.cc/vTWJrgtz/tablet1.png",
-        scale: 1,
+        scale: 0.8,
       }); // Item Two //
     }
     if (size.width < 1120) {

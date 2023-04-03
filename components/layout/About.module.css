@@ -8,6 +8,7 @@
   justify-content: center;
   text-align: left;
   padding: 1%;
+  border: 2px solid red;
 }
 
 .text {

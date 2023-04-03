@@ -1,16 +1,13 @@
 
-
 .container {
   width: 100%;
   top: 0%;
-  margin-top: 10vh;
-  margin-top: 10svh;
-  min-height: 500vh;
-  min-height: 500svh;
+  min-height: 250vh;
+  min-height: 250svh;
   position: relative;
   overflow: hidden;
   text-align: left;
-  
+  margin-bottom: 40vh;
 }
 
 .container__wrapper {
@@ -24,7 +21,7 @@
 
 .container__images {
   flex: 1 1 0px;
-  width: 90%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;

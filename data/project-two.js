@@ -13,7 +13,6 @@ import { useEffect, useState } from "react";
 // import mobileFour from "/images/projectTwo/mobile4.png";
 
 
-
 const ProjectTwo = () => {
   const { scrollYProgress } = useScroll();
   const size = useWindowSize();
@@ -21,31 +20,31 @@ const ProjectTwo = () => {
   const [itemOneSettings, setItemOneSettings] = useState({
     x: "5%",
     img: "https://i.postimg.cc/SsP7Ng02/desktop2.png",
-    scale: 1.2,
-    yTop: "290%",
+    scale: 0.9,
+    yTop: "370%",
     yBottom: "-200%",
   }); // Item One //
 
   const [itemTwoSettings, setItemTwoSettings] = useState({
-    x: "35%",
+    x: "1%",
     scale: 0.7,
-    yTop: "400%",
+    yTop: "430%",
     yBottom: "-220%",
   }); // Item Two //
 
   const [itemThreeSettings, setItemThreeSettings] = useState({
     x: "13%",
-    scale: 1.2,
+    scale: 0.9,
     img: "https://i.postimg.cc/NFVNSgGn/desktop1.png",
     yTop: "780%",
     yBottom: "-250%",
   }); // Item Three //
 
   const [itemFourSettings, setItemFourSettings] = useState({
-    x: "-5%",
+    x: "1%",
     scale: 0.7,
-    yTop: "880%",
-    yBottom: "-260%",
+    yTop: "900%",
+    yBottom: "-270%",
   }); // Item Three //
 
   useEffect(() => {
@@ -83,31 +82,31 @@ const ProjectTwo = () => {
       setItemOneSettings({
         x: "5%",
         img: "https://i.postimg.cc/SsP7Ng02/desktop2.png",
-        scale: 1.2,
-        yTop: "290%",
+        scale: 0.9,
+        yTop: "370%",
         yBottom: "-200%",
       }); // Item One //
 
       setItemTwoSettings({
-        x: "35%",
+        x: "1%",
         scale: 0.7,
-        yTop: "400%",
+        yTop: "430%",
         yBottom: "-220%",
       }); // Item Two //
 
       setItemThreeSettings({
         x: "13%",
-        scale: 1.2,
+        scale: 0.9,
         img: "https://i.postimg.cc/NFVNSgGn/desktop1.png",
         yTop: "780%",
         yBottom: "-250%",
       }); // Item Three //
 
       setItemFourSettings({
-        x: "-5%",
+        x: "1%",
         scale: 0.7,
-        yTop: "880%",
-        yBottom: "-260%",
+        yTop: "900%",
+        yBottom: "-270%",
       }); // Item Four //
     }
     if (size.width < 1120) {
