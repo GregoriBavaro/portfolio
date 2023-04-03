@@ -126,9 +126,9 @@
 
 .navGreen {
   background-color: var(--green);
-  width: 103vw;
-  min-height: 103vh;
-  height: 103svh;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
   position: absolute;
   top: 0;
   left: 0;
@@ -137,9 +137,9 @@
 
 .navBlack {
   background-color: var(--black);
-  width: 104vw;
-  height: 104vh;
-  height: 104svh;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
   position: absolute;
   top: 0;
   left: 0;
