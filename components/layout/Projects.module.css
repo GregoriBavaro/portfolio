@@ -116,9 +116,8 @@
 }
 
 .container__button__wrapper {
-  padding: 0 0 0 1rem;
+  padding: 2rem 0 0 1rem;
   width: fit-content;
-  margin-top:auto;
   margin-bottom: 0.5rem;
 }
 
@@ -198,6 +197,14 @@
     padding: 0 0 0 0;
   }
 
+  .container__wrapper {
+    padding: 1rem
+  }
+
+  .container__text {
+    width: fit-content;
+  }
+
   .text__uppercase {
     text-transform: uppercase;
     color: var(--green);
@@ -212,12 +219,13 @@
     padding: 2rem 0 0 0;
     width: fit-content;
   }
-}
 
-@media (max-width: 420px) {
-  .container__text {
+  .container__button__wrapper {
+    padding: 1rem 0 0 0rem;
     width: fit-content;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
   }
-
-  
 }
+
+

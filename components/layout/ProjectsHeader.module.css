@@ -27,6 +27,11 @@
 
 @media (max-width: 600px) {
   .container {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
+
+  .text__projects {
+    padding: 1rem 0rem 0;
+  }
+  
 }
