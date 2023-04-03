@@ -9,7 +9,7 @@
 .text__projects {
   text-transform: uppercase;
   font-family: "evermoreregular";
-  padding: 1rem 0 0;
+  padding: 1rem 0.5rem 0;
   overflow: hidden;
 }
 
@@ -23,4 +23,10 @@
 
 .text__projects span:not(:first-child) {
   margin-left: -0.3em;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 2rem;
+  }
 }

@@ -50,30 +50,30 @@ const ProjectOne = () => {
   useEffect(() => {
     if (size.width < 1520) {
       setItemOneSettings({
-        x: "30%",
-        yTop: "70%",
+        x: "45%",
+        yTop: "170%",
         yBottom: "-360%",
         img: "https://i.postimg.cc/2SdsbZS8/mobile2.png",
-        scale: 0.9,
+        scale: 0.8,
       }); // Item One //
       setItemTwoSettings({
-        x: "5%",
-        yTop: "100%",
+        x: "2%",
+        yTop: "220%",
         yBottom: "-420%",
         scale: 0.8,
       }); // Item Two //
       setItemThreeSettings({
-        x: "27%",
-        yTop: "240%",
-        yBottom: "-460%",
+        x: "43%",
+        yTop: "380%",
+        yBottom: "-430%",
         scale: 0.8,
       }); // Item Three //
       setItemFourSettings({
-        x: "4%",
-        yTop: "250%",
-        yBottom: "-370%",
+        x: "3%",
+        yTop: "460%",
+        yBottom: "-480%",
         img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
-        scale: 0.9,
+        scale: 0.8,
       }); // Item Four //
     } else {
       setItemOneSettings({
@@ -105,56 +105,112 @@ const ProjectOne = () => {
     }
     if (size.width < 1120) {
       setItemOneSettings({
-        x: "20%",
-        yTop: "70%",
+        x: "23%",
+        yTop: "170%",
         yBottom: "-360%",
         img: "https://i.postimg.cc/2SdsbZS8/mobile2.png",
-        scale: 0.9,
+        scale: 0.7,
       }); // Item One //
       setItemTwoSettings({
-        x: "2%",
-        yTop: "150%",
-        yBottom: "-450%",
-        scale: 0.8,
+        x: "0%",
+        yTop: "220%",
+        yBottom: "-410%",
+        scale: 0.7,
       }); // Item Two //
       setItemThreeSettings({
-        x: "17%",
-        yTop: "240%",
-        yBottom: "-460%",
-        scale: 0.8,
+        x: "23%",
+        yTop: "330%",
+        yBottom: "-400%",
+        scale: 0.7,
       }); // Item Three //
       setItemFourSettings({
-        x: "2%",
-        yTop: "340%",
-        yBottom: "-500%",
+        x: "0%",
+        yTop: "380%",
+        yBottom: "-430%",
         img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
-        scale: 0.9,
+        scale: 0.7,
       }); // Item Four //
     }
-    if (size.width < 525) {
+    if (size.width < 820) {
       setItemOneSettings({
-        x: "20%",
-        yTop: "70%",
+        x: "70%",
+        yTop: "170%",
         yBottom: "-360%",
         img: "https://i.postimg.cc/2SdsbZS8/mobile2.png",
         scale: 0.6,
       }); // Item One //
       setItemTwoSettings({
         x: "2%",
-        yTop: "150%",
-        yBottom: "-450%",
+        yTop: "220%",
+        yBottom: "-410%",
         scale: 0.6,
       }); // Item Two //
       setItemThreeSettings({
-        x: "17%",
-        yTop: "240%",
-        yBottom: "-460%",
+        x: "70%",
+        yTop: "330%",
+        yBottom: "-400%",
         scale: 0.6,
       }); // Item Three //
       setItemFourSettings({
         x: "2%",
-        yTop: "340%",
-        yBottom: "-500%",
+        yTop: "380%",
+        yBottom: "-430%",
+        img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
+        scale: 0.6,
+      }); // Item Four //
+    }
+    if (size.width < 630) {
+      setItemOneSettings({
+        x: "50%",
+        yTop: "170%",
+        yBottom: "-360%",
+        img: "https://i.postimg.cc/2SdsbZS8/mobile2.png",
+        scale: 0.6,
+      }); // Item One //
+      setItemTwoSettings({
+        x: "2%",
+        yTop: "220%",
+        yBottom: "-410%",
+        scale: 0.6,
+      }); // Item Two //
+      setItemThreeSettings({
+        x: "50%",
+        yTop: "330%",
+        yBottom: "-400%",
+        scale: 0.6,
+      }); // Item Three //
+      setItemFourSettings({
+        x: "2%",
+        yTop: "380%",
+        yBottom: "-430%",
+        img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
+        scale: 0.6,
+      }); // Item Four //
+    }
+    if (size.width < 420) {
+      setItemOneSettings({
+        x: "20%",
+        yTop: "170%",
+        yBottom: "-360%",
+        img: "https://i.postimg.cc/2SdsbZS8/mobile2.png",
+        scale: 0.6,
+      }); // Item One //
+      setItemTwoSettings({
+        x: "-8%",
+        yTop: "220%",
+        yBottom: "-410%",
+        scale: 0.6,
+      }); // Item Two //
+      setItemThreeSettings({
+        x: "20%",
+        yTop: "330%",
+        yBottom: "-400%",
+        scale: 0.6,
+      }); // Item Three //
+      setItemFourSettings({
+        x: "-8%",
+        yTop: "380%",
+        yBottom: "-430%",
         img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
         scale: 0.6,
       }); // Item Four //

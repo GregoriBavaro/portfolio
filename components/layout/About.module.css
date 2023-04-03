@@ -29,7 +29,7 @@
 .text__aboutMe {
   text-transform: uppercase;
   font-family: "evermoreregular";
-  padding: 1rem 0 0;
+  padding: 1rem 0.5rem 0;
   overflow: hidden;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .text__bottom h3 {
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   font-weight: 400;
   letter-spacing: -1px;
 }
@@ -69,6 +69,19 @@
     height: 40vh;
     width: 100%;
   }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .text__aboutMe {
+
+    padding: 1rem 0;
+  }
+
 }
 
 

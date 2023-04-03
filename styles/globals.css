@@ -39,12 +39,13 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 
-  --fs-xxl: clamp(4rem, 10vw + 1rem, 12rem); 
+  --fs-xxl: clamp(4rem, 10vw + 1rem, 12rem);
   --fs-xl: clamp(4rem, 10vw + 1rem, 7rem);
-  --fs-l: clamp(2.7rem, 5vw + 1rem, 4rem);
+  --fs-l: clamp(2rem, 5vw + 1rem, 4rem);
   --fs-600: clamp(1rem, 3vw + 1rem, 2rem);
-  --fs-500: clamp(0.7rem, 3vw + 1rem, 1.5rem);
-  --fs-400: clamp(0.5rem, 6vw + 1rem, 1.2rem);
+  --fs-500: clamp(0.7rem, 3vw + 1rem, 2rem);
+  --fs-400: clamp(0.3rem, 6vw + 1rem, 1.2rem);
+
 
   --beige: rgb(172, 136, 97);
   --lightBeige: rgb(215, 189, 184);
@@ -173,8 +174,6 @@
   color: var(--purple);
 }
 
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -199,7 +198,7 @@ body {
 body {
   background-color: #1d1d1d;
   text-align: center;
-  font-family: 'Andika', sans-serif;
+  font-family: "Andika", sans-serif;
 }
 
 .parent {
@@ -233,6 +232,11 @@ a {
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  font-family: "ducklingregular";
+  src: url("../public/static/fonts/duckling-zvbaq-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap");

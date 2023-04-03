@@ -65,7 +65,7 @@
   font: normal normal 500 1.5em/1.7em "Oswald", sans-serif;
   overflow: hidden;
   min-width: fit-content;
-  border-radius: 0.3rem;
+  border-radius: 0.1rem;
   border: 1px solid var(--lightBeige);
   transition: all 0.3s ease-in-out;
   padding: 0 1rem;

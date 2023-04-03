@@ -50,32 +50,32 @@ const ProjectTwo = () => {
   useEffect(() => {
     if (size.width < 1520) {
       setItemOneSettings({
-        x: "30%",
+        x: "45%",
         img: "https://i.postimg.cc/g0WG1pnr/mobile3.png",
-        scale: 0.9,
-        yTop: "290%",
+        scale: 0.8,
+        yTop: "420%",
         yBottom: "-200%",
       }); // Item One //
 
       setItemTwoSettings({
-        x: "5%",
+        x: "3%",
         scale: 0.8,
-        yTop: "400%",
+        yTop: "470%",
         yBottom: "-220%",
       }); // Item Two //
 
       setItemThreeSettings({
-        x: "27%",
-        scale: 0.9,
+        x: "42%",
+        scale: 0.8,
         img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
-        yTop: "780%",
+        yTop: "880%",
         yBottom: "-290%",
       }); // Item Three //
 
       setItemFourSettings({
-        x: "4%",
-        scale: 0.9,
-        yTop: "880%",
+        x: "3%",
+        scale: 0.8,
+        yTop: "830%",
         yBottom: "-250%",
       }); // Item Four //
     } else {
@@ -111,64 +111,126 @@ const ProjectTwo = () => {
     }
     if (size.width < 1120) {
       setItemOneSettings({
-        x: "20%",
+        x: "23%",
         img: "https://i.postimg.cc/g0WG1pnr/mobile3.png",
-        scale: 0.9,
-        yTop: "290%",
+        scale: 0.7,
+        yTop: "350%",
         yBottom: "-200%",
       }); // Item One //
 
       setItemTwoSettings({
-        x: "2%",
-        scale: 0.8,
+        x: "0%",
+        scale: 0.7,
         yTop: "400%",
         yBottom: "-220%",
       }); // Item Two //
 
       setItemThreeSettings({
-        x: "17%",
-        scale: 0.9,
+        x: "23%",
+        scale: 0.7,
         img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
         yTop: "780%",
         yBottom: "-290%",
       }); // Item Three //
 
       setItemFourSettings({
-        x: "2%",
-        scale: 0.9,
-        yTop: "880%",
-        yBottom: "-250%",
+        x: "0%",
+        scale: 0.7,
+        yTop: "870%",
+        yBottom: "-320%",
       }); // Item Four //
     }
-    if (size.width < 525) {
+    if (size.width < 820) {
       setItemOneSettings({
-        x: "20%",
+        x: "70%",
         img: "https://i.postimg.cc/g0WG1pnr/mobile3.png",
         scale: 0.6,
-        yTop: "290%",
+        yTop: "350%",
         yBottom: "-200%",
       }); // Item One //
 
       setItemTwoSettings({
-        x: "2%",
+        x: "0%",
         scale: 0.6,
-        yTop: "450%",
-        yBottom: "-240%",
+        yTop: "400%",
+        yBottom: "-220%",
       }); // Item Two //
 
       setItemThreeSettings({
-        x: "17%",
+        x: "70%",
         scale: 0.6,
         img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
-        yTop: "640%",
+        yTop: "780%",
         yBottom: "-290%",
       }); // Item Three //
 
       setItemFourSettings({
-        x: "2%",
+        x: "0%",
         scale: 0.6,
-        yTop: "750%",
-        yBottom: "-250%",
+        yTop: "870%",
+        yBottom: "-320%",
+      }); // Item Four //
+    }
+    if (size.width < 630) {
+      setItemOneSettings({
+        x: "50%",
+        img: "https://i.postimg.cc/g0WG1pnr/mobile3.png",
+        scale: 0.6,
+        yTop: "350%",
+        yBottom: "-200%",
+      }); // Item One //
+
+      setItemTwoSettings({
+        x: "0%",
+        scale: 0.6,
+        yTop: "400%",
+        yBottom: "-220%",
+      }); // Item Two //
+
+      setItemThreeSettings({
+        x: "50%",
+        scale: 0.6,
+        img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
+        yTop: "780%",
+        yBottom: "-290%",
+      }); // Item Three //
+
+      setItemFourSettings({
+        x: "0%",
+        scale: 0.6,
+        yTop: "870%",
+        yBottom: "-320%",
+      }); // Item Four //
+    }
+    if (size.width < 420) {
+      setItemOneSettings({
+        x: "20%",
+        img: "https://i.postimg.cc/g0WG1pnr/mobile3.png",
+        scale: 0.6,
+        yTop: "350%",
+        yBottom: "-200%",
+      }); // Item One //
+
+      setItemTwoSettings({
+        x: "-8%",
+        scale: 0.6,
+        yTop: "400%",
+        yBottom: "-220%",
+      }); // Item Two //
+
+      setItemThreeSettings({
+        x: "20%",
+        scale: 0.6,
+        img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
+        yTop: "780%",
+        yBottom: "-290%",
+      }); // Item Three //
+
+      setItemFourSettings({
+        x: "-8%",
+        scale: 0.6,
+        yTop: "870%",
+        yBottom: "-320%",
       }); // Item Four //
     }
   }, [size.width]);

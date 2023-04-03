@@ -1,6 +1,6 @@
 //Hooks
 import { Context } from "../hooks/Store";
-import { useRef, useContext} from "react";
+import { useRef, useContext } from "react";
 import {
   motion as m,
   useScroll,
@@ -11,8 +11,6 @@ import {
 
 //CSS
 import classes from "../layout/Projects.module.css";
-
-
 
 const Projects = (props) => {
   const { skills, contact } = useContext(Context);
@@ -86,21 +84,25 @@ const Projects = (props) => {
                   style={classAnimationText}
                   className={classes.text__uppercase}
                 >
-                  <span className={classes.text__line}>
-                    {props.dataObject.name}
-                  </span>
-                  <br />
-                  <span className={classes.text__line}>
-                    {props.dataObject.job1}
-                  </span>
-                  <br />
+                  {props.dataObject.name}
                 </m.h3>
+                <m.h3 style={classAnimationText}>{props.dataObject.job1}</m.h3>
                 <m.div
                   style={classAnimationText}
                   className={classes.text__bottom}
                 >
                   <h3>{props.dataObject.description}</h3>
                 </m.div>
+              </div>
+            </div>
+            <div className={classes.container__button__wrapper}>
+              <div className={classes.contact__me}>
+                <a href={props.dataObject.link} target="_blank">
+                  {props.dataObject.buttonName}
+                </a>
+                <a href={props.dataObject.link} target="_blank">
+                  {props.dataObject.buttonName}
+                </a>
               </div>
             </div>
           </m.div>
