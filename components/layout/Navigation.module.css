@@ -88,3 +88,9 @@
 .toPurple:hover {
   --_p: 0%;
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0 1rem;
+  }
+}

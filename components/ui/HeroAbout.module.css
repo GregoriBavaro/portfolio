@@ -7,6 +7,7 @@
   padding: 0%;
   position: relative;
   padding: 1%;
+  width: 100%;
 }
 
 .container {
@@ -14,7 +15,7 @@
   bottom: 0;
   left: 0;
   height: 100%;
-  overflow: hidden;
+  width: 100%;
   display: flex;
 }
 
@@ -36,10 +37,10 @@
 }
 
 .container__two__day h1 {
-  font-size: var(--fs-l);
+  font-size: clamp(2rem, 5vw + 1rem, 4rem);
   font-weight: 300;
   font-family: "evermoreregular";
-  line-height: 9rem;
+  margin-top: 65%;
 }
 
 .container__two__month {
@@ -54,6 +55,11 @@
 .container__two__month h1 {
   font-family: "Duckling", sans-serif;
   color: var(--green);
+  font-size: var(--fs-600);
+}
+
+.container__two__month p {
+  font-size: var(--fs-400);
 }
 
 .text {
@@ -74,4 +80,40 @@
   margin-left: -0.3em;
 }
 
+@media (max-width: 1250px) {
+  .text {
+    position: absolute;
+    bottom: 100%;
+    -webkit-transform: rotateZ(90deg);
+    transform-origin: 0 100%;
+    white-space: nowrap;
+  }
+}
 
+@media (max-width: 600px) {
+  .container__two {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+  }
+
+  .container__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0rem 0.5rem 0.5rem;
+    height: fit-content;
+    margin-top: auto;
+  }
+
+  .container__two__day {
+    overflow: hidden;
+    margin-bottom: auto;
+  }
+
+  .container__two__month p {
+    font-size: 0.8rem;
+  }
+}

@@ -25,7 +25,7 @@ const DivAnimations = () => {
               key={index}
               className={classDiv}
               initial={{ x: "-100%" }}
-              animate={{ x: 0 }}
+              animate={{ x: "0%" }}
               transition={{
                 delay: animateDelay,
                 ease: "easeInOut",

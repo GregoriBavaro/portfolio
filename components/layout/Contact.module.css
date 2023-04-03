@@ -3,8 +3,8 @@
 .container {
   position: relative;
   top: 0%;
-  height: 85vh;
-  height: 85svh;
+  min-height: 85vh;
+  min-height: 85svh;
   margin-top: 30vh;
   margin-top: 30svh;
   width: 100%;

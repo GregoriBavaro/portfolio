@@ -8,7 +8,6 @@
   justify-content: center;
   text-align: left;
   padding: 1%;
-  border: 2px solid red;
 }
 
 .text {
@@ -56,7 +55,7 @@
   letter-spacing: -1px;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1250px) {
   .container {
     flex-direction: column;
     margin-top: 20vh;

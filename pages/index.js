@@ -67,7 +67,13 @@ const HomePage = () => {
           }}
           style={{
             width: "100%",
+            maxWidth: "1920px",
             position: "absolute",
+            left: 0,
+            right: 0,
+            margin: " 0 auto",
+            zIndex: -120,
+            overflow: "visible",
           }}
         >
           <WaveSvg />
