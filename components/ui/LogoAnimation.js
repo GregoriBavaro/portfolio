@@ -17,9 +17,9 @@ const LogoAnimation = () => {
     <Fragment>
       <m.div
         className={classes.logoInitial}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{ opacity: 1, scale: 0 }}
+        transition={{opacity: {duration: 1}, scale: {delay: 5} }}
       >
         {size.width > 1000 && <NameSignSVG />}
         {size.width < 1000 && <MobileLogoAnime />}
