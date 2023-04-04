@@ -14,7 +14,7 @@
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.14",
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.273",
+    "@splinetool/runtime": "^0.9.280",
     "framer-motion": "^10.0.1",
     "hamburger-react": "^2.5.0",
     "next": "13.2.3",
