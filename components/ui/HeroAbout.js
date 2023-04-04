@@ -10,40 +10,40 @@ import classes from "./HeroAbout.module.css";
 const developerItems = [
   {
     letter: "D",
-    delay: 3,
+    delay: 5,
   },
   {
     letter: "E",
-    delay: 3.1,
+    delay: 5.1,
   },
   {
     letter: "V",
-    delay: 3.2,
+    delay: 5.2,
   },
   {
     letter: "E",
-    delay: 3.3,
+    delay: 5.3,
   },
   {
     letter: "L",
-    delay: 3.4,
+    delay: 5.4,
   },
   {
     letter: "O",
-    delay: 3.5,
+    delay: 5.5,
   },
   {
     letter: "P",
-    delay: 3.6,
+    delay: 5.6,
   },
   ,
   {
     letter: "E",
-    delay: 3.7,
+    delay: 5.7,
   },
   {
     letter: "R",
-    delay: 3.8,
+    delay: 5.8,
   },
 ];
 
@@ -77,7 +77,7 @@ const HeroAbout = () => {
             <m.h1
               initial={{ y: "200%" }}
               animate={{ y: "0%" }}
-              transition={{ delay: 3, duration: 1 }}
+              transition={{ delay: 5.2, duration: 1 }}
             >
               <NumberIncAnimation n={parsedDay} />
             </m.h1>
@@ -86,14 +86,14 @@ const HeroAbout = () => {
             <m.h1
               initial={{ y: "200%" }}
               animate={{ y: "0%" }}
-              transition={{ delay: 3.5, duration: 1 }}
+              transition={{ delay: 5.2, duration: 1 }}
             >
               {new Date().toLocaleString("en-US", { month: "short" })}
             </m.h1>
             <m.p
               initial={{ y: "200%" }}
               animate={{ y: "0%" }}
-              transition={{ delay: 4, duration: 0.4 }}
+              transition={{ delay: 5.7, duration: 0.4 }}
             >
               available <br></br> for work
             </m.p>

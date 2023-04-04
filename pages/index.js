@@ -66,8 +66,8 @@ const HomePage = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            scale: { delay: 4 },
-            opacity: { duration: 1.5, delay: 4.5 },
+            scale: { delay: 4.5 },
+            opacity: { duration: 1.2, delay: 6 },
           }}
           style={{
             width: "100%",
@@ -85,7 +85,7 @@ const HomePage = () => {
         <m.div
           initial={{ display: "none" }}
           animate={{ display: "inline-block" }}
-          transition={{ delay: 3.5, duration: 0.1 }}
+          transition={{ delay: 4.5, duration: 0.1 }}
           className="parent"
         >
           <AboutHero />

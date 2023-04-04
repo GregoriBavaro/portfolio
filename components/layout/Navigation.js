@@ -53,8 +53,8 @@ const Navigation = (props) => {
           initial={{ opacity: 0, x: "300%" }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
-            x: { delay: 3, duration: 0.5 },
-            opacity: { delay: 3, duration: 0.5 },
+            x: { delay: 4, duration: 0.7 },
+            opacity: { delay: 4, duration: 0.7 },
           }}
         >
           <Hamburger

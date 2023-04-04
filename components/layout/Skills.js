@@ -1,17 +1,17 @@
 //Hooks
 import { Context } from "../hooks/Store";
-import { useRef,useContext, useEffect, useState } from "react";
+import { useRef, useContext, useEffect, useState } from "react";
 import { motion as m, useInView } from "framer-motion";
 import useWindowSize from "../hooks/use-windowDimensions";
 
 //Components
 import CanvasSkills from "../ui/CanvasSkills";
 import CanvasSkillsMobile from "../ui/CanvasSkillsMobile";
+import CanvasSkillsSmallMobile from "../ui/CanvasSkillsSmallMobile";
 import Arrow from "../ui/Arrow";
 
 //CSS
 import classes from "../layout/Skills.module.css";
-import { Canvas } from "../ui/Canvas";
 
 const developerItems = [
   {
@@ -60,7 +60,7 @@ const Skills = () => {
   const { skills } = useContext(Context);
   const [stateSkills, setStateSkills] = skills;
   const targetRef = useRef(null);
-  const [threeDModel, setThreeDModel] = useState(<CanvasSkills />)
+  const [threeDModel, setThreeDModel] = useState(<CanvasSkills />);
   const isInView = useInView(targetRef, { once: false });
   const isInViewSkills = useInView(targetRef, { once: true });
   const size = useWindowSize();
@@ -69,14 +69,16 @@ const Skills = () => {
     setStateSkills(isInView);
   }, [isInView]);
 
-  
   useEffect(() => {
-    if(size.width < 1250) {
-      setThreeDModel(<CanvasSkillsMobile />) 
+    if (size.width < 1250) {
+      setThreeDModel(<CanvasSkillsMobile />);
     } else {
-      setThreeDModel(<CanvasSkills />) 
+      setThreeDModel(<CanvasSkills />);
     }
-  },[size.width])
+    if (size.width < 620) {
+      setThreeDModel(<CanvasSkillsSmallMobile />)
+    }
+  }, [size.width]);
 
   return (
     <div ref={targetRef} className={classes.container}>
@@ -110,30 +112,17 @@ const Skills = () => {
           </div>
         )}
         <div className={classes.text__skills__wrapper}>
-          {isInViewSkills && (
-            <div>
-              <m.div
-                className={classes.skills3D}
-                initial={{ scale: 0 }}
-                animate={{ scale: [0, 2, 1] }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                {threeDModel}
-
-                <m.div
-                  className={classes.arrow}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 2.5 }}
-                >
-                  <div className={classes.arrowSvg}>
-                    <Arrow />
-                    <h1>Hover me</h1>
-                  </div>
-                </m.div>
-              </m.div>
+          <div>
+            <div className={classes.skills3D}>
+              {threeDModel}
+              <div className={classes.arrow}>
+                <div className={classes.arrowSvg}>
+                  <Arrow />
+                  <h1>Hover me</h1>
+                </div>
+              </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </div>

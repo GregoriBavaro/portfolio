@@ -108,6 +108,21 @@
   padding: 0rem 0rem 0.5rem;
 }
 
+.madeBy {
+  width: fit-content;
+  position: absolute;
+  left: 100%;
+  -webkit-transform: rotateZ(270deg);
+  transform-origin: 0 100%;
+  white-space: nowrap;
+  top: 70%;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.4rem 0;
+  background-color: var(--green);
+  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+}
+
 @media (max-width: 600px) {
   .text__topics {
     height: 45px;

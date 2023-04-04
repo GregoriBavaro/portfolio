@@ -78,16 +78,9 @@ const About = () => {
           </div>
         </div>
       )}
-      {isInView && (
-        <m.div
-          className={classes.threeD}
-          initial={{ scale: 0 }}
-          animate={{ scale: [0, 2, 1] }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <Canvas />
-        </m.div>
-      )}
+      <div className={classes.threeD}>
+        <Canvas />
+      </div>
     </m.div>
   );
 };
