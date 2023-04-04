@@ -1,14 +1,17 @@
 //Hooks
 import { Context } from "../hooks/Store";
-import { useRef, useState, useContext, useEffect } from "react";
+import { useRef,useContext, useEffect, useState } from "react";
 import { motion as m, useInView } from "framer-motion";
+import useWindowSize from "../hooks/use-windowDimensions";
 
 //Components
 import CanvasSkills from "../ui/CanvasSkills";
+import CanvasSkillsMobile from "../ui/CanvasSkillsMobile";
 import Arrow from "../ui/Arrow";
 
 //CSS
 import classes from "../layout/Skills.module.css";
+import { Canvas } from "../ui/Canvas";
 
 const developerItems = [
   {
@@ -57,12 +60,23 @@ const Skills = () => {
   const { skills } = useContext(Context);
   const [stateSkills, setStateSkills] = skills;
   const targetRef = useRef(null);
+  const [threeDModel, setThreeDModel] = useState(<CanvasSkills />)
   const isInView = useInView(targetRef, { once: false });
   const isInViewSkills = useInView(targetRef, { once: true });
+  const size = useWindowSize();
 
   useEffect(() => {
     setStateSkills(isInView);
   }, [isInView]);
+
+  
+  useEffect(() => {
+    if(size.width < 1250) {
+      setThreeDModel(<CanvasSkillsMobile />) 
+    } else {
+      setThreeDModel(<CanvasSkills />) 
+    }
+  },[size.width])
 
   return (
     <div ref={targetRef} className={classes.container}>
@@ -104,7 +118,7 @@ const Skills = () => {
                 animate={{ scale: [0, 2, 1] }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <CanvasSkills />
+                {threeDModel}
 
                 <m.div
                   className={classes.arrow}

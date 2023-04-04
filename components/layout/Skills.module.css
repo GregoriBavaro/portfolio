@@ -101,9 +101,9 @@
   }
 
   .text__skills__wrapper {
-    z-index: 1000;
-    justify-content: flex-start;
-    align-items: flex-start;
+    z-index: -1000;
+    justify-content: center;
+    align-items: center;
   }
 
   .skills3D {
@@ -111,17 +111,11 @@
     height: 70vh;
     position: relative;
     left: 0;
-    z-index: 100;
-    overflow: visible;
+
   }
 
   .arrow {
-    position: absolute;
-    height: 45%;
-    width: 30%;
-    z-index: -1;
-    bottom: 0;
-    left: 30%;
+    display: none;
   }
 }
 
