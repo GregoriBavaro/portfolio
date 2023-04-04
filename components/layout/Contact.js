@@ -74,9 +74,6 @@ const Contact = () => {
 
   return (
     <div ref={targetRef} className={classes.container}>
-      <div className={classes.madeBy}>
-        <h3>Copyrights @ 2023 Gregori Bavaro</h3>
-      </div>
       <div className={classes.container__wrapper}>
         <div className={classes.container__wrapper__text}>
           <div className={classes.text}>
