@@ -5,7 +5,7 @@ import useWindowSize from "../hooks/use-windowDimensions";
 
 //Components
 import NameSignSVG from "./NameSignSVG";
-import NameSignSvgMobile from "./NameSignSvgMobile";
+import MobileLogoAnime from "./MobileLogoAnime";
 
 //CSS
 import classes from "./LogoAnimation.module.css";
@@ -22,7 +22,7 @@ const LogoAnimation = () => {
         transition={{ duration: 1 }}
       >
         {size.width > 1000 && <NameSignSVG />}
-        {size.width < 1000 && <NameSignSvgMobile />}
+        {size.width < 1000 && <MobileLogoAnime />}
       </m.div>
     </Fragment>
   );
