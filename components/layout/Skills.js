@@ -117,7 +117,7 @@ const Skills = () => {
             <div className={classes.arrow}>
               <div className={classes.arrowSvg}>
                 <Arrow />
-                <h1>Hover me</h1>
+                <h1>Hover to see my skills</h1>
               </div>
             </div>
           </div>

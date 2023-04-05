@@ -73,7 +73,7 @@
   height: 45%;
   width: 30%;
   z-index: -1;
-  bottom: 0;
+  bottom: -5rem;
   left: 30%;
   background-color: transparent;
 }
@@ -86,9 +86,11 @@
 .arrow h1 {
   position: absolute;
   bottom: 30%;
+  left: -4rem;
   font-family: "ducklingregular";
   transform: rotate(320deg);
   color: var(--lightBeige);
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1250px) {
