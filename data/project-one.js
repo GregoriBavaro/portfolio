@@ -176,7 +176,7 @@ const ProjectOne = () => {
       setItemThreeSettings({
         x: "50%",
         yTop: "320%",
-        yBottom: "-430%",
+        yBottom: "-460%",
         scale: 0.6,
       }); // Item Three //
       setItemFourSettings({
@@ -204,7 +204,7 @@ const ProjectOne = () => {
       setItemThreeSettings({
         x: "20%",
         yTop: "320%",
-        yBottom: "-430%",
+        yBottom: "-460%",
         scale: 0.6,
       }); // Item Three //
       setItemFourSettings({
