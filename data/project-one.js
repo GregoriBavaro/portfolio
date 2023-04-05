@@ -181,7 +181,7 @@ const ProjectOne = () => {
       }); // Item Three //
       setItemFourSettings({
         x: "2%",
-        yTop: "370%",
+        yTop: "350%",
         yBottom: "-450%",
         img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
         scale: 0.6,
@@ -209,7 +209,7 @@ const ProjectOne = () => {
       }); // Item Three //
       setItemFourSettings({
         x: "-8%",
-        yTop: "370%",
+        yTop: "350%",
         yBottom: "-450%",
         img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
         scale: 0.6,
