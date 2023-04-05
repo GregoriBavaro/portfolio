@@ -1,9 +1,9 @@
-@import url("https://fonts.cdnfonts.com/css/duckling");
 
 .container {
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
+  margin-top: 20vh;
   display: flex;
   align-items: center;
   padding: 1%;
@@ -108,10 +108,9 @@
 
   .skills3D {
     width: 90vw;
-    height: 70vh;
+    height: 35vh;
     position: relative;
     left: 0;
-
   }
 
   .arrow {
@@ -130,5 +129,18 @@
 
   .text__skills {
     padding: 1rem 0;
+    
   }
+
+  .skills3D {
+    height: 79vh;
+    position: relative;
+    left: 0;
+
+  }
+
+  .text__skills span {
+    line-height: 4rem;
+  }
+  
 }

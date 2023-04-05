@@ -76,7 +76,7 @@ const Skills = () => {
       setThreeDModel(<CanvasSkills />);
     }
     if (size.width < 620) {
-      setThreeDModel(<CanvasSkillsSmallMobile />)
+      setThreeDModel(<CanvasSkillsSmallMobile />);
     }
   }, [size.width]);
 
@@ -112,14 +112,12 @@ const Skills = () => {
           </div>
         )}
         <div className={classes.text__skills__wrapper}>
-          <div>
-            <div className={classes.skills3D}>
-              {threeDModel}
-              <div className={classes.arrow}>
-                <div className={classes.arrowSvg}>
-                  <Arrow />
-                  <h1>Hover me</h1>
-                </div>
+          <div className={classes.skills3D}>
+            {threeDModel}
+            <div className={classes.arrow}>
+              <div className={classes.arrowSvg}>
+                <Arrow />
+                <h1>Hover me</h1>
               </div>
             </div>
           </div>

@@ -78,9 +78,14 @@
   }
 
   .text__aboutMe {
-
     padding: 1rem 0;
   }
+
+ 
+  .text__aboutMe span {
+    line-height: 4rem;
+  }
+  
 
 }
 

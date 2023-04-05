@@ -33,13 +33,13 @@
 
 .header ul li {
   text-transform: uppercase;
-  font-size: var(--fs-l);
   cursor: pointer;
 }
 
 .header ul li h4 {
   padding: 1rem;
   font-weight: 300;
+  font-size: var(--fs-600);
 }
 
 .hamburger {

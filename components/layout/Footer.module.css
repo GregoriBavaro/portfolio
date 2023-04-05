@@ -106,6 +106,12 @@
   transform: translateY(0rem);
 }
 
+@media (max-width: 900px) {
+  .contact__me {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   .nameOfIcon {
     display: none;
@@ -113,10 +119,6 @@
 }
 
 @media (max-width: 450px) {
-  .contact__me {
-    display: none;
-  }
-
   .wrapper__icons ul {
     justify-content: space-around;
     align-items: center;
