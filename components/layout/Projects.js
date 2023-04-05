@@ -115,7 +115,7 @@ const Projects = (props) => {
                 style={{ y, right: x, scale }}
                 className={classes.container__images__wrapper}
               >
-                <img src={src} alt={alt} className={className} />
+                <img src={src} alt={alt} className={className}  />
               </m.div>
             );
           })}

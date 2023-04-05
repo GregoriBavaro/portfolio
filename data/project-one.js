@@ -175,14 +175,14 @@ const ProjectOne = () => {
       }); // Item Two //
       setItemThreeSettings({
         x: "50%",
-        yTop: "330%",
-        yBottom: "-400%",
+        yTop: "320%",
+        yBottom: "-430%",
         scale: 0.6,
       }); // Item Three //
       setItemFourSettings({
         x: "2%",
-        yTop: "380%",
-        yBottom: "-430%",
+        yTop: "370%",
+        yBottom: "-450%",
         img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
         scale: 0.6,
       }); // Item Four //
@@ -203,14 +203,14 @@ const ProjectOne = () => {
       }); // Item Two //
       setItemThreeSettings({
         x: "20%",
-        yTop: "330%",
-        yBottom: "-400%",
+        yTop: "320%",
+        yBottom: "-430%",
         scale: 0.6,
       }); // Item Three //
       setItemFourSettings({
         x: "-8%",
-        yTop: "380%",
-        yBottom: "-430%",
+        yTop: "370%",
+        yBottom: "-450%",
         img: "https://i.postimg.cc/P5cSqfmr/mobile5.png",
         scale: 0.6,
       }); // Item Four //

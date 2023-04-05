@@ -215,7 +215,7 @@ const ProjectTwo = () => {
         x: "-8%",
         scale: 0.6,
         yTop: "400%",
-        yBottom: "-220%",
+        yBottom: "-250%",
       }); // Item Two //
 
       setItemThreeSettings({
@@ -223,14 +223,14 @@ const ProjectTwo = () => {
         scale: 0.6,
         img: "https://i.postimg.cc/26HmqBTB/mobile4.png",
         yTop: "780%",
-        yBottom: "-290%",
+        yBottom: "-320%",
       }); // Item Three //
 
       setItemFourSettings({
         x: "-8%",
         scale: 0.6,
-        yTop: "870%",
-        yBottom: "-320%",
+        yTop: "860%",
+        yBottom: "-350%",
       }); // Item Four //
     }
   }, [size.width]);
