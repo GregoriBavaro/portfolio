@@ -2,6 +2,7 @@
 import Store from "../components/hooks/Store";
 import { useRef, Fragment } from "react";
 import { motion as m, useInView } from "framer-motion";
+import useWindowSize from "../components/hooks/use-windowDimensions";
 import Head from "next/head";
 
 //Components
@@ -15,12 +16,17 @@ import Footer from "../components/layout/Footer";
 import WaveSvg from "../components/ui/WaveSvg";
 import ProjectsHeader from "@/components/layout/ProjectsHeader";
 
+//Components Mobile
+import ProjectsMobile from "../components/layout/ProjectsMobile";
+
 //Data
 import ProjectOne from "../data/project-one";
 import ProjectTwo from "../data/project-two";
 
 //CSS
 import classes from "../components/layout/Projects.module.css";
+import classesMobile from "../components/layout/ProjectsMobile.module.css";
+
 
 const projectOneData = {
   number: "1",
@@ -53,6 +59,7 @@ const HomePage = () => {
   const betweenProjects = useRef();
 
   const isInView = useInView(betweenProjects, { once: false, amount: "some" });
+  const size = useWindowSize();
 
   return (
     <Fragment>
@@ -93,21 +100,37 @@ const HomePage = () => {
             <About />
           </div>
           <ProjectsHeader />
-          <div id="projects" ref={projectsRef}>
-            <Projects
-              dataObject={projectOneData}
-              photos={projectOnePhotos}
-              class={classes.container__p1}
-              hideFirst={isInView}
-            />
-            <div ref={betweenProjects}></div>
-            <Projects
-              dataObject={ProjectTwoData}
-              photos={projectTwoPhotos}
-              class={classes.container__p2}
-              hideFirst={isInView}
-            />
-          </div>
+          {size.width > 600 && (
+            <div id="projects" ref={projectsRef}>
+              <Projects
+                dataObject={projectOneData}
+                photos={projectOnePhotos}
+                class={classes.container__p1}
+                hideFirst={isInView}
+              />
+              <div ref={betweenProjects}></div>
+              <Projects
+                dataObject={ProjectTwoData}
+                photos={projectTwoPhotos}
+                class={classes.container__p2}
+                hideFirst={isInView}
+              />
+            </div>
+          )}
+          {size.width <= 600 && (
+            <div id="projects" ref={projectsRef}>
+              <ProjectsMobile
+                dataObject={projectOneData}
+                photos={projectOnePhotos}
+                container={classesMobile.projectOne}
+              />
+               <ProjectsMobile
+                dataObject={ProjectTwoData}
+                photos={projectTwoPhotos}
+                container={classesMobile.projectTwo}
+              />
+            </div>
+          )}
           <div ref={skillsRef}>
             <Skills />
           </div>

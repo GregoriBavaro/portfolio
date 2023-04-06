@@ -110,9 +110,12 @@
 
   .skills3D {
     width: 90vw;
-    height: 35vh;
+    height: 55vh;
     position: relative;
     left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 2rem 0 ;
   }
 
   .arrow {
@@ -120,7 +123,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .container {
     padding: 0 1rem;
   }
@@ -135,9 +138,8 @@
   }
 
   .skills3D {
+    width: fit-content;
     height: 79vh;
-    position: relative;
-    left: 0;
     padding: 2rem 0 0;
   }
 

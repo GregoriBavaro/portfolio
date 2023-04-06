@@ -3,8 +3,8 @@
   top: 0%;
   min-height: 85vh;
   min-height: 85svh;
-  margin-top: 30vh;
-  margin-top: 30svh;
+  margin-top: 10vh;
+  margin-top: 10svh;
   width: 100%;
   color: var(--lightBeige);
 }
