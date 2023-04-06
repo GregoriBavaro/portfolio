@@ -4,14 +4,15 @@
   color: var(--lightBeige);
   border-top: 1px solid var(--lightBeige);
   border-bottom: 1px solid var(--lightBeige);
+
 }
 
 .projectTwo {
-    position: relative;
-    width: 100%;
-    color: var(--lightBeige);
-    border-bottom: 1px solid var(--lightBeige);
-  }
+  position: relative;
+  width: 100%;
+  color: var(--lightBeige);
+  border-bottom: 1px solid var(--lightBeige);
+}
 
 .header {
   display: flex;
@@ -54,9 +55,7 @@
   color: var(--green);
 }
 
-.photo__wrapper {
-  height: 100svh;
-}
+
 
 .photo__wrapper img {
   max-width: 100%;
