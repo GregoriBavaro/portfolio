@@ -138,7 +138,7 @@
 }
 
 
-@media only screen and (max-width: 768px) and ( orientation: landscape ) {
+@media only screen and (max-width: 1000px) and ( orientation: landscape ) {
   .text__topics {
     height: 45px;
     font: normal normal 500 1.2em/1.6em "Oswald", sans-serif;

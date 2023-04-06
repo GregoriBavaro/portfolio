@@ -122,7 +122,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
   .hero {
     height: 85svh;
   }
