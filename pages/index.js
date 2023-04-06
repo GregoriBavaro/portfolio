@@ -48,7 +48,7 @@ const HomePage = () => {
 
   const projectOneData = {
     number: "1",
-    numberMobile: <LooksOneOutlinedIcon sx={{color: "var(--green)"}} style={{ fontSize: size.width > 600 ? "50px" : "30px" }}/>,
+    numberMobile: <LooksOneOutlinedIcon sx={{color: "var(--green)"}} style={{ fontSize: size.width > 1000 ? "50px" : "30px" }}/>,
     name: "MM9 Machinery",
     job1: "Front End Developer",
     description:
@@ -59,7 +59,7 @@ const HomePage = () => {
   
   const ProjectTwoData = {
     number: "2",
-    numberMobile: <LooksTwoOutlinedIcon sx={{color: "var(--green)"}} style={{ fontSize: size.width > 600 ? "50px" : "30px" }}/>,
+    numberMobile: <LooksTwoOutlinedIcon sx={{color: "var(--green)"}} style={{ fontSize: size.width > 1000 ? "50px" : "30px" }}/>,
     name: "Productivity App",
     job1: "Front End Developer",
     description:
