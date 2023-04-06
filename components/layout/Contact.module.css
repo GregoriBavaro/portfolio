@@ -136,3 +136,23 @@
     margin-top: -2em;
   }
 }
+
+
+@media only screen and (max-width: 768px) and ( orientation: landscape ) {
+  .text__topics {
+    height: 45px;
+    font: normal normal 500 1.2em/1.6em "Oswald", sans-serif;
+  }
+
+  .text__topics:hover a:nth-child(1) {
+    margin-top: -1.6em;
+  }
+
+  .container__wrapper__text {
+    padding: 0 1rem
+  }
+
+  .text__connect {
+    padding: 1rem 0rem 0;
+  }
+}

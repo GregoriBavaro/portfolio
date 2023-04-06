@@ -32,6 +32,10 @@
   margin-left: auto;
 }
 
+.header div:nth-child(1) {
+  margin-top: 0.2rem;
+}
+
 .body {
   display: flex;
   flex-direction: column;
@@ -49,8 +53,6 @@
 .header span {
   color: var(--green);
 }
-
-
 
 .photo__wrapper img {
   max-width: 100%;

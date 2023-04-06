@@ -142,3 +142,21 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 768px) and ( orientation: landscape ) {
+  .nameOfIcon {
+    display: flex;
+  }
+
+  .wrapper__icons li a {
+    font-size: 0.7rem;
+    gap: 0.2rem;
+  }
+
+  .wrapper__icons ul {
+    gap: 1rem;
+  }
+
+ 
+  
+}
