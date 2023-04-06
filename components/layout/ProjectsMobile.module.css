@@ -3,15 +3,16 @@
   width: 100%;
   color: var(--lightBeige);
   border-top: 1px solid var(--lightBeige);
-  border-bottom: 1px solid var(--lightBeige);
-
+  overflow: hidden;
 }
 
 .projectTwo {
   position: relative;
   width: 100%;
   color: var(--lightBeige);
+  border-top: 1px solid var(--lightBeige);
   border-bottom: 1px solid var(--lightBeige);
+  overflow: hidden;
 }
 
 .header {
@@ -26,21 +27,15 @@
   font-size: var(--fs-500);
 }
 
-.header h1:nth-child(1) {
-  padding: 0 1rem 0 0;
-  font-family: "evermoreregular";
-  font-size: 1.3rem;
-  line-height: 0.1rem;
-  margin-top: 1rem;
-}
 
-.header div {
+.header div:nth-child(3) {
   margin-left: auto;
 }
 
 .body {
   display: flex;
   flex-direction: column;
+  padding: 0 0 1rem;
 }
 
 .text {
@@ -125,3 +120,8 @@
   color: var(--green);
   transform: translateY(0rem);
 }
+
+
+/* @media only screen and (max-width: 768px) and ( orientation: landscape ) {
+
+} */

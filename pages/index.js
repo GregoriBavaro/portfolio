@@ -27,26 +27,11 @@ import ProjectTwo from "../data/project-two";
 import classes from "../components/layout/Projects.module.css";
 import classesMobile from "../components/layout/ProjectsMobile.module.css";
 
+//Icons
+import LooksOneOutlinedIcon from '@mui/icons-material/LooksOneOutlined';
+import LooksTwoOutlinedIcon from '@mui/icons-material/LooksTwoOutlined';
 
-const projectOneData = {
-  number: "1",
-  name: "MM9 Machinery",
-  job1: "Front End Developer",
-  description:
-    "Developed end-to-end solution for a client in the corrugated box manufacturing business. The main focus was to create a product that is user-friendly with amazing UX/UI, optimizing the application for maximum speed and building responsive styled components for a better overall user experience, especially for mobile and tablet users. Developed in React.js & .Net.",
-  link: "",
-  buttonName: "website",
-};
 
-const ProjectTwoData = {
-  number: "2",
-  name: "Productivity App",
-  job1: "Front End Developer",
-  description:
-    "Developed end-to-end solution with a team of 3 developers, Productivity Web Application aimed at task and time management to help people struggling with productivity management, and help them handle their workload better.",
-  link: "https://github.com/GregoriBavaro/Productivity-App",
-  buttonName: "github",
-};
 
 const HomePage = () => {
   const { projectOnePhotos: projectOnePhotos } = ProjectOne();
@@ -60,6 +45,28 @@ const HomePage = () => {
 
   const isInView = useInView(betweenProjects, { once: false, amount: "some" });
   const size = useWindowSize();
+
+  const projectOneData = {
+    number: "1",
+    numberMobile: <LooksOneOutlinedIcon sx={{color: "var(--green)"}} style={{ fontSize: size.width > 600 ? "50px" : "30px" }}/>,
+    name: "MM9 Machinery",
+    job1: "Front End Developer",
+    description:
+      "Developed end-to-end solution for a client in the corrugated box manufacturing business. The main focus was to create a product that is user-friendly with amazing UX/UI, optimizing the application for maximum speed and building responsive styled components for a better overall user experience, especially for mobile and tablet users. Developed in React.js & .Net.",
+    link: "",
+    buttonName: "website",
+  };
+  
+  const ProjectTwoData = {
+    number: "2",
+    numberMobile: <LooksTwoOutlinedIcon sx={{color: "var(--green)"}} style={{ fontSize: size.width > 600 ? "50px" : "30px" }}/>,
+    name: "Productivity App",
+    job1: "Front End Developer",
+    description:
+      "Developed end-to-end solution with a team of 3 developers, Productivity Web Application aimed at task and time management to help people struggling with productivity management, and help them handle their workload better.",
+    link: "https://github.com/GregoriBavaro/Productivity-App",
+    buttonName: "github",
+  };
 
   return (
     <Fragment>
@@ -100,7 +107,7 @@ const HomePage = () => {
             <About />
           </div>
           <ProjectsHeader />
-          {size.width > 600 && (
+          {size.width > 992 && (
             <div id="projects" ref={projectsRef}>
               <Projects
                 dataObject={projectOneData}
@@ -117,7 +124,7 @@ const HomePage = () => {
               />
             </div>
           )}
-          {size.width <= 600 && (
+          {size.width <= 992 && (
             <div id="projects" ref={projectsRef}>
               <ProjectsMobile
                 dataObject={projectOneData}

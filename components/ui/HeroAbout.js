@@ -10,40 +10,40 @@ import classes from "./HeroAbout.module.css";
 const developerItems = [
   {
     letter: "D",
-    delay: 5,
+    delay: 4,
   },
   {
     letter: "E",
-    delay: 5.1,
+    delay: 4.1,
   },
   {
     letter: "V",
-    delay: 5.2,
+    delay: 4.2,
   },
   {
     letter: "E",
-    delay: 5.3,
+    delay: 4.3,
   },
   {
     letter: "L",
-    delay: 5.4,
+    delay: 4.4,
   },
   {
     letter: "O",
-    delay: 5.5,
+    delay: 4.4,
   },
   {
     letter: "P",
-    delay: 5.6,
+    delay: 4.6,
   },
   ,
   {
     letter: "E",
-    delay: 5.7,
+    delay: 4.7,
   },
   {
     letter: "R",
-    delay: 5.8,
+    delay: 4.8,
   },
 ];
 
