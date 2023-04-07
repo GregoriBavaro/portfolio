@@ -52,6 +52,10 @@
   gap: 1rem;
 }
 
+.text p {
+  font-size: var(--fs-400);
+}
+
 .header span {
   color: var(--green);
 }
@@ -129,3 +133,9 @@
 /* @media only screen and (max-width: 768px) and ( orientation: landscape ) {
 
 } */
+
+@media (max-width: 360px) {
+  .header h1 {
+    font-size: var(--fs-400);
+  }
+}

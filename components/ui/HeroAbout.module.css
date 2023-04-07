@@ -78,7 +78,6 @@
   margin-left: -0.3em;
 }
 
-
 @media (max-width: 600px) {
   .text {
     position: absolute;
@@ -152,5 +151,16 @@
 
   .text {
     padding: 0 0 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 605px) and (orientation: landscape) {
+  .text {
+    bottom: 0%;
+    -webkit-transform: rotateZ(360deg);
+  }
+
+  .container__two {
+    height: 30%;
   }
 }

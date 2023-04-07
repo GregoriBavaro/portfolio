@@ -39,7 +39,7 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 
-  --fs-xxl: clamp(4rem, 10vw + 1rem, 12rem);
+  --fs-xxl: clamp(3rem, 10vw + 1rem, 12rem);
   --fs-xl: clamp(4rem, 10vw + 1rem, 7rem);
   --fs-l: clamp(2rem, 5vw + 1rem, 4rem);
   --fs-600: clamp(1rem, 3vw + 1rem, 2rem);

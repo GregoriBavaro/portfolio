@@ -7,7 +7,8 @@ import useWindowSize from "../hooks/use-windowDimensions";
 //Components
 import CanvasSkills from "../ui/CanvasSkills";
 import CanvasSkillsMobile from "../ui/CanvasSkillsMobile";
-import CanvasSkillsSmallMobile from "../ui/CanvasSkillsSmallMobile";
+import { CanvasSkillsSmallMobile } from "../ui/CanvasSkillsSmallMobile";
+import { CanvasSkillsSuperSmallMobile } from "../ui/CanvasSkillsSmallMobile";
 import Arrow from "../ui/Arrow";
 
 //CSS
@@ -77,6 +78,9 @@ const Skills = () => {
     }
     if (size.width < 620) {
       setThreeDModel(<CanvasSkillsSmallMobile />);
+    } 
+    if (size.width < 390) {
+      setThreeDModel(<CanvasSkillsSuperSmallMobile />)
     }
   }, [size.width]);
 

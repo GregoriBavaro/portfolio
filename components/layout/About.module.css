@@ -38,7 +38,7 @@
 }
 
 .person__container:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .person__container img {
@@ -54,9 +54,8 @@
 }
 
 .person__container:hover .person__img {
-  transform: scale(1.3) translateY(-1rem)
+  transform: scale(1.3) translateY(-1rem);
 }
-
 
 .person__circle {
   position: absolute;
@@ -98,7 +97,7 @@
 }
 
 .text__bottom h3 {
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   font-weight: 400;
   letter-spacing: -1px;
   padding: 0 0.7rem 0;
@@ -124,7 +123,7 @@
   .container {
     padding: 0 1rem;
     text-align: left;
-    gap: 1.5rem
+    gap: 1.5rem;
   }
 
   .text__aboutMe {
@@ -137,6 +136,15 @@
 
   .person__container {
     max-width: 15rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    gap: 3rem;
+  }
+  .person__container {
+    max-width: 12rem;
   }
 }
 

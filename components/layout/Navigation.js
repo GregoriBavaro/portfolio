@@ -2,6 +2,7 @@
 import { useState, Fragment, useEffect } from "react";
 import { Spin as Hamburger } from "hamburger-react";
 import { motion as m, AnimatePresence } from "framer-motion";
+import useWindowSize from "../hooks/use-windowDimensions";
 
 //Components
 import DivAnimations from "../ui/DivAnimations";
@@ -16,6 +17,16 @@ import classes from "./Navigation.module.css";
 const Navigation = (props) => {
   const links = [...menuList.menuItems];
   const [isOpen, setOpen] = useState(false);
+  const [hamburgerSize, setHamburgerSize] = useState(30);
+  const size = useWindowSize();
+
+  useEffect(() => {
+    if (size.width < 600) {
+      setHamburgerSize(25);
+    } else {
+      setHamburgerSize(30);
+    }
+  }, [size]);
 
   useEffect(() => {
     if (isOpen) {
@@ -61,6 +72,7 @@ const Navigation = (props) => {
             color="var(--lightBeige)"
             toggled={isOpen}
             toggle={setOpen}
+            size={hamburgerSize}
           />
         </m.div>
         <AnimatePresence>

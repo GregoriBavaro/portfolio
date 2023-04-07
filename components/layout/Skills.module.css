@@ -48,7 +48,7 @@
 }
 
 .text__bottom h3 {
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   font-weight: 400;
 }
 
@@ -153,6 +153,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .skills3D {
+    padding: 1rem 0 0;
+  }
+}
+
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
   .skills3D {
     height: 100vh;
@@ -165,5 +171,16 @@
 
   .text__skills {
     padding: 1rem 0.7rem 0;
+  }
+}
+
+@media only screen and (max-width: 625px) and (orientation: landscape) {
+  .skills3D {
+    height: fit-content;
+    padding: 1rem 0;
+  }
+
+  .text__bottom {
+    padding: 0 1rem;
   }
 }
