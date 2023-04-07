@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion as m, useInView } from "framer-motion";
 
 //Components
-import { Canvas } from "../ui/Canvas";
+// import { Canvas } from "../ui/Canvas";
 
 //img
 import me from "../../public/static/images/gregori.png";

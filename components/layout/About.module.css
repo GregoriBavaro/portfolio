@@ -68,23 +68,11 @@
   aspect-ratio: 1 / 1;
 }
 
-/* .photo__wrapper {
-  width: 80%;
-  border-radius: 100%;
-  overflow: hidden;
-  background: rgb(45, 112, 100);
-  background: linear-gradient(
-    346deg,
-    rgba(45, 112, 100, 1) 16%,
-    rgba(46, 112, 100, 0) 53%
-  );
-} */
-
-.threeD {
+/* .threeD {
   flex: 1 1 0px;
   height: 100%;
   z-index: -100;
-}
+} */
 
 .text__aboutMe {
   text-transform: uppercase;
@@ -136,6 +124,7 @@
   .container {
     padding: 0 1rem;
     text-align: left;
+    gap: 1.5rem
   }
 
   .text__aboutMe {
@@ -144,6 +133,10 @@
 
   .text__aboutMe span {
     line-height: 4rem;
+  }
+
+  .person__container {
+    max-width: 15rem;
   }
 }
 
