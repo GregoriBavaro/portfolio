@@ -157,13 +157,13 @@
 
   .wrapper__icons::before {
     width: 90%;
-    top: -0rem;
+    top: -0.5rem;
   }
 
   .wrapper__icons {
     width: 100%;
     height: 3rem;
-    padding: 1rem 2% 0rem;
+    padding: 0.5rem 2% 0rem;
     width: 100%;
   }
 
