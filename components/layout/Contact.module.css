@@ -50,12 +50,13 @@
   font-size: var(--fs-600);
   font-weight: 400;
   text-transform: uppercase;
+ padding: 0 0.5rem 0;
 }
 
 /* TOPICS */
 
 .text__topics__wrapper {
-  padding: 2rem 0;
+  padding: 2rem 0.5rem;
   display: flex;
   justify-content: flex-start;
   gap: 0.7rem;
@@ -107,6 +108,7 @@
   padding: 0rem 0rem 0.5rem;
 }
 
+
 @media (max-width: 600px) {
   .text__topics {
     height: 45px;
@@ -141,11 +143,11 @@
 @media only screen and (max-width: 1000px) and ( orientation: landscape ) {
   .text__topics {
     height: 45px;
-    font: normal normal 500 1.2em/1.6em "Oswald", sans-serif;
+    font: normal normal 500 0.8em/2.3em "Oswald", sans-serif;
   }
 
   .text__topics:hover a:nth-child(1) {
-    margin-top: -1.6em;
+    margin-top: -2.2em;
   }
 
   .container__wrapper__text {

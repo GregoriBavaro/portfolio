@@ -106,15 +106,40 @@
   transform: translateY(0rem);
 }
 
+.developedBy {
+  border-top: 1px solid var(--lightBeige);
+  border-right: 1px solid var(--lightBeige);
+  border-left: 1px solid var(--lightBeige);
+  position: absolute;
+  bottom: 4.5rem;
+  right: 50%;
+  transform: translate(50%);
+  padding: 0.2em;
+}
+
+.developedBy p {
+  font-size: 0.7rem
+}
+
 @media (max-width: 900px) {
   .contact__me {
     display: none;
   }
+  .developedBy {
+    bottom: 2.5rem
+  }
+  
 }
 
 @media (max-width: 800px) {
   .nameOfIcon {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .developedBy p {
+    font-size: 0.4rem
   }
 }
 
@@ -141,6 +166,10 @@
     padding: 1rem 2% 0rem;
     width: 100%;
   }
+
+  .developedBy {
+    bottom: 5rem; 
+  }
 }
 
 @media only screen and (max-width: 1000px) and ( orientation: landscape ) {
@@ -157,6 +186,10 @@
     gap: 1rem;
   }
 
+  .developedBy {
+    right: 1.2%;
+    transform: translate(0%);
+  }
  
   
 }

@@ -5,6 +5,9 @@ import { motion as m, useInView } from "framer-motion";
 //Components
 import { Canvas } from "../ui/Canvas";
 
+//img
+import me from "../../public/static/images/gregori.png";
+
 //CSS
 import classes from "../layout/About.module.css";
 
@@ -69,17 +72,24 @@ const About = () => {
           </div>
           <div className={classes.text__bottom}>
             <h3>
-              I am Creative and skillful frontend web developer with a passion
-              for design and creating elegant solutions. I care deeply about
-              user experience with a serious passion for UI design and new
-              technologies.I love to create beautiful and performant products
-              with delightful user experiences.
+              Hi, my name is Gregori. I am a Creative and skillful frontend web
+              developer with a passion for design and creating elegant
+              solutions. I care deeply about user experience with a serious
+              passion for UI design and new technologies.I love to create
+              beautiful and performant products with delightful user
+              experiences.
             </h3>
           </div>
         </div>
       )}
-      <div className={classes.threeD}>
+      {/* <div className={classes.threeD}>
         <Canvas />
+      </div> */}
+      <div className={classes.photo__container}>
+        <div className={classes.person__container}>
+          <div className={classes.person__circle} /><div/>
+          <img className={classes.person__img}src={me.src} alt="" />
+        </div>
       </div>
     </m.div>
   );

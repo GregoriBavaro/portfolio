@@ -6,7 +6,6 @@ import { motion as m, AnimatePresence } from "framer-motion";
 
 //Icons
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 //CSS
 import classes from "./ProjectsMobile.module.css";
