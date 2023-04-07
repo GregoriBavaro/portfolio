@@ -16,7 +16,7 @@ const Footer = () => {
       transition={{ delay: 6.8, duration: "1s ease-out" }}
     >
       <m.div className={classes.container__wrapper}>
-      <div className={classes.developedBy}><p>Designed & Build by Gregori Bavaro</p></div>
+      {/* <div className={classes.developedBy}><p>Designed & Build by Gregori Bavaro</p></div> */}
         <m.div className={classes.wrapper__icons}>
           <ul>
             {icons.map(({ name, href, icon, animationDelay }, i) => {
