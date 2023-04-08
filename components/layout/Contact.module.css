@@ -50,8 +50,9 @@
   font-size: var(--fs-600);
   font-weight: 400;
   text-transform: uppercase;
- padding: 0 0.5rem 0;
+  padding: 0 0.5rem 0;
 }
+
 
 /* TOPICS */
 
@@ -108,7 +109,6 @@
   padding: 0rem 0rem 0.5rem;
 }
 
-
 @media (max-width: 600px) {
   .text__topics {
     height: 45px;
@@ -126,6 +126,16 @@
   .text__connect {
     padding: 1rem 0rem 0;
   }
+
+  .text__bottom h3 {
+    font-size: var(--fs-400);
+  }
+
+  .text div:nth-child(1) {
+    position: absolute;
+    bottom: 93%;
+  }
+  
 }
 
 @media (max-width: 445px) {
@@ -139,8 +149,7 @@
   }
 }
 
-
-@media only screen and (max-width: 1000px) and ( orientation: landscape ) {
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
   .text__topics {
     height: 45px;
     font: normal normal 500 0.8em/2.3em "Oswald", sans-serif;
@@ -151,7 +160,7 @@
   }
 
   .container__wrapper__text {
-    padding: 0 1rem
+    padding: 0 1rem;
   }
 
   .text__connect {
