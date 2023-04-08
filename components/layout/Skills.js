@@ -3,12 +3,9 @@ import { Context } from "../hooks/Store";
 import { useRef, useContext, useEffect, useState } from "react";
 import { motion as m, useInView } from "framer-motion";
 import useWindowSize from "../hooks/use-windowDimensions";
+import CanvasSkills from "../ui/CanvasSkills"
 
 //Components
-import CanvasSkills from "../ui/CanvasSkills";
-import CanvasSkillsMobile from "../ui/CanvasSkillsMobile";
-import { CanvasSkillsSmallMobile } from "../ui/CanvasSkillsSmallMobile";
-import { CanvasSkillsSuperSmallMobile } from "../ui/CanvasSkillsSmallMobile";
 import Arrow from "../ui/Arrow";
 
 //CSS
@@ -58,10 +55,11 @@ const developerItems = [
 ];
 
 const Skills = () => {
+  const {desktop, tablet, mobile620, mobile390} = CanvasSkills();
   const { skills } = useContext(Context);
   const [stateSkills, setStateSkills] = skills;
   const targetRef = useRef(null);
-  const [threeDModel, setThreeDModel] = useState(<CanvasSkills />);
+  const [threeDModel, setThreeDModel] = useState(desktop);
   const isInView = useInView(targetRef, { once: false });
   const isInViewSkills = useInView(targetRef, { once: true });
   const size = useWindowSize();
@@ -72,15 +70,15 @@ const Skills = () => {
 
   useEffect(() => {
     if (size.width < 1250) {
-      setThreeDModel(<CanvasSkillsMobile />);
+      setThreeDModel(tablet);
     } else {
-      setThreeDModel(<CanvasSkills />);
+      setThreeDModel(desktop);
     }
     if (size.width < 620) {
-      setThreeDModel(<CanvasSkillsSmallMobile />);
+      setThreeDModel(mobile620);
     } 
     if (size.width < 390) {
-      setThreeDModel(<CanvasSkillsSuperSmallMobile />)
+      setThreeDModel(mobile390)
     }
   }, [size.width]);
 

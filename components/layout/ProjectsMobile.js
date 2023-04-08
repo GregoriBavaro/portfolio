@@ -5,7 +5,7 @@ import { Pagination } from "swiper";
 import { motion as m, AnimatePresence } from "framer-motion";
 
 //Icons
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 //CSS
 import classes from "./ProjectsMobile.module.css";
