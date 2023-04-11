@@ -146,6 +146,10 @@
   .person__container {
     max-width: 12rem;
   }
+
+  .person__container:hover .person__img {
+    transform: scale(1.3) translateY(-0.5rem);
+  }
 }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
