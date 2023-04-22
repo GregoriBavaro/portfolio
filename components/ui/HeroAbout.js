@@ -74,13 +74,13 @@ const HeroAbout = () => {
       >
         <div className={classes.container__wrapper}>
           <div className={classes.container__two__day}>
-            <m.h1
+            <m.span
               initial={{ y: "200%" }}
               animate={{ y: "0%" }}
               transition={{ delay: 5.2, duration: 1 }}
             >
               <NumberIncAnimation n={parsedDay} />
-            </m.h1>
+            </m.span>
           </div>
           <div className={classes.container__two__month}>
             <m.h1

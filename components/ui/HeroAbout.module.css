@@ -34,20 +34,19 @@
   overflow: hidden;
 }
 
-.container__two__day h1 {
-  font-size: clamp(2rem, 5vw + 1rem, 3.2rem);
+.container__two__day span {
+  font-size: clamp(2rem, 5vw + 1rem, 6rem);
   font-weight: 300;
-  font-family: "evermoreregular";
-  margin-top: 65%;
 }
 
 .container__two__month {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   margin-bottom: auto;
   overflow: hidden;
+  margin-top: auto;
 }
 
 .container__two__month h1 {
@@ -57,7 +56,7 @@
 }
 
 .container__two__month p {
-  font-size: var(--fs-400);
+  font-size: clamp(0.3rem, 5vw + 1rem, 0.7rem);
 }
 
 .text {
