@@ -53,7 +53,7 @@ const HomePage = () => {
     job1: "Front End Developer",
     description:
       "Developed end-to-end solution for a client in the corrugated box manufacturing business. The main focus was to create a product that is user-friendly with amazing UX/UI, optimizing the application for maximum speed and building responsive styled components for a better overall user experience, especially for mobile and tablet users. Developed in React.js & .Net.",
-    link: "",
+    link: "https://mm-9-machinery.vercel.app/",
     buttonName: "website",
   };
   
