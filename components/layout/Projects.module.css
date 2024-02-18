@@ -6,7 +6,6 @@
   position: relative;
   overflow: hidden;
   text-align: left;
- 
 }
 
 .container__wrapper {
@@ -31,8 +30,6 @@
 
 .container__text {
   flex: 0.7 0.7 0px;
-  height: 96vh;
-  height: 96svh;
   color: var(--lightBeige);
   display: flex;
   flex-direction: column;
@@ -40,6 +37,8 @@
   z-index: -100;
   width: 37%;
   position: absolute;
+  height: 80%;
+  overflow: hidden;
 }
 
 .container__3D h1 {
@@ -47,6 +46,7 @@
   font-weight: 300;
   font-family: "evermoreregular";
   line-height: 6rem;
+  margin-top: 3rem;
 }
 
 .container__text__about h3 span {
@@ -176,6 +176,7 @@
 @media (max-width: 830px) {
   .container__text {
     width: 90%;
+    border: 1px solid red;
   }
 
   .container__images__wrapper img {
@@ -185,7 +186,7 @@
 
 @media (max-height: 850px) {
   .container__text {
-    height: 93%;
+    /* min-height: 90vh; */
   }
 }
 
