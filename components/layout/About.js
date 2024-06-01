@@ -2,9 +2,6 @@
 import { useRef } from "react";
 import { motion as m, useInView } from "framer-motion";
 
-//Components
-// import { Canvas } from "../ui/Canvas";
-
 //img
 import me from "../../public/static/images/gregori.png";
 
@@ -72,12 +69,15 @@ const About = () => {
           </div>
           <div className={classes.text__bottom}>
             <h3>
-              Hi, my name is Gregori. I am a Creative and skillful frontend web
-              developer with a passion for design and creating elegant
-              solutions. I care deeply about user experience with a serious
-              passion for UI design and new technologies.I love to create
-              beautiful and performant products with delightful user
-              experiences.
+              Passionate React JavaScript Developer with over one year of
+              freelance experience. Dedicated to crafting innovative and
+              high-quality web solutions that elevate user experiences.
+              Proficient in frontend development using React.js & Next.js, with
+              a keen eye for detail and a drive for continuous learning. Skilled
+              in collaborating with clients to understand their needs and
+              deliver tailored solutions that exceed expectations. Committed to
+              staying updated with the latest technologies and industry trends
+              to consistently deliver top-notch results.
             </h3>
           </div>
         </div>
@@ -87,8 +87,9 @@ const About = () => {
       </div> */}
       <div className={classes.photo__container}>
         <div className={classes.person__container}>
-          <div className={classes.person__circle} /><div/>
-          <img className={classes.person__img}src={me.src} alt="" />
+          <div className={classes.person__circle} />
+          <div />
+          <img className={classes.person__img} src={me.src} alt="" />
         </div>
       </div>
     </m.div>
